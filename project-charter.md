@@ -22,8 +22,6 @@ As the project tackles the main challenges facing the discipline, it aims to del
     -   B.3. Investigate administrative topics that are useful for the discipline, such as how to coordinate with the 2 conferences we attend to make sure that we embed and incentivize the use of the processes we would like to develop.
     -   B.4. Outlining of the white paper/guidance for the discipline on reproducibility
 
-## Project roles and participants
-
 ## Project management
 
 To manage the project, a [GitHub projects is used](https://github.com/orgs/UN-Task-Team-for-Scanner-Data/projects/1/views/1) for coordination and transparency.
