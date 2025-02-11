@@ -13,12 +13,12 @@ The project aims to simplify this situation in the price statistics discipline b
 As the project tackles the main challenges facing the discipline, it aims to deliver the following aspects:
 
 -   Objective A: Developing an interim data catalogue tool for several open datasets and publishing several open datasets as a proof of concept. The idea is to start helping researchers know how to reference open datasets for better replicability within the discipline
-    -   A.1. Mock up an interim data catalogue on the UNGP GitLab static site that is easy to read through and understand.
+    -   A.1. Mock up an interim data catalogue on the UNGP GitLab static site that is easy to read through and understand. The catalogue will be made available [on its own GitHub repo](https://github.com/UN-Task-Team-for-Scanner-Data/price-stats-data-catalogue).
     -   A.2. Investigate the applicable metadata for publishing/registering a dataset and outline an ingestion/registration process that can be leveraged to onboard datasets to the interim data catalogue.
     -   A.3. Coordinate the registering of several open datasets that can act as a pilot for the interim data catalogue.
 -   Objective B: Developing a white paper to outline the why, the what, the where, the when (in the research process) and the how. The idea is to create a high level guide for researchers, and could build on the FAIR or reproducibility literature and apply it to our domain. The paper would have several sub components that should be investigated and discussed, such as:
     -   B.1. Investigate processes around data – such as how to reference the data (internal, public, or synthetic), how to incentivize the use of benchmark datasets for specific tasks in the discipline, how to deal with complex use cases (such as confidentiality or privately owned but widely used data).
-    -   B.2. Investigate processes around code and related objects like clear code documentation – such as where to publish code, what should be included in the repository, how to clearly document the process, etc.
+    -   B.2. Investigate processes around code and related objects like clear code documentation – such as where to publish code, what should be included in the repository, how to clearly document the process, etc. If applicable, make template repositories or examples available for the community.
     -   B.3. Investigate administrative topics that are useful for the discipline, such as how to coordinate with the 2 conferences we attend to make sure that we embed and incentivize the use of the processes we would like to develop.
     -   B.4. Outlining of the white paper/guidance for the discipline on reproducibility
 
