@@ -35,7 +35,7 @@ website:
 format:
   html:
     theme: 
-      dark: cyborg
       light: flatly
+      dark: cyborg
     css: docs/styles.css
     toc: true

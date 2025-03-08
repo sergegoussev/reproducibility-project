@@ -1,4 +1,9 @@
 ---
 title: "Price Statistics Reproducibility Project"
+format:
+  html:
+    toc: true
+    toc-expand: 2
 ---
 
+Welcome to the project aiming to help researchers in the field of price statistics make their projects more reproducible and to use more open (and FAIR) data in their projects. This project is led by Workstream 5 of the [UN Task Team on Scanner data](https://unstats.un.org/bigdata/task-teams/scanner/index.cshtml), part of the [UN Committee of Experts on Big Data and Data Science for Official Statistics (UN-CEBD)](https://unstats.un.org/bigdata/index.cshtml).
