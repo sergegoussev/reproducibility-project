@@ -27,7 +27,7 @@ website:
         href: https://unstats.un.org/bigdata/task-teams/scanner/index.cshtml
         text: "Find out more about the UN Task Team"
     contents:
-      - href: docs/index.qmd
+      - href: index.qmd
         text: Home
       - href: docs/about.qmd
         text: "About us"
