@@ -1,0 +1,7 @@
+---
+title: "Open data in price statistics"
+format:
+  html:
+    toc: true
+    toc-expand: 2
+---

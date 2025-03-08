@@ -1,0 +1,7 @@
+---
+title: "How to cite open data"
+format:
+  html:
+    toc: true
+    toc-expand: 2
+---
