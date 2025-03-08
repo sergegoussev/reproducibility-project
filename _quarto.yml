@@ -18,18 +18,24 @@ website:
     search: true
     title: "Price Statistics Reproducibility Project"
     left:
-      - href: index.qmd
+      - href: docs/index.qmd
         text: Home
       - text: "Reproducibility Guidance"
         menu:
-          - docs/datasets-guidance/intro.qmd
-          - docs/datasets-guidance/code.qmd
-          - docs/datasets-guidance/citing-code.qmd
+          - href: docs/datasets-guidance/intro.qmd
+            text: "Starting out"
+          - href: docs/datasets-guidance/code.qmd
+            text: "Tips on making code reproducible"
+          - href: docs/datasets-guidance/citing-code.qmd
+            text: "How to cite others' code"
       - text: "Open Datasets"
         menu:
-          - docs/datasets-guidance/intro.qmd
-          - docs/datasets-guidance/catalogue.qmd
-          - docs/datasets-guidance/how-to-cite.qmd
+          - href: docs/datasets-guidance/intro.qmd
+            text: "Why use open data"
+          - href: docs/datasets-guidance/catalogue.qmd
+            text: "Catalogue of open data for price statistics"
+          - href: docs/datasets-guidance/how-to-cite.qmd
+            text: "How to cite open data"
 
       
     tools:
