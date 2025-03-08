@@ -9,12 +9,14 @@ website:
   repo-url: https://github.com/UN-Task-Team-for-Scanner-Data/reproducibility-project
   issue-url: https://github.com/UN-Task-Team-for-Scanner-Data/reproducibility-project/issues/new
   repo-actions: [source, issue]
+  favicon: docs/images/logo.png
   bread-crumbs: true
   page-navigation: true
   back-to-top-navigation: true
   search: true
   navbar:
     background: primary
+    logo: docs/images/logo.png
     search: true
     title: "Price Statistics Reproducibility Project"
     left:
@@ -22,20 +24,14 @@ website:
         text: Home
       - text: "Reproducibility Guidance"
         menu:
-          - href: docs/datasets-guidance/intro.qmd
-            text: "Starting out"
-          - href: docs/datasets-guidance/code.qmd
-            text: "Tips on making code reproducible"
-          - href: docs/datasets-guidance/citing-code.qmd
-            text: "How to cite others' code"
+          - href: docs/reproducibility-guidance/intro.qmd
+          - href: docs/reproducibility-guidance/code.qmd
+          - href: docs/reproducibility-guidance/citing-code.qmd
       - text: "Open Datasets"
         menu:
           - href: docs/datasets-guidance/intro.qmd
-            text: "Why use open data"
           - href: docs/datasets-guidance/catalogue.qmd
-            text: "Catalogue of open data for price statistics"
           - href: docs/datasets-guidance/how-to-cite.qmd
-            text: "How to cite open data"
 
       
     tools:
