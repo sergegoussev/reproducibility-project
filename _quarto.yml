@@ -1,0 +1,41 @@
+project:
+  type: website
+
+execute:
+  freeze: auto
+
+website:
+  title: "Price Statistics Reproducibility Project"
+  repo-url: https://github.com/UN-Task-Team-for-Scanner-Data/reproducibility-project
+  issue-url: https://github.com/UN-Task-Team-for-Scanner-Data/reproducibility-project/issues/new
+  repo-actions: [source, issue]
+  bread-crumbs: true
+  page-navigation: true
+  back-to-top-navigation: true
+  search: true
+  sidebar:
+    style: "docked"
+    type: "dark"
+    search: true
+    title: "Price Statistics Reproducibility Project"
+    border: true
+    tools:
+      - icon: globe
+        href: https://unstats.un.org/wiki/display/GWGSD/Handbook+on+utilising+new+data+sources+in+the+production+of+consumer+price+statistics
+        text: "UN Task Team e-handbook home"
+      - icon: person-raised-hand
+        href: https://unstats.un.org/bigdata/task-teams/scanner/index.cshtml
+        text: "Find out more about the UN Task Team"
+    contents:
+      - href: docs/index.qmd
+        text: Home
+      - href: docs/about.qmd
+        text: "About us"
+
+format:
+  html:
+    theme: 
+      dark: cyborg
+      light: flatly
+    css: docs/styles.css
+    toc: true
