@@ -13,12 +13,25 @@ website:
   page-navigation: true
   back-to-top-navigation: true
   search: true
-  sidebar:
-    style: "docked"
-    type: "dark"
+  navbar:
+    background: primary
     search: true
     title: "Price Statistics Reproducibility Project"
-    border: true
+    left:
+      - href: index.qmd
+        text: Home
+      - text: "Reproducibility Guidance"
+        menu:
+          - docs/datasets-guidance/intro.qmd
+          - docs/datasets-guidance/code.qmd
+          - docs/datasets-guidance/citing-code.qmd
+      - text: "Open Datasets"
+        menu:
+          - docs/datasets-guidance/intro.qmd
+          - docs/datasets-guidance/catalogue.qmd
+          - docs/datasets-guidance/how-to-cite.qmd
+
+      
     tools:
       - icon: globe
         href: https://unstats.un.org/wiki/display/GWGSD/Handbook+on+utilising+new+data+sources+in+the+production+of+consumer+price+statistics
@@ -26,16 +39,12 @@ website:
       - icon: person-raised-hand
         href: https://unstats.un.org/bigdata/task-teams/scanner/index.cshtml
         text: "Find out more about the UN Task Team"
-    contents:
-      - href: docs/index.qmd
-        text: Home
-      - href: docs/about.qmd
-        text: "About us"
+
 
 format:
   html:
+    toc: true
     theme: 
       light: flatly
       dark: cyborg
     css: docs/styles.css
-    toc: true

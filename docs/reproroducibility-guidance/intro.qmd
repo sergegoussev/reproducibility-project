@@ -1,0 +1,9 @@
+---
+title: "Why and how to approach reproducibility"
+format:
+  html:
+    toc: true
+    toc-expand: 2
+---
+
+test
