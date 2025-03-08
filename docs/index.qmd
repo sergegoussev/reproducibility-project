@@ -15,7 +15,7 @@ Welcome to the project aiming to help researchers in the field of price statisti
 Research in the price statistics discipline is not as reproducible as it could be. Most researchers utilize proprietary datasets and don't publish the code alongside the research so that a specific methodology or finding can be easily reproduced. The idea of this project is to help in both topics! We aim to:
 
 -   Provide clear and approachable guidance on how researchers in price statistics can make their projects reproducible (including by learning new skills, by understanding how to publish and cite code, and many other topics)
--   Support cataloguing open datasets that can be used as benchmarks to use for research purposes. The idea is to have all findings trialed and demonstrated on open benchmark datasets.
+-   Support cataloging open datasets that can be used as benchmarks to use for research purposes. The idea is to have all findings trialed and demonstrated on open benchmark datasets.
 
 ## What this project does not aim to do
 
