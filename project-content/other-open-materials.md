@@ -4,12 +4,17 @@ The following list is a mini-compenidum of other materials that may be of intere
 
 ## Packages applicable to price statistics
 
+* [Awesome list of official statistics software](https://github.com/SNStatComp/awesome-official-statistics-software)
+* [References in JOSS paper](https://joss.theoj.org/papers/10.21105/joss.06781)
+* [Steve's stars](https://github.com/stars/marberts/lists/index-numbers)
+
 ### R
 
 * [`hicp` package (Eurostat)](https://github.com/eurostat/hicp/tree/main) - provides functions to access and work with HICP data (price indices and weights) from Eurostat's public database
 * ['PriceIndices' package](https://cran.r-project.org/web/packages/PriceIndices/vignettes/PriceIndices.html)
 * [`IndexNumR` package](https://cran.r-project.org/web/packages/IndexNumR/index.html)
 * [`piar` package](https://marberts.github.io/piar/)
+* [CRAN task view for official statistics](https://cran.r-project.org/web/views/OfficialStatistics.html)
 
 ### Python
 
