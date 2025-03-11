@@ -63,6 +63,27 @@
     "text": "The Turing Way - an open science/collaboration project\nreproducible-project-template - repo template (i.e cookie cutter template)\n\n\n\n\n\nRAP Companion, by Matthew Gregory and Matthew Upson shows much of the original RAP ideas (for R)\nUdemy course on RAP with R\nReproducible Analytical Pipelines or RAP (NHS) site\nESCAP training on RAP with web scraping application for price statistics"
   },
   {
+    "objectID": "other-open-materials.html",
+    "href": "other-open-materials.html",
+    "title": "List of open materials relevant to price statistics",
+    "section": "",
+    "text": "The following list is a mini-compenidum of other materials that may be of interest to reseachers in the prices statistics discipline. The list is meant to be live and up to date, hence if you see any inaccuracies, a broken link, or something missing - please feel free to add!\n\n\n\nAwesome list of official statistics software\nReferences in JOSS paper\nSteve’s stars\n\n\n\n\nhicp package (Eurostat) - provides functions to access and work with HICP data (price indices and weights) from Eurostat’s public database\n‘PriceIndices’ package\nIndexNumR package\npiar package\nCRAN task view for official statistics\n\n\n\n\n\nPriceIndexCalc package - a partially working package to calculate price indices.\n\n\n\n\n\ndff - a repo on Dominick’s Finer Foods showcasing the dataset by Jens Mehrhoff\n\n\n\n\n\n\n\n\nThe Turing Way - an open science/collaboration project\nreproducible-project-template - repo template (i.e cookie cutter template)\n\n\n\n\n\nRAP Companion, by Matthew Gregory and Matthew Upson shows much of the original RAP ideas (for R)\nUdemy course on RAP with R\nReproducible Analytical Pipelines or RAP (NHS) site\nESCAP training on RAP with web scraping application for price statistics"
+  },
+  {
+    "objectID": "other-open-materials.html#packages-applicable-to-price-statistics",
+    "href": "other-open-materials.html#packages-applicable-to-price-statistics",
+    "title": "List of open materials relevant to price statistics",
+    "section": "",
+    "text": "Awesome list of official statistics software\nReferences in JOSS paper\nSteve’s stars\n\n\n\n\nhicp package (Eurostat) - provides functions to access and work with HICP data (price indices and weights) from Eurostat’s public database\n‘PriceIndices’ package\nIndexNumR package\npiar package\nCRAN task view for official statistics\n\n\n\n\n\nPriceIndexCalc package - a partially working package to calculate price indices.\n\n\n\n\n\ndff - a repo on Dominick’s Finer Foods showcasing the dataset by Jens Mehrhoff"
+  },
+  {
+    "objectID": "other-open-materials.html#reproducibility-resources",
+    "href": "other-open-materials.html#reproducibility-resources",
+    "title": "List of open materials relevant to price statistics",
+    "section": "",
+    "text": "The Turing Way - an open science/collaboration project\nreproducible-project-template - repo template (i.e cookie cutter template)\n\n\n\n\n\nRAP Companion, by Matthew Gregory and Matthew Upson shows much of the original RAP ideas (for R)\nUdemy course on RAP with R\nReproducible Analytical Pipelines or RAP (NHS) site\nESCAP training on RAP with web scraping application for price statistics"
+  },
+  {
     "objectID": "project-content/meeting-minutes.html",
     "href": "project-content/meeting-minutes.html",
     "title": "Meeting minutes of the project team",
