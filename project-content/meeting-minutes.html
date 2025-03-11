@@ -172,6 +172,11 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#agenda-2" id="toc-agenda-2" class="nav-link" data-scroll-target="#agenda-2">Agenda</a></li>
   <li><a href="#notes-2" id="toc-notes-2" class="nav-link" data-scroll-target="#notes-2">Notes</a></li>
   </ul></li>
+  <li><a href="#section-2" id="toc-section-2" class="nav-link" data-scroll-target="#section-2">2025-02-25</a>
+  <ul class="collapse">
+  <li><a href="#agenda-3" id="toc-agenda-3" class="nav-link" data-scroll-target="#agenda-3">Agenda</a></li>
+  <li><a href="#notes-3" id="toc-notes-3" class="nav-link" data-scroll-target="#notes-3">Notes</a></li>
+  </ul></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/UN-Task-Team-for-Scanner-Data/reproducibility-project/blob/main/project-content/meeting-minutes.md" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/UN-Task-Team-for-Scanner-Data/reproducibility-project/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
@@ -251,6 +256,41 @@ ul.task-list li input[type="checkbox"] {
 <li>The use of the two repos was discussed. The <a href="https://github.com/UN-Task-Team-for-Scanner-Data/reproducibility-project">reproducibility-project repo</a> will host the guidance we develop in whatever format we decide (ideas shared including using quarto to <a href="https://github.com/UN-Task-Team-for-Scanner-Data/reproducibility-project">write reproducible papers</a>, or a <a href="https://quarto.org/docs/websites/">quarto static site</a> if we will more tend towards creating guidance). <a href="https://github.com/UN-Task-Team-for-Scanner-Data/price-stats-data-catalogue">price-stats-data-catalogue</a> will host the interim open data catalogue.</li>
 <li>Scope of the data contract was firmed up - we could aim to catalogue input datasets that are used to create some experimental indices and version the output datasets (that may be price indices or other artifacts) as part of the repository on github (such as by saving them in data folder and formatting them in <a href="https://nhsdigital.github.io/rap-community-of-practice/implementing_RAP/workflow/tidy-data/">tidy data format</a>).</li>
 <li>Use of tools like Zenodo was discussed and will be investigated to mint DOIs - <a href="https://github.com/UN-Task-Team-for-Scanner-Data/reproducibility-project/issues/3">ticket #3</a></li>
+</ul>
+</section>
+</section>
+<section id="section-2" class="level2">
+<h2 class="anchored" data-anchor-id="section-2">2025-02-25</h2>
+<section id="agenda-3" class="level3">
+<h3 class="anchored" data-anchor-id="agenda-3">Agenda</h3>
+<ul>
+<li>Discussion on format for meeting minutes and how to review/approve the minutes each meeting.</li>
+<li>How to track materials related to reproducibility but are just references to others’ material (not the overall guidance we will provide).</li>
+<li>What format is seen as the best way to deliver guidance on reproducibility? It is best to decide an applicable format and stick with it. Options include writing a paper, using a static site, or using the wiki</li>
+</ul>
+</section>
+<section id="notes-3" class="level3">
+<h3 class="anchored" data-anchor-id="notes-3">Notes</h3>
+<ul>
+<li>The team agreed on keeping notes in this <code>meeting-minutes.md</code> file. The team also agreed to the process:
+<ul>
+<li>The note taker would summarize the meeting and would draft a branch and prepare a Pull Request for the team to review the meeting minutes at the next meeting.</li>
+<li>At the start of the next meeting, the team would review the PR, would commit any changes/fixes needed. and <a href="https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/about-merge-methods-on-github#squashing-your-merge-commits">squash and commit the PR</a> into the <code>main</code> branch to approve the minutes.</li>
+</ul></li>
+<li>The team agreed to track other materials in <code>other-open-materials.md</code> for now</li>
+<li>The team discussed the means of how guidance will be provided at the end of the day as a lot of material could be included based on the goals in <a href="https://github.com/UN-Task-Team-for-Scanner-Data/reproducibility-project/blob/main/project-charter.md#expected-outcomes-in-a-little-more-detail" title="https://github.com/UN-Task-Team-for-Scanner-Data/reproducibility-project/blob/main/project-charter.md#expected-outcomes-in-a-little-more-detail">Objective B of our project</a>. Some possible options:
+<ul>
+<li>a paper (similar to say <a href="https://www.nature.com/articles/sdata201618" title="https://www.nature.com/articles/sdata201618">the FAIR paper on software</a> to be presented at say 2026 Ottawa Group conference) as the main document for guidance and other materials as supporting (like the catalogue). This could use the <a href="https://quarto.org/docs/manuscripts/" title="https://quarto.org/docs/manuscripts/">quarto manuscript format</a> for example.</li>
+<li>a static site (again say a quarto one <a href="https://escap-sd.github.io/ESCAP_RAP_class/docs/" title="https://escap-sd.github.io/ESCAP_RAP_class/docs/">like this one</a>) as the main means of sharing guidance, but also a short paper for the 2026 OG conference as an offline guide</li>
+<li>a set of <a href="https://unstats.un.org/wiki/display/GWGSD/" title="https://unstats.un.org/wiki/display/GWGSD/">wiki pages similar to other content</a> made by the Task Team</li>
+</ul></li>
+<li>The team agreed that a static site (the quarto option) is likely the most appropriate as the site can be expanded and maintained as appropriate, a presentation with a link to the site could be provided at conferences.</li>
+<li>The team discussed planning for the next 1.5 months. The <a href="https://github.com/orgs/UN-Task-Team-for-Scanner-Data/projects/1/views/1">project roadmap outlines the target timelines</a>. As several issues remain unassigned, the team are encouraged to sign up based on bandwidth.</li>
+<li>Roundtable discussion included:
+<ul>
+<li>Update on Zenodo - which is an option for uploading and citing data (detail in <a href="https://github.com/UN-Task-Team-for-Scanner-Data/reproducibility-project/issues/3#issuecomment-2681854343">issue 3</a>). There isn’t a process yet identified for datasets that are not owned by the community and where the owner does not upload it to a repository that mints a DOI.</li>
+<li>Update on citing data in PriceIndices R package as it has a DOI. Ability to extract the data without installing the package has to be confirmed.</li>
+</ul></li>
 </ul>
 
 
