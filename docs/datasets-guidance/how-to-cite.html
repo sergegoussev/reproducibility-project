@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -150,8 +184,14 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="2">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#example-priceindices" id="toc-example-priceindices" class="nav-link active" data-scroll-target="#example-priceindices">Example: {PriceIndices}</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/UN-Task-Team-for-Scanner-Data/reproducibility-project/blob/main/docs/datasets-guidance/how-to-cite.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/UN-Task-Team-for-Scanner-Data/reproducibility-project/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -175,8 +215,93 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>Citing an open dataset for a research project is straightforward if it is archived in an open research repository like <a href="https://zenodo.org/">Zenodo</a>. In this case it will have the relevant metadata, along with a DOI, to make it easily citeable, even if access to these data is restricted. Unfortunately open datasets do not always reside in a repository like Zenodo. A common place for open datasets in statistics, and in particular price statistics, is as part of an R package on CRAN. Citing these datasets is not difficult—all CRAN packages have a DOI and are easily cited—but, as part of a package, data are more difficult to access.</p>
+<section id="example-priceindices" class="level2">
+<h2 class="anchored" data-anchor-id="example-priceindices">Example: {PriceIndices}</h2>
+<p>The {PriceIndices} R package comes with several datasets that can be useful for comparing different index-number methods. Citing these data is easy because R packages are highly citeable.</p>
+<pre><code>@Manual{,
+  title = {PriceIndices: Calculating Bilateral and Multilateral Price Indexes},
+  author = {Jacek Białek},
+  year = {2025},
+  doi = {10.32614/CRAN.package.PriceIndices},
+  url = {https://cran.r-project.org/package=PriceIndices},
+  note = {R package version 0.2.3}
+}</code></pre>
+<p>Using these data is easy enough with R. Simply install the package and the datasets become available from within R.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages("PriceIndices")</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(PriceIndices<span class="sc">::</span>coffee)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>        time prices quantities prodID retID    description
+1 2017-12-01 123.55         13  32308  2183 instant coffee
+2 2017-12-01  56.08         16  51858  2183 instant coffee
+3 2017-12-01  66.90         11  51859  2183 instant coffee
+4 2017-12-01  66.90         10  51860  2183 instant coffee
+5 2017-12-01  34.30         11  51863  2183 instant coffee
+6 2017-12-01 141.20         10  55880  2183 instant coffee</code></pre>
+</div>
+</div>
+<p>Using these datasets is less convenient with, say, Python. One option is to simply export them in an interoperable format like Apache Parquet from R.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>arrow<span class="sc">::</span><span class="fu">write_parquet</span>(PriceIndices<span class="sc">::</span>coffee, <span class="st">"coffee.parquet"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Now it is simple to use these data with Python.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>pd.read_parquet(<span class="st">"coffee.parquet"</span>).head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>         time  prices  quantities  prodID  retID     description
+0  2017-12-01  123.55          13   32308   2183  instant coffee
+1  2017-12-01   56.08          16   51858   2183  instant coffee
+2  2017-12-01   66.90          11   51859   2183  instant coffee
+3  2017-12-01   66.90          10   51860   2183  instant coffee
+4  2017-12-01   34.30          11   51863   2183  instant coffee</code></pre>
+</div>
+</div>
+<p>Another approach, and one that doesn’t use R, is to simply download the {PriceIndices} package from CRAN and use the <a href="https://doi.org/10.21105/joss.07540">{rdata}</a> Python package to read the datasets in Python.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">curl</span> <span class="at">-s</span> https://cran.r-project.org/src/contrib/PriceIndices_0.2.3.tar.gz <span class="at">-o</span> PriceIndices_0.2.3.tar.gz</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">tar</span> <span class="at">-vxzf</span> PriceIndices_0.2.3.tar.gz PriceIndices/data</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>PriceIndices/data/
+PriceIndices/data/dataU.rda
+PriceIndices/data/milk.rda
+PriceIndices/data/coffee.rda
+PriceIndices/data/data_DOWN_UP_SIZED.rda
+PriceIndices/data/dataAGGR.rda
+PriceIndices/data/sugar.rda
+PriceIndices/data/dataMATCH.rda
+PriceIndices/data/dataCOICOP.rda</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> rdata</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> date_constructor(obj, attr):</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> pd.to_datetime(obj, unit<span class="op">=</span><span class="st">"D"</span>)</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>constructor_dict <span class="op">=</span> {<span class="op">**</span>rdata.conversion.DEFAULT_CLASS_MAP,</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>                    <span class="st">"Date"</span>: date_constructor}</span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>coffee <span class="op">=</span> rdata.read_rda(<span class="st">"PriceIndices/data/coffee.rda"</span>,</span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>                        constructor_dict<span class="op">=</span>constructor_dict)</span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>pd.DataFrame(coffee[<span class="st">"coffee"</span>]).head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>        time  prices  quantities  prodID  retID     description
+1 2017-12-01  123.55          13   32308   2183  instant coffee
+2 2017-12-01   56.08          16   51858   2183  instant coffee
+3 2017-12-01   66.90          11   51859   2183  instant coffee
+4 2017-12-01   66.90          10   51860   2183  instant coffee
+5 2017-12-01   34.30          11   51863   2183  instant coffee</code></pre>
+</div>
+</div>
 
 
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -745,4 +870,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/UN-Task-Team-for-Scanner-Data/reproducibility-project/blob/main/docs/datasets-guidance/how-to-cite.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/UN-Task-Team-for-Scanner-Data/reproducibility-project/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/UN-Task-Team-for-Scanner-Data/reproducibility-project/blob/main/docs/datasets-guidance/how-to-cite.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/UN-Task-Team-for-Scanner-Data/reproducibility-project/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
