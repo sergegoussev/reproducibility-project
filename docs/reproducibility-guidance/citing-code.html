@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -150,8 +184,16 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="2">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#citing-research-software" id="toc-citing-research-software" class="nav-link active" data-scroll-target="#citing-research-software">Citing research software</a></li>
+  <li><a href="#making-software-citable" id="toc-making-software-citable" class="nav-link" data-scroll-target="#making-software-citable">Making software citable</a></li>
+  <li><a href="#example" id="toc-example" class="nav-link" data-scroll-target="#example">Example</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/UN-Task-Team-for-Scanner-Data/reproducibility-project/blob/main/docs/reproducibility-guidance/citing-code.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/UN-Task-Team-for-Scanner-Data/reproducibility-project/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -175,8 +217,80 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>Citing software is historically not something that researchers have done. Code can often be hard to cite and the software used to derive the results of a paper was usually seen as a “detail” that is not worth mentioning in the body of paper. (Perhaps to avoid too many questions about how, exactly, the results in the paper were derived.) The last decade has seen a move towards more reproducible research in economics—mainstream journals require code and usually data for quantitative papers—and the proliferation of open-source research software has made it easier to reliably cite the software used for research.</p>
+<p>Citing code is particularly important in the area of price statistics to facilitate reproducible research. There are a great many price index methods, often with fiddly variations, used by different researchers and it is important to know the exact implementation used to generate a price index in order to reproduce the construction of that index. Research for price statistics is also usually done by government agencies; transparency about the code to generate the results that inform the methods used by government agencies is important to maintain the trust in official statistics.</p>
+<p>For further reading, the <a href="https://book.the-turing-way.org/communication/citable">Turing Way</a> provides a good overview for citing code in research and represents the current state of the world of open-source research software.</p>
+<section id="citing-research-software" class="level2">
+<h2 class="anchored" data-anchor-id="citing-research-software">Citing research software</h2>
+<p>Unlike academic papers, there is no one way to cite a piece of software. How to cite a piece of software usually depends on how easy the author makes it. For example, R packages are easy to cite within R using the <code>citation()</code> function.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">citation</span>(<span class="st">"IndexNumR"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>To cite package 'IndexNumR' in publications use:
+
+  White G (2023). _IndexNumR: Index Number Calculation_. R package
+  version 0.6.0, &lt;https://github.com/grahamjwhite/IndexNumR&gt;.
+
+A BibTeX entry for LaTeX users is
+
+  @Manual{,
+    title = {IndexNumR: Index Number Calculation},
+    author = {Graham White},
+    year = {2023},
+    note = {R package version 0.6.0},
+    url = {https://github.com/grahamjwhite/IndexNumR},
+  }
+
+ATTENTION: This citation information has been auto-generated from the
+package DESCRIPTION file and may need manual editing, see
+'help("citation")'.</code></pre>
+</div>
+</div>
+<p>Modern R packages tend to have their own <a href="https://marberts.github.io/piar/authors.html#citation">website with this information on display</a> and all <a href="https://cran.r-project.org/web/packages/PriceIndices/index.html">CRAN packages get a DOI</a> to facilitate referencing the use of R packages. Things are less standardized in the Python ecosystem, but the same ideas apply to make projects citeable (e.g., <a href="https://doi.org/10.5281/zenodo.3509134">pandas</a>).</p>
+<p>Another way to cite a piece of research software is to the cite the paper introducing this software, usually in a journal like the <a href="https://joss.theoj.org/">Journal of Open Source Software</a>, the <a href="https://www.jstatsoft.org/index">Journal of Statistical Software</a>, or the <a href="https://journal.r-project.org/">R Journal</a>.</p>
+<pre><code>@article{RJ-2021-038,
+  author = {Saavedra-Nieves, Alejandro and Saavedra-Nieves, Paula},
+  title = {IndexNumber: An R Package for Measuring the Evolution of Magnitudes},
+  journal = {The R Journal},
+  year = {2021},
+  note = {https://rjournal.github.io/},
+  volume = {13},
+  issue = {1},
+  issn = {2073-4859},
+  pages = {253-275}
+}</code></pre>
+<p>Finally, for code that is not in a mainstream repository like CRAN, or does not have a website with citation information, <a href="https://raw.githubusercontent.com/marberts/piar/refs/heads/main/CITATION.cff">citation information can sometimes be found in the source code</a>. Github helps to find the citation information for a package and displays a button to cite the repository.</p>
+</section>
+<section id="making-software-citable" class="level2">
+<h2 class="anchored" data-anchor-id="making-software-citable">Making software citable</h2>
+<p>Given the variety of ways to cite research software, the key to making it citeable is making it easy to generate a reference for that software. For R packages this happens automatically if the package is available on CRAN; for Python packages (and R packages not on CRAN), a service like <a href="https://zenodo.org/">Zenodo</a> can be used to get a DOI to facilitate referencing the software. Although consumers of software tend not to get it directly from a source-code repository, citation metadata can be added to github repositories to make them more citeable.</p>
+</section>
+<section id="example" class="level2">
+<h2 class="anchored" data-anchor-id="example">Example</h2>
+<p>The {piar} R package is an example of a piece of software for making price indexes that is highly citeable.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">citation</span>(<span class="st">"piar"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>To cite package 'piar' in publications use:
+
+  Martin S (2024). "piar: Price Index Aggregation R." _Journal of Open
+  Source Software_, *9*(101), 6781. doi:10.21105/joss.06781
+  &lt;https://doi.org/10.21105/joss.06781&gt;.
+
+  Martin S (2024). _piar: Price Index Aggregation_.
+  doi:10.5281/zenodo.10110046
+  &lt;https://doi.org/10.5281/zenodo.10110046&gt;, R package version 0.8.1,
+  &lt;https://cran.r-project.org/package=piar&gt;.
+
+To see these entries in BibTeX format, use 'print(&lt;citation&gt;,
+bibtex=TRUE)', 'toBibtex(.)', or set
+'options(citation.bibtex.max=999)'.</code></pre>
+</div>
+</div>
+<p>This information is displayed on the <a href="https://marberts.github.io/piar/authors.html#citation">project website</a> and <a href="https://cran.r-project.org/web/packages/piar/citation.html">CRAN</a>. The citation information is contained in the source code, and consequently displayed by github, and the readme for the project is adorned with badges giving citation information. The goal is to have citation information available at each entry point at which a prospective user may first engage with {piar} and to have it be easy to add to a reference list.</p>
 
 
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -745,4 +859,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/UN-Task-Team-for-Scanner-Data/reproducibility-project/blob/main/docs/reproducibility-guidance/citing-code.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/UN-Task-Team-for-Scanner-Data/reproducibility-project/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/UN-Task-Team-for-Scanner-Data/reproducibility-project/blob/main/docs/reproducibility-guidance/citing-code.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/UN-Task-Team-for-Scanner-Data/reproducibility-project/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
