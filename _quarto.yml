@@ -1,9 +1,8 @@
 project:
   type: website
 
-
 execute:
-  freeze: auto
+  freeze: true
 
 website:
   title: "Price Statistics Reproducibility Project"

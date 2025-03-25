@@ -77,3 +77,11 @@ This document summarizes the meetings of the workstream
 -   Roundtable discussion included:
     -   Update on Zenodo - which is an option for uploading and citing data (detail in [issue 3](https://github.com/UN-Task-Team-for-Scanner-Data/reproducibility-project/issues/3#issuecomment-2681854343)). There isn't a process yet identified for datasets that are not owned by the community and where the owner does not upload it to a repository that mints a DOI.
     -   Update on citing data in PriceIndices R package as it has a DOI. Ability to extract the data without installing the package has to be confirmed.
+
+## 2025-03-11
+
+### Agenda
+- Discuss 
+
+
+### Notes
