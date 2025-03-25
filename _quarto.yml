@@ -1,6 +1,7 @@
 project:
   type: website
 
+
 execute:
   freeze: auto
 
@@ -33,6 +34,12 @@ website:
           - href: docs/datasets-guidance/catalogue.qmd
           - href: docs/datasets-guidance/how-to-cite.qmd
 
+  announcement: 
+    icon: info-circle
+    dismissable: true
+    content: "**Site work is being developed** - this website is will have its soft launch at [2025 Meeting of the Group of Experts on Consumer Price Indices](https://unece.org/info/events/event/394156). Please come back soon!"
+    type: secondary
+    position: below-navbar
       
     tools:
       - icon: globe
