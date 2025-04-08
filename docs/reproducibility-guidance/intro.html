@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.42">
+<meta name="generator" content="quarto-1.6.43">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -37,8 +37,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-b53751a350365c71b6c909e95f209ed1.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-d4d76bf8491c20bad77d141916dc28e1.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-4379b0ccadffce622b03caf4c46266b3.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-24fab65de848c24ae69d5f49cf751ca2.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
@@ -109,31 +109,31 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">Why and how to approach reproducibility</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../docs/reproducibility-guidance/code.html">
- <span class="dropdown-text">Approaches to reproducible code</span></a>
+    <a class="dropdown-item" href="../../docs/reproducibility-guidance/how-to-cite-digital-objects.html">
+ <span class="dropdown-text">How to reference digital objects in papers</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../docs/reproducibility-guidance/citing-code.html">
  <span class="dropdown-text">How to cite code</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../../docs/reproducibility-guidance/citing-data.html">
+ <span class="dropdown-text">How to cite open data</span></a>
+  </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-open-datasets" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Open Datasets</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-open-data" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Open Data</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-open-datasets">    
-        <li>
-    <a class="dropdown-item" href="../../docs/datasets-guidance/intro.html">
- <span class="dropdown-text">Why and how to use open data</span></a>
-  </li>  
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-open-data">    
         <li>
     <a class="dropdown-item" href="../../docs/datasets-guidance/catalogue.html">
- <span class="dropdown-text">Open data in price statistics</span></a>
+ <span class="dropdown-text">Catalogue of open data in price statistics</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../docs/datasets-guidance/how-to-cite.html">
- <span class="dropdown-text">How to cite open data</span></a>
+    <a class="dropdown-item" href="../../docs/datasets-guidance/opening-up-datasets.html">
+ <span class="dropdown-text">Options for making a dataset openly available</span></a>
   </li>  
     </ul>
   </li>
@@ -152,8 +152,14 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="2">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#structuring-the-research-compendium" id="toc-structuring-the-research-compendium" class="nav-link active" data-scroll-target="#structuring-the-research-compendium">Structuring the research compendium</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/UN-Task-Team-for-Scanner-Data/reproducibility-project/blob/main/docs/reproducibility-guidance/intro.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/UN-Task-Team-for-Scanner-Data/reproducibility-project/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -183,9 +189,31 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>test</p>
+<p>Reproducible research projects set out to make all elements of the research project available for others openly so that the project can be reproduced. Specifically, it means that the <a href="https://book.the-turing-way.org/reproducible-research/compendia">research compendium</a>, which are these elements assembled together in a logical and clear fashion, are published alongside the research paper. The practice creating and publishing a research compendium may involve some technical skills, however it will help the research team leading the project, other researchers, and the discipline as a whole. It will also help publish official statistics with the methods being researched, as the Reproducible Analytical Pipelines (RAP) principles applied to reproducible and technically mature production processes leverage the very same technical best practices. Indeed, RAP and research compedia are conceptually the same things – the application of technical processes for reproducibility and process robustness – its just one focuses more on research and the other on production of official statistics.</p>
+<section id="structuring-the-research-compendium" class="level2">
+<h2 class="anchored" data-anchor-id="structuring-the-research-compendium">Structuring the research compendium</h2>
+<p>In a nutshell, a compendium includes all research objects necessary to reproduce the research. In a technical sense, these are often git repositories (in say GitHub) that include a structure similar to the one in Figure 1 below.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../docs/images/price-stats-exemplar.svg" class="img-fluid figure-img" style="width:35.0%"></p>
+<figcaption>Figure 1: Exemplar <a href="https://github.com/UN-Task-Team-for-Scanner-Data/price-index-pipeline">price index pipeline</a>.</figcaption>
+</figure>
+</div>
+<p>Specifically:</p>
+<ul>
+<li>A data folder stores the raw dataset used for the research project. Ideally the researcher uses an open dataset (which will make the whole process reproducible), but they may also use a proprietary dataset. Note the dataset itself should not be version controlled with the repository but the ability to save the dataset in this folder means that others can download the repository, save the dataset in the same folder, and replicate the results. In a technical sense, the data itself is ignored by making sure that it is listed in the <code>.gitignore</code> file.</li>
+<li>A functions (or code) folder that does the research aspects. This could include the code to clean and prepare the raw dataset for research purposes, the code to create the processing and research experients, as well as notebooks where the data is explored and various aspects that feed the research paper are generated.</li>
+<li>A folder for the output data. This data can be versioned (if it is not sensitive) with the repository and allows researchers to replicate the process. Note, if the output data can be used for research in its own right, it may be appropriate to register this dataset on a public repository (such as Zenodo) that mints a DOI.</li>
+<li>A folder for the docs that explain how the various aspects of the research come together. This folder stores <a href="https://book.the-turing-way.org/reproducible-research/code-documentation/code-documentation-project">project documentation</a> or <a href="https://book.the-turing-way.org/project-design/pd-overview">the project design</a>, however <a href="https://book.the-turing-way.org/reproducible-research/code-documentation/code-documentation-code">code should also be documented</a> well.</li>
+<li>A licence is included to tell users how they can use the code.</li>
+<li><code>.gitignore</code> file ignores various files (such as datasets) from being version controlled</li>
+<li>A file to <a href="https://book.the-turing-way.org/reproducible-research/renv">recreate the environment</a> so that the code can be run as it ran on the machine of the researcher.</li>
+<li>Finally, a README to introduce the project when someone navigates to the project</li>
+</ul>
+<p>To showcase an exemplar for price statistics, we created <a href="https://github.com/UN-Task-Team-for-Scanner-Data/price-index-pipeline">a mock-up price index pipeline</a> that researchers can explore.</p>
 
 
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -750,8 +778,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="../../docs/about.html">
+<p>About</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="../../docs/faq.html">
+<p>FAQ</p>
+</a>
+  </li>  
+</ul>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/UN-Task-Team-for-Scanner-Data/reproducibility-project/blob/main/docs/reproducibility-guidance/intro.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/UN-Task-Team-for-Scanner-Data/reproducibility-project/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
 
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/UN-Task-Team-for-Scanner-Data/reproducibility-project/blob/main/docs/reproducibility-guidance/intro.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/UN-Task-Team-for-Scanner-Data/reproducibility-project/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+</body></html>
