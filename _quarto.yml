@@ -14,6 +14,12 @@ website:
   page-navigation: true
   back-to-top-navigation: true
   search: true
+  page-footer:
+    center:
+      - text: "About"
+        href: docs/about.qmd
+      - text: "FAQ"
+        href: docs/faq.qmd
   navbar:
     background: primary
     logo: docs/images/logo.png
@@ -25,13 +31,12 @@ website:
       - text: "Reproducibility Guidance"
         menu:
           - href: docs/reproducibility-guidance/intro.qmd
-          - href: docs/reproducibility-guidance/code.qmd
           - href: docs/reproducibility-guidance/citing-code.qmd
-      - text: "Open Datasets"
+          - href: docs/reproducibility-guidance/citing-data.qmd
+      - text: "Open Data"
         menu:
-          - href: docs/datasets-guidance/intro.qmd
           - href: docs/datasets-guidance/catalogue.qmd
-          - href: docs/datasets-guidance/how-to-cite.qmd
+          - href: docs/datasets-guidance/opening-up-datasets.qmd
 
   announcement: 
     icon: info-circle
