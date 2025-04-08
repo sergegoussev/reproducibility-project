@@ -183,6 +183,11 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#agenda-4" id="toc-agenda-4" class="nav-link" data-scroll-target="#agenda-4">Agenda</a></li>
   <li><a href="#notes-4" id="toc-notes-4" class="nav-link" data-scroll-target="#notes-4">Notes</a></li>
   </ul></li>
+  <li><a href="#section-4" id="toc-section-4" class="nav-link" data-scroll-target="#section-4">2025-03-25</a>
+  <ul class="collapse">
+  <li><a href="#agenda-5" id="toc-agenda-5" class="nav-link" data-scroll-target="#agenda-5">Agenda</a></li>
+  <li><a href="#notes-5" id="toc-notes-5" class="nav-link" data-scroll-target="#notes-5">Notes</a></li>
+  </ul></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/UN-Task-Team-for-Scanner-Data/reproducibility-project/blob/main/project-content/meeting-minutes.md" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/UN-Task-Team-for-Scanner-Data/reproducibility-project/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
@@ -318,6 +323,32 @@ ul.task-list li input[type="checkbox"] {
 <li>The deliverables to be presented at the 2025 CPI Expert Group were discussed as per the <a href="https://github.com/orgs/UN-Task-Team-for-Scanner-Data/projects/1/views/1?layout=roadmap">view in the project roadmap</a>.</li>
 <li>An approach on how to import data from a package was discussed. For instance, how should researchers use data from an R package (such as the PriceIndices package, which has datasets we would like to make list in the interim catalogue) and they wanted to import the data and use it in Python? The team discussed on a phased approach: guidance on how to download the dataset and use it in python from the R ecosystem will be proposed; a longer term approach could be to work with dataset owners to get them to publish it on a repository like Zenodo.</li>
 <li>Support by the UN Global Platform team for the project was also discussed</li>
+</ul>
+</section>
+</section>
+<section id="section-4" class="level2">
+<h2 class="anchored" data-anchor-id="section-4">2025-03-25</h2>
+<section id="agenda-5" class="level3">
+<h3 class="anchored" data-anchor-id="agenda-5">Agenda</h3>
+<ul>
+<li>Review of skeleton data catalogue</li>
+<li>Review of the changes to the project site, specifically how to cite code and how to cite data sections</li>
+<li>Review roadmap and discussion of topics left to finish in this phase of the project</li>
+</ul>
+</section>
+<section id="notes-5" class="level3">
+<h3 class="anchored" data-anchor-id="notes-5">Notes</h3>
+<ul>
+<li>The team discussed the <a href="https://un-task-team-for-scanner-data.github.io/price-stats-data-catalogue/">skeleton of the proof of concecept data catalogue</a>. The technical process to register new datasets is basically to (1) draft a new <code>yaml</code> file in the <a href="https://github.com/UN-Task-Team-for-Scanner-Data/price-stats-data-catalogue/tree/main/datasets"><code>datasets/</code></a> folder using the <a href="https://cli.datacontract.com/"><code>datacontrac.cli</code></a> specifications, and then (2) when the PR is accepted (after releveant review) and merged with the <code>main</code> branch, the runner will rerender the catalogue and the dataset will show up.</li>
+<li>The team discussed next steps. The dataset in <a href="https://github.com/UN-Task-Team-for-Scanner-Data/price-stats-data-catalogue/issues/6">#6</a> is still the third we’d want for presentation at CPI EG.</li>
+<li>There is a need to differentiate open versus proprietary but popular datasets. Open datasets will be the focus for now with potential for expansion after the conference.</li>
+<li>The team discussed <a href="https://un-task-team-for-scanner-data.github.io/reproducibility-project/docs/datasets-guidance/how-to-cite.html">how to cite datasets</a> and <a href="https://un-task-team-for-scanner-data.github.io/reproducibility-project/docs/reproducibility-guidance/citing-code.html">how to cite code</a> topics, and based on the example by the <a href="https://www.nature.com/articles/s41597-022-01710-x#data-availability">recent Baker et al (2022) FAIR principles for software paper</a>, we decided to go with a nuanced recomemndation for now:
+<ul>
+<li>if data or code that a research uses exists should be included in the bibliography</li>
+<li>data or code that is created as part of the paper should be (ideally published to something that mints a DOI) but the links to the dataset or code are included at the end of the paper under “Data availability” and “Code availability” headers.</li>
+<li>The idea of topics to discuss after the confernece was also brought up - the process of creating synthetic datasets.</li>
+</ul></li>
+<li>To support researchers to structure their code, the team also discussed and endoresed recommendign a <a href="https://github.com/UN-Task-Team-for-Scanner-Data/price-index-pipeline">template RAP</a>.</li>
 </ul>
 
 
