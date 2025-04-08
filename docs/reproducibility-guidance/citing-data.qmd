@@ -6,6 +6,8 @@ format:
   html:
     toc: true
     toc-expand: 2
+execute: 
+  enabled: false
 ---
 
 Citing an open dataset for a research project is straightforward if it is
