@@ -70,11 +70,11 @@
     "text": "Welcome to the project aiming to help researchers in the field of price statistics make their projects more reproducible and help push open science in the discipline."
   },
   {
-    "objectID": "docs/index.html#making-guidance-on-reproducibility-available",
-    "href": "docs/index.html#making-guidance-on-reproducibility-available",
+    "objectID": "docs/index.html#making-guidance-on-reproducibility-availablew",
+    "href": "docs/index.html#making-guidance-on-reproducibility-availablew",
     "title": "Welcome to the Price Statistics Reproducibility Project",
-    "section": "Making guidance on reproducibility available",
-    "text": "Making guidance on reproducibility available\nThe project thus helps make:\n\nrecommendations on making research code open\nrecommendations on structured ways to reference and include digital objects\nrecommendations on specific guidance on how to cite others’ code and how to cite open datasets in your research."
+    "section": "Making guidance on reproducibility availableW",
+    "text": "Making guidance on reproducibility availableW\nThe project thus helps make:\n\nRecommendations on making research code open\nRecommendations on structured ways to reference and include digital objects\nRecommendations on specific guidance on how to cite others’ code and how to cite open datasets in your research."
   },
   {
     "objectID": "docs/index.html#cataloguing-all-open-datasets-applicable-to-the-discipline",
@@ -221,7 +221,7 @@
     "href": "docs/faq.html",
     "title": "Frequently asked questions",
     "section": "",
-    "text": "Help us fill this page!\n\n\n\nHave an idea for a common topic to add to this FAQ? Give us a shout! Submit an issue to the project and tag the the issue using the “question” label.\n\n\nHow do I register a dataset to the catalogue (or recommend a dataset be registered)?\n\n\n\n Back to top"
+    "text": "Help us fill this page!\n\n\n\nHave an idea for a common topic to add to this FAQ? Give us a shout! Submit an issue to the project and tag the the issue using the “question” label.\n\n\n\nHow do I register a dataset to the catalogue (or recommend a dataset be registered)?\nWe provide guidance on how you can do both here.\n\n\nWhat training can I take to practice technical skills to create and publish a research compendium for my project?\nWe are exploring more targeted support, however for now we recommend that practice is the best training. Try it out! The following guides are great to review and get started:\n\nThe Turing Way\nThe RAP Community of Practice (hosted by the NHS in the UK)\n\n\n\nHow do I select the appropriate tools (GitHub) or data repository?\nFirstly, you should follow the guidance of your organization. They will guide you what you can and cannot do. For instance they may have processes to follow to publish to GitHub or a specific data repository/process to use for data you want to publish.\n\n\n\n\n Back to top"
   },
   {
     "objectID": "docs/datasets-guidance/catalogue.html",
