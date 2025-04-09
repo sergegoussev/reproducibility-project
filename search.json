@@ -39,49 +39,56 @@
     "href": "docs/about.html",
     "title": "About this project",
     "section": "",
-    "text": "This project is led by Workstream 5 of the UN Task Team on Scanner data, part of the UN Committee of Experts on Big Data and Data Science for Official Statistics (UN-CEBD)\n\n\n\n Back to top"
+    "text": "This project is led by Workstream 5 of the UN Task Team on Scanner data, part of the UN Committee of Experts on Big Data and Data Science for Official Statistics (UN-CEBD)."
+  },
+  {
+    "objectID": "docs/about.html#what-this-project-aims-to-do",
+    "href": "docs/about.html#what-this-project-aims-to-do",
+    "title": "About this project",
+    "section": "What this project aims to do",
+    "text": "What this project aims to do\nResearch in the price statistics discipline is not as reproducible as it could be. Most researchers utilize proprietary datasets and don’t publish the code alongside the research so that a specific methodology or finding can be easily reproduced. The idea of this project is to help in both topics! We aim to:\n\nProvide clear and approachable guidance on how researchers in price statistics can make their projects reproducible (including by learning new skills, by understanding how to publish and cite code, and many other topics)\nSupport cataloging open datasets that can be used as benchmarks to use for research purposes. The idea is to have all findings trialed and demonstrated on open benchmark datasets.\n\nThe project also builds on great efforts of early promoters of open science in the discipline!1 We are aiming to continue to build momentum and make it easier for researchers to work openly!"
+  },
+  {
+    "objectID": "docs/about.html#what-this-project-does-not-aim-to-do",
+    "href": "docs/about.html#what-this-project-does-not-aim-to-do",
+    "title": "About this project",
+    "section": "What this project does not aim to do",
+    "text": "What this project does not aim to do\nAs there is a lot of great guidance on the topic already, including The Turing Way, Reproducible Analytical Pipelines or RAP, and many more resources - the idea is to distilling key information for the price statistics community, not to create a new standard."
+  },
+  {
+    "objectID": "docs/about.html#footnotes",
+    "href": "docs/about.html#footnotes",
+    "title": "About this project",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nNotable early efforts include but are not limited to Frances Krsinich publishing the FEWS package with open data in 2018, Jens Mehrhoff showcasing the open Dominick’s Finer Foods scanner dataset in 2019, Erwin Dielert and Chihiro Shimizu opening a dataset of japanese laptop sales, or Jacek Białek including datasets with the PriceIndices R package.↩︎"
   },
   {
     "objectID": "docs/index.html",
     "href": "docs/index.html",
     "title": "Welcome to the Price Statistics Reproducibility Project",
     "section": "",
-    "text": "Welcome to the project aiming to help researchers in the field of price statistics make their projects more reproducible and to use more open (and FAIR) data in their projects."
+    "text": "Welcome to the project aiming to help researchers in the field of price statistics make their projects more reproducible and help push open science in the discipline."
   },
   {
-    "objectID": "docs/index.html#what-this-project-aims-to-do",
-    "href": "docs/index.html#what-this-project-aims-to-do",
+    "objectID": "docs/index.html#making-guidance-on-reproducibility-available",
+    "href": "docs/index.html#making-guidance-on-reproducibility-available",
     "title": "Welcome to the Price Statistics Reproducibility Project",
-    "section": "What this project aims to do",
-    "text": "What this project aims to do\nResearch in the price statistics discipline is not as reproducible as it could be. Most researchers utilize proprietary datasets and don’t publish the code alongside the research so that a specific methodology or finding can be easily reproduced. The idea of this project is to help in both topics! We aim to:\n\nProvide clear and approachable guidance on how researchers in price statistics can make their projects reproducible (including by learning new skills, by understanding how to publish and cite code, and many other topics)\nSupport cataloging open datasets that can be used as benchmarks to use for research purposes. The idea is to have all findings trialed and demonstrated on open benchmark datasets.\n\nThe project also builds on great efforts of early promoters of open science in the discipline!1 We are aiming to continue to build momentum and make it easier for researchers to work openly!"
+    "section": "Making guidance on reproducibility available",
+    "text": "Making guidance on reproducibility available\nThe project thus helps make:\n\nrecommendations on making research code open\nrecommendations on structured ways to reference and include digital objects\nrecommendations on specific guidance on how to cite others’ code and how to cite open datasets in your research."
   },
   {
-    "objectID": "docs/index.html#what-this-project-does-not-aim-to-do",
-    "href": "docs/index.html#what-this-project-does-not-aim-to-do",
+    "objectID": "docs/index.html#cataloguing-all-open-datasets-applicable-to-the-discipline",
+    "href": "docs/index.html#cataloguing-all-open-datasets-applicable-to-the-discipline",
     "title": "Welcome to the Price Statistics Reproducibility Project",
-    "section": "What this project does not aim to do",
-    "text": "What this project does not aim to do\nAs there is a lot of great guidance on the topic already, including The Turing Way, Reproducible Analytical Pipelines or RAP, and many more resources - the idea is to distilling key information for the price statistics community, not to create a new standard."
-  },
-  {
-    "objectID": "docs/index.html#key-concepts",
-    "href": "docs/index.html#key-concepts",
-    "title": "Welcome to the Price Statistics Reproducibility Project",
-    "section": "Key concepts",
-    "text": "Key concepts\nThe idea is to make it easy for researchers to prioritize using open data and publish their research compendium (code and related objects) with their research. In either case, other researchers can reproduce the research, expand on it, and apply it to internal data.\n\n\n\nFigure 1: Shifting from limited to fuller reproducibility (summarizing the main materials for a research, inspired by Bontemps and Orozco (2020))\n\n\nStepping back a bit, let us first define what reproducibility means. While there are many definitions, the aim of reproducible research is to ensure that work can be independently recreated from the same data and the same code. If researchers don’t have access to the same data (which may be locked down due to confidentiality reasons), researchers can aim to replicate the result with their own data.\n\n\n\nFigure 2: Definitions of Reproducible Research by the Turing Way\n\n\nTo support open-science within price statistics, the project recommends:\n\nThat researchers in the discipline use of open datasets when available in order to support reproducible or robust research. This is why the project has started a catalogue of open datasets that can be leveraged for research purposes;\nThe publication of research code and related research artifacts so that other researchers can independently reproduce all research results. The project provides guidance on structuring and publishing research code so that others can reproduce your results.\n\nIdeally, both aspects are adopted by researchers. However even the adoption of one is valuable as it is possible to replicate the results with different data. Without either, a slower and less effective goal of science in the discipline is generalizable findings by non-reproducible research simply from what is stated in each researchers’ paper (the status quo)."
-  },
-  {
-    "objectID": "docs/index.html#navigating-the-guidance",
-    "href": "docs/index.html#navigating-the-guidance",
-    "title": "Welcome to the Price Statistics Reproducibility Project",
-    "section": "Navigating the guidance",
-    "text": "Navigating the guidance\nWhile guidance will expand over time, the following sections and links can help researchers in the discipline:\n\nCatalogue of open datasets available to price statisticians\nGuidance on the open data catalogue and how to register new datasets\nRecommendations on making research code open\nGuidance on how to cite others’ code and how to cite open datasets in your research.\nOptions for those wanting to publish new datasets in the catalogue\n\nWe also recommend other guidance related to the topic but not specific to price statistics:\n\nThe Turing Way is a wonderful and comprehensive guide for open research\nThe Reproducible Analytical Pipelines (or RAP) is another very applicable paradigm for reproducibility, although has come to be applied within official statistics as a way to operationalize production processes. Many UN classes are nowadays teaching these principles as a basic minimum standard within official statistics and have been recommended by the ONS for price statistics.23"
+    "section": "Cataloguing all open datasets applicable to the discipline",
+    "text": "Cataloguing all open datasets applicable to the discipline\nThe project also makes resources available, such as:\n\nThe Price Statistics Open Data Catalogue\nExplain how the Price Statistics Open Data Catalogue works\nGuidance on how to publish data openly and contribute to the Price Statistics Data Catalogue"
   },
   {
     "objectID": "docs/index.html#footnotes",
     "href": "docs/index.html#footnotes",
     "title": "Welcome to the Price Statistics Reproducibility Project",
     "section": "Footnotes",
-    "text": "Footnotes\n\n\nNotable early efforts include but are not limited to Frances Krsinich publishing the FEWS package with open data in 2018, Jens Mehrhoff showcasing the open Dominick’s Finer Foods scanner dataset in 2019, Erwin Dielert and Chihiro Shimizu opening a dataset of japanese laptop sales, or Jacek Białek including datasets with the PriceIndices R package.↩︎\nFor instance see class on RAP by UN ESCAP, by UN SIAP for classes.↩︎\nSee Price and Marques (2023) for an overview of RAP to price statistics.↩︎"
+    "text": "Footnotes\n\n\nFor instance see class on RAP by UN ESCAP, by UN SIAP for classes.↩︎\nSee Price and Marques (2023) for an overview of RAP to price statistics.↩︎"
   },
   {
     "objectID": "project-content/other-open-materials.html",
