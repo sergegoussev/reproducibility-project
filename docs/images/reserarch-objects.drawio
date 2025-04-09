@@ -25,13 +25,13 @@
         <mxCell id="6WQPMh8JYxecZ4hOtQSG-94" value="" style="shape=singleArrow;whiteSpace=wrap;html=1;arrowWidth=0.5703708224826389;arrowSize=0.433331298828125;fillColor=#e1d5e7;strokeColor=#9673a6;sketch=1;curveFitting=1;jiggle=2;sketchStyle=rough;rotation=-15;" parent="1" vertex="1">
           <mxGeometry x="749" y="650" width="40" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="6WQPMh8JYxecZ4hOtQSG-96" value="&lt;b&gt;Status quo: &lt;/b&gt;To reproduce, researchers have to understand the aspects of the data and interpret (or at best request) the code" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" parent="1" vertex="1">
+        <mxCell id="6WQPMh8JYxecZ4hOtQSG-96" value="&lt;p data-pm-slice=&quot;1 1 [&amp;quot;body&amp;quot;,{}]&quot;&gt;&lt;strong&gt;Default: Generalizability.&amp;nbsp;&lt;/strong&gt;Researchers struggle to understand and repeat aspects of the research and apply with their own data as only the paper is&amp;nbsp;available.&lt;/p&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" parent="1" vertex="1">
           <mxGeometry x="357" y="649" width="370" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="6WQPMh8JYxecZ4hOtQSG-98" value="&lt;b&gt;Option A&lt;/b&gt;: Open data and code is used. Researchers replicate the results or expand them, and can apply them on internal data" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" parent="1" vertex="1">
+        <mxCell id="6WQPMh8JYxecZ4hOtQSG-98" value="&lt;b&gt;Goal: Reproducibility.&lt;/b&gt;&amp;nbsp;Open data and code is used. Researchers replicate the results or expand them, and can apply them on other data" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" parent="1" vertex="1">
           <mxGeometry x="820" y="535" width="360" height="51" as="geometry" />
         </mxCell>
-        <mxCell id="jeABVTtX3Q1DxEAOlglV-11" value="&lt;b&gt;Option B&lt;/b&gt;: Internal data is used but code is published. Researchers can undersand and then replicate the process with their own or open data." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" parent="1" vertex="1">
+        <mxCell id="jeABVTtX3Q1DxEAOlglV-11" value="&lt;p data-pm-slice=&quot;1 1 [&amp;quot;body&amp;quot;,{}]&quot;&gt;&lt;strong&gt;Backup: Replicability.&lt;/strong&gt;&amp;nbsp;Data is not available to other researchers but code is published. Researchers can understand and replicate the process with other data.&lt;/p&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" parent="1" vertex="1">
           <mxGeometry x="810" y="834" width="370" height="60" as="geometry" />
         </mxCell>
         <mxCell id="jeABVTtX3Q1DxEAOlglV-15" value="" style="shape=singleArrow;whiteSpace=wrap;html=1;arrowWidth=0.5703708224826389;arrowSize=0.433331298828125;fillColor=#e1d5e7;strokeColor=#9673a6;sketch=1;curveFitting=1;jiggle=2;sketchStyle=rough;rotation=20;" parent="1" vertex="1">

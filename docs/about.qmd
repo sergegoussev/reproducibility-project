@@ -4,6 +4,26 @@ format:
   html:
     toc: true
     toc-expand: 2
+    other-links:
+        - text: "Home page of the Scanner Data Task Team on the UN CEBD site"
+          href: https://unstats.un.org/bigdata/task-teams/scanner/index.cshtml
 ---
 
-This project is led by Workstream 5 of the [UN Task Team on Scanner data](https://unstats.un.org/bigdata/task-teams/scanner/index.cshtml), part of the [UN Committee of Experts on Big Data and Data Science for Official Statistics (UN-CEBD)](https://unstats.un.org/bigdata/index.cshtml)
+This project is led by Workstream 5 of the [UN Task Team on Scanner data](https://unstats.un.org/bigdata/task-teams/scanner/index.cshtml), part of the [UN Committee of Experts on Big Data and Data Science for Official Statistics (UN-CEBD)](https://unstats.un.org/bigdata/index.cshtml).
+
+# About the project
+
+## What this project aims to do
+
+Research in the price statistics discipline is not as reproducible as it could be. Most researchers utilize proprietary datasets and don't publish the code alongside the research so that a specific methodology or finding can be easily reproduced. The idea of this project is to help in both topics! We aim to:
+
+-   Provide clear and approachable guidance on how researchers in price statistics can make their projects reproducible (including by learning new skills, by understanding how to publish and cite code, and many other topics)
+-   Support cataloging open datasets that can be used as benchmarks to use for research purposes. The idea is to have all findings trialed and demonstrated on open benchmark datasets.
+
+The project also builds on great efforts of early promoters of open science in the discipline![^1] We are aiming to continue to build momentum and make it easier for researchers to work openly!
+
+[^1]: Notable early efforts include but are not limited to [Frances Krsinich publishing the FEWS package with open data in 2018](https://code.officialstatistics.org/scanner-task-team-gwg/FEWS_package), [Jens Mehrhoff showcasing the open Dominick's Finer Foods scanner dataset in 2019](https://github.com/eurostat/dff), [Erwin Dielert and Chihiro Shimizu opening a dataset of japanese laptop sales](https://unece.org/sites/default/files/2023-06/6.3%20Diewert%20and%20Shimizu%20Scanner%20Data%20Product%20Churn%20and%20Quality%20Adjustment%E3%80%80new.pdf), or [Jacek Białek including datasets with the PriceIndices R package](https://github.com/JacekBialek/PriceIndices/tree/master?tab=readme-ov-file#ad1).
+
+## What this project does not aim to do
+
+As there is a lot of great guidance on the topic already, including [The Turing Way](https://book.the-turing-way.org/), [Reproducible Analytical Pipelines or RAP](https://nhsdigital.github.io/rap-community-of-practice/introduction_to_RAP/what_is_RAP/), and many more resources - the idea is to distilling key information for the price statistics community, not to create a new standard.

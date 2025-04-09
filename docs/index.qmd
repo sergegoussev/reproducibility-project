@@ -8,59 +8,49 @@ format:
     toc-expand: 2
 ---
 
-Welcome to the project aiming to help researchers in the field of price statistics make their projects more reproducible and to use more open (and FAIR) data in their projects.
+Welcome to the project aiming to help researchers in the field of price statistics make their projects more reproducible and help push open science in the discipline.
 
-# About the project
+# Why care about open science?
 
-## What this project aims to do
+When only the research paper is available, we struggle to understand and easily apply the findings as we cannot reproduce the results or reuse the code. We also cannot expand the research into new directions and get insight into related but unanswered questions and are slower at learning from each other. In a sense, individually each researcher is less well off, and collectively, the discipline is slower at getting to a consensus on an approach.
 
-Research in the price statistics discipline is not as reproducible as it could be. Most researchers utilize proprietary datasets and don't publish the code alongside the research so that a specific methodology or finding can be easily reproduced. The idea of this project is to help in both topics! We aim to:
+The idea of this project is to help researchers by providing approachable guidance on how all digital artifacts for their research projects (such as code) can be published openly, as well as help bring together all the open datasets that are part of the discipline so that input data for projects can be open and not the proprietary datasets that are often the default.
 
--   Provide clear and approachable guidance on how researchers in price statistics can make their projects reproducible (including by learning new skills, by understanding how to publish and cite code, and many other topics)
--   Support cataloging open datasets that can be used as benchmarks to use for research purposes. The idea is to have all findings trialed and demonstrated on open benchmark datasets.
+# How does it work in practice?
 
-The project also builds on great efforts of early promoters of open science in the discipline![^1] We are aiming to continue to build momentum and make it easier for researchers to work openly!
-
-[^1]: Notable early efforts include but are not limited to [Frances Krsinich publishing the FEWS package with open data in 2018](https://code.officialstatistics.org/scanner-task-team-gwg/FEWS_package), [Jens Mehrhoff showcasing the open Dominick's Finer Foods scanner dataset in 2019](https://github.com/eurostat/dff), [Erwin Dielert and Chihiro Shimizu opening a dataset of japanese laptop sales](https://unece.org/sites/default/files/2023-06/6.3%20Diewert%20and%20Shimizu%20Scanner%20Data%20Product%20Churn%20and%20Quality%20Adjustment%E3%80%80new.pdf), or [Jacek Białek including datasets with the PriceIndices R package](https://github.com/JacekBialek/PriceIndices/tree/master?tab=readme-ov-file#ad1).
-
-## What this project does not aim to do
-
-As there is a lot of great guidance on the topic already, including [The Turing Way](https://book.the-turing-way.org/), [Reproducible Analytical Pipelines or RAP](https://nhsdigital.github.io/rap-community-of-practice/introduction_to_RAP/what_is_RAP/), and many more resources - the idea is to distilling key information for the price statistics community, not to create a new standard.
-
-# Overview of reproducibility guidance
-
-## Key concepts
-
-The idea is to make it easy for researchers to prioritize using [open data](/docs/datasets-guidance/catalogue.qmd) and publish their [research compendium](/docs/reproducibility-guidance/intro.qmd) (code and related objects) with their research. In either case, other researchers can reproduce the research, expand on it, and apply it to internal data.
-
-![Figure 1: Shifting from limited to fuller reproducibility (summarizing the main materials for a research, inspired by [Bontemps and Orozco (2020)](https://publications.ut-capitole.fr/id/eprint/41896/1/wp_tse_1161.pdf))](images/reserarch-objects-shifting-the-paradigm.svg)
-
-Stepping back a bit, let us first define what reproducibility means. While there are many definitions, the aim of reproducible research is to ensure that work can be independently recreated from the same data and the same code. If researchers don't have access to the same data (which may be locked down due to confidentiality reasons), researchers can aim to replicate the result with their own data.
+The aim is can be visualized using the (input) data and analysis quadrant commonly applied for this case (see Figure 1). With proprietary data and non-open analysis (i.e. code and other digital artifacts), generalizability is the default. However, if the dataset used for the research is shared and the analysis is open, the method can be reproduced exactly. The goal of the project is to help make this happen. The backup is replicability, where the analysis is shared but different datasets are used (such as because the data cannot be shared).
 
 ![Figure 2: Definitions of Reproducible Research by the Turing Way](https://book.the-turing-way.org/build/reproducible-matrix-4c629c0db1c1c416790052e1f27f7907.jpg){fig-align="center" width="60%"}
 
-To support open-science within price statistics, the project recommends:
+Visually, the status quo is a shift (see Figure 2). If [research compendium](/docs/reproducibility-guidance/intro.qmd) (code and related objects) are published alongside the research and (ideally) [open data](/docs/datasets-guidance/catalogue.qmd) is used, the goal can be achieved.
 
-a.  That researchers in the discipline use of open datasets when available in order to support reproducible or robust research. This is why the project has started a [catalogue of open datasets](https://un-task-team-for-scanner-data.github.io/price-stats-data-catalogue/) that can be leveraged for research purposes;
-b.  The publication of research code and related research artifacts so that other researchers can independently reproduce all research results. The project provides guidance on structuring and publishing research code so that others can reproduce your results.
+![Figure 1: Shifting from limited to fuller reproducibility (summarizing the main materials for a research, inspired by Bontemps and Orozco (2020))](images/reserarch-objects-shifting-the-paradigm.svg)
 
-Ideally, both aspects are adopted by researchers. However even the adoption of one is valuable as it is possible to replicate the results with different data. Without either, a slower and less effective goal of science in the discipline is generalizable findings by non-reproducible research simply from what is stated in each researchers' paper (the status quo).
+# How the reproducibility project helps you?
 
-## Navigating the guidance
+## Making guidance on reproducibility available
 
-While guidance will expand over time, the following sections and links can help researchers in the discipline:
+The project thus helps make:
 
--   [Catalogue of open datasets available to price statisticians](https://un-task-team-for-scanner-data.github.io/price-stats-data-catalogue/)
--   [Guidance on the open data catalogue and how to register new datasets](/docs/datasets-guidance/catalogue.qmd)
--   [Recommendations on making research code open](/docs/reproducibility-guidance/intro.qmd)
--   [Guidance on how to cite others' code](/docs/reproducibility-guidance/citing-code.qmd) and [how to cite open datasets](/docs/datasets-guidance/how-to-cite.qmd) in your research.
--   [Options for those wanting to publish new datasets in the catalogue](/docs/datasets-guidance/opening-up-datasets.qmd)
+-   [recommendations on making research code open](/docs/reproducibility-guidance/intro.qmd)
+-   [recommendations on structured ways to reference and include digital objects](/docs/reproducibility-guidance/how-to-cite-digital-objects.qmd)
+-   [recommendations on specific guidance on how to cite others' code](/docs/reproducibility-guidance/citing-code.qmd) and [how to cite open datasets](/docs/datasets-guidance/how-to-cite.qmd) in your research.
 
-We also recommend other guidance related to the topic but not specific to price statistics:
+## Cataloguing all open datasets applicable to the discipline
+
+The project also makes resources available, such as:
+
+-   [The Price Statistics Open Data Catalogue](https://un-task-team-for-scanner-data.github.io/price-stats-data-catalogue/)
+-   [Explain how the Price Statistics Open Data Catalogue works](/docs/datasets-guidance/catalogue.qmd)
+-   [Guidance on how to publish data openly and contribute to the Price Statistics Data Catalogue](/docs/datasets-guidance/opening-up-datasets.qmd)
+
+# Interested about the reproducibility?
+
+We recommend other guidance related to the topic but not specific to price statistics (on whom we mostly base our discipline-specific guidance):
 
 -   [The Turing Way](https://book.the-turing-way.org/) is a wonderful and comprehensive guide for open research
--   [The Reproducible Analytical Pipelines (or RAP)](https://nhsdigital.github.io/rap-community-of-practice/) is another very applicable paradigm for reproducibility, although has come to be applied within official statistics as a way to operationalize production processes. Many UN classes are nowadays teaching these principles as a basic minimum standard within official statistics and have been recommended by the ONS for price statistics.[^2][^3]
+-   [The Reproducible Analytical Pipelines (or RAP)](https://nhsdigital.github.io/rap-community-of-practice/) is another very applicable paradigm for reproducibility, although has come to be applied within official statistics as a way to operationalize production processes. Many UN classes are nowadays teaching these principles as a basic minimum standard within official statistics and have been recommended by the ONS for price statistics.[^1][^2]
 
-[^2]: For instance see class on RAP [by UN ESCAP](https://escap-sd.github.io/ESCAP_RAP_class/docs/), [by UN SIAP](https://siap-elearning.org/enrol/index.php?id=256) for classes.
+[^1]: For instance see class on RAP [by UN ESCAP](https://escap-sd.github.io/ESCAP_RAP_class/docs/), [by UN SIAP](https://siap-elearning.org/enrol/index.php?id=256) for classes.
 
-[^3]: See [Price and Marques (2023)](https://unece.org/sites/default/files/2023-05/7.4%20UK_un_systems_railfares_paper.pdf) for an overview of RAP to price statistics.
+[^2]: See [Price and Marques (2023)](https://unece.org/sites/default/files/2023-05/7.4%20UK_un_systems_railfares_paper.pdf) for an overview of RAP to price statistics.
