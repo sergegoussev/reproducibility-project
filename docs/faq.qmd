@@ -10,4 +10,17 @@ format:
 Have an idea for a common topic to add to this FAQ? Give us a shout! Submit an issue to the project and tag the the issue using the "question" label.
 :::
 
-How do I register a dataset to the catalogue (or recommend a dataset be registered)?
+# How do I register a dataset to the catalogue (or recommend a dataset be registered)?
+
+We provide guidance on [how you can do both here](/docs/datasets-guidance/opening-up-datasets.qmd).
+
+# What training can I take to practice technical skills to create and publish a research compendium for my project?
+
+We are exploring more targeted support, however for now we recommend that practice is the best training. Try it out! The following guides are great to review and get started:
+
+-   [The Turing Way](https://book.the-turing-way.org/)
+-   [The RAP Community of Practice](https://nhsdigital.github.io/rap-community-of-practice/introduction_to_RAP/what_is_RAP/) (hosted by the NHS in the UK)
+
+# How do I select the appropriate tools (GitHub) or data repository?
+
+Firstly, you should follow the guidance of your organization. They will guide you what you can and cannot do. For instance they may have processes to follow to publish to GitHub or a specific data repository/process to use for data you want to publish.
