@@ -8,7 +8,7 @@
 
 <meta name="dcterms.date" content="2025-04-28">
 
-<title>Options for making a dataset openly available – Price Statistics Reproducibility Project</title>
+<title>Open a dataset and registering it to the catalogue – Price Statistics Reproducibility Project</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -133,7 +133,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
         <li>
     <a class="dropdown-item" href="../../docs/datasets-guidance/opening-up-datasets.html">
- <span class="dropdown-text">Options for making a dataset openly available</span></a>
+ <span class="dropdown-text">Open a dataset and registering it to the catalogue</span></a>
   </li>  
     </ul>
   </li>
@@ -152,15 +152,22 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="2">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#some-basic-ideas-on-open-data" id="toc-some-basic-ideas-on-open-data" class="nav-link active" data-scroll-target="#some-basic-ideas-on-open-data">Some basic ideas on open data</a></li>
+  <li><a href="#a-quick-process-to-follow-to-register-the-dataset-on-the-catalogue." id="toc-a-quick-process-to-follow-to-register-the-dataset-on-the-catalogue." class="nav-link" data-scroll-target="#a-quick-process-to-follow-to-register-the-dataset-on-the-catalogue.">A quick process to follow to register the dataset on the catalogue.</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/UN-Task-Team-for-Scanner-Data/reproducibility-project/blob/main/docs/datasets-guidance/opening-up-datasets.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/UN-Task-Team-for-Scanner-Data/reproducibility-project/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Options for making a dataset openly available</h1>
+<h1 class="title">Open a dataset and registering it to the catalogue</h1>
 </div>
 
 
@@ -183,17 +190,39 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Do you have a dataset that you would like to register on the data catalogue? Follow the simple.</p>
-<p>The project does not have final guidance on the topic. For now, we recommend the following process:</p>
-<ol type="a">
-<li>Publish your dataset in a <a href="https://book.the-turing-way.org/reproducible-research/rdm/rdm-repository#rr-rdm-repository-select">data repository</a> that mints a Digital Object Identifier (DOI). This will make your dataset citable by other researchers.</li>
-<li>Register your dataset in the price statistics data catalogue. See the <a href="https://github.com/UN-Task-Team-for-Scanner-Data/price-stats-data-catalogue/blob/main/CONTRIBUTING.md">contributing guidance of the data catalogue</a> for more information.</li>
+<p>If you have a dataset that you want to register on the catalogue (whether you own it or you simply know a good one for us to include), we’d like to hear from you!</p>
+<section id="some-basic-ideas-on-open-data" class="level2">
+<h2 class="anchored" data-anchor-id="some-basic-ideas-on-open-data">Some basic ideas on open data</h2>
+<p>Data should ideally be <a href="https://www.go-fair.org/fair-principles/">Findable, Accessible, Interoperable, and Reusable (i.e.&nbsp;FAIR)</a>. In essence, it is best that it is shared in a data repository<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> that creates a Digital Object Identifiers (or DOI) for the data. This makes it easy for anyone to find the data. Data repositories also support hosting a lot of information and metadata about the dataset and even make it possible to host private datasets where only metadata is available to the wider public. If the dataset needs to be expanded regularly, using a repository will make it easy for others to find both the parent dataset and understand what version of the historic dataset was used.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Interim recommendation: Use a data repository (if you can) to host open data
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The project is investigating longer term solutions, however for now, we recommend that an option researchers consider is using a general purpose data repository, although you should always check with your institution first.</p>
+</div>
+</div>
+</section>
+<section id="a-quick-process-to-follow-to-register-the-dataset-on-the-catalogue." class="level2">
+<h2 class="anchored" data-anchor-id="a-quick-process-to-follow-to-register-the-dataset-on-the-catalogue.">A quick process to follow to register the dataset on the catalogue.</h2>
+<p>Once a dataset is hosted somewhere such as a data repository and the catalogue can cite it, we can register the dataset on the repository. In a nutshell, it is as simple as making a new dataset record in the <code>/datasets/</code> folder of the GitHub repository of the catalogue!</p>
+<p>A slightly more technical process is available in the <a href="https://github.com/UN-Task-Team-for-Scanner-Data/price-stats-data-catalogue/blob/main/CONTRIBUTING.md">contributing guidance of the data catalogue</a>.</p>
+
+
+</section>
+
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Read more about <a href="https://book.the-turing-way.org/reproducible-research/rdm/rdm-repository#rr-rdm-repository-select">data repositories in the Turing Way</a>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
-<p>We would like to hear of other datasets that may not fit this process (such as datasets that are not registered in an data repository like Zenodo). We are happy to work with you to get the dataset there.</p>
-
-
-
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -774,7 +803,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </a>
   </li>  
 </ul>
-    <div class="toc-actions"><ul><li><a href="https://github.com/UN-Task-Team-for-Scanner-Data/reproducibility-project/blob/main/docs/datasets-guidance/opening-up-datasets.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/UN-Task-Team-for-Scanner-Data/reproducibility-project/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/UN-Task-Team-for-Scanner-Data/reproducibility-project/blob/main/docs/datasets-guidance/opening-up-datasets.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/UN-Task-Team-for-Scanner-Data/reproducibility-project/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
