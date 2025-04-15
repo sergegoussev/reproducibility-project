@@ -46,7 +46,7 @@
     "href": "docs/datasets-guidance/opening-up-datasets.html#a-quick-process-to-follow-to-register-the-dataset-on-the-catalogue.",
     "title": "Open a dataset and registering it to the catalogue",
     "section": "A quick process to follow to register the dataset on the catalogue.",
-    "text": "A quick process to follow to register the dataset on the catalogue.\nOnce a dataset is hosted somewhere such as a data repository and the catalogue can cite it, we can register the dataset on the repository. In a nutshell, it is as simple as making a new dataset record in the /datasets/ folder of the GitHub repository of the catalogue!\nA slightly more technical process is available in the contributing guidance of the data catalogue."
+    "text": "A quick process to follow to register the dataset on the catalogue.\nOnce a dataset is hosted somewhere such as a data repository and the catalogue can cite it, we can register the dataset to the catalogue. In a nutshell, it is as simple as making a new dataset record in the /datasets/ folder of the Catalogue GitHub repository!\nA slightly more technical process is outlined in the contributing guidance of the data catalogue."
   },
   {
     "objectID": "docs/datasets-guidance/opening-up-datasets.html#footnotes",
@@ -91,11 +91,11 @@
     "text": "Welcome to the project aiming to help researchers in the field of price statistics make their projects more reproducible and help push open science in the discipline."
   },
   {
-    "objectID": "docs/index.html#making-guidance-on-reproducibility-availablew",
-    "href": "docs/index.html#making-guidance-on-reproducibility-availablew",
+    "objectID": "docs/index.html#making-guidance-on-reproducibility-available",
+    "href": "docs/index.html#making-guidance-on-reproducibility-available",
     "title": "Welcome to the Price Statistics Reproducibility Project",
-    "section": "Making guidance on reproducibility availableW",
-    "text": "Making guidance on reproducibility availableW\nThe project thus helps make:\n\nRecommendations on making research code open.\nRecommendations on structured ways to reference and include digital objects.\nRecommendations on specific guidance on how to cite others’ code and how to cite open datasets in your research."
+    "section": "Making guidance on reproducibility available",
+    "text": "Making guidance on reproducibility available\nThe project thus helps make:\n\nRecommendations on making research code open.\nRecommendations on structured ways to reference and include digital objects.\nRecommendations on specific guidance on how to cite others’ code and how to cite open datasets in your research."
   },
   {
     "objectID": "docs/index.html#cataloguing-all-open-datasets-applicable-to-the-discipline",
