@@ -20,7 +20,7 @@ The idea is simple. The catalogue lists open datasets relevant to the discipline
 
 ## Where is the data catalogue?
 
-The data catalogue can be found here. It is basically a simple static site hosted on GitHub.
+The [data catalogue can be found here](https://un-task-team-for-scanner-data.github.io/price-stats-data-catalogue/). It is basically a simple static site hosted on GitHub.
 
 ## How to register an open dataset on the catalogue?
 
