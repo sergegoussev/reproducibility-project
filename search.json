@@ -28,130 +28,81 @@
     "text": "Example: {PriceIndices}\nThe {PriceIndices} R package comes with several datasets that can be useful for comparing different index-number methods. Citing these data is easy because R packages are highly citeable.\n@Manual{,\n  title = {PriceIndices: Calculating Bilateral and Multilateral Price Indexes},\n  author = {Jacek Białek},\n  year = {2025},\n  doi = {10.32614/CRAN.package.PriceIndices},\n  url = {https://cran.r-project.org/package=PriceIndices},\n  note = {R package version 0.2.3}\n}\nUsing these data is easy enough with R. Simply install the package and the datasets become available from within R."
   },
   {
-    "objectID": "docs/datasets-guidance/opening-up-datasets.html",
-    "href": "docs/datasets-guidance/opening-up-datasets.html",
-    "title": "Open a dataset and registering it to the catalogue",
+    "objectID": "docs/datasets-guidance/catalogue.html",
+    "href": "docs/datasets-guidance/catalogue.html",
+    "title": "Catalogue of open data in price statistics",
     "section": "",
-    "text": "If you have a dataset that you want to register on the catalogue (whether you own it or you simply know a good one for us to include), we’d like to hear from you!"
+    "text": "Researchers often struggle to use open data. They may find it hard to find open datasets for their research projects. If they find open datasets, they may struggle to easily understand them in order to judge that the datasets easily work for their research. Finally they may find it challenging to know how to work with or even how to cite the dataset.\nTo help find, assess, and understand how to access open datasets, this project has developed a basic discipline specific catalogue."
   },
   {
-    "objectID": "docs/datasets-guidance/opening-up-datasets.html#some-basic-ideas-on-open-data",
-    "href": "docs/datasets-guidance/opening-up-datasets.html#some-basic-ideas-on-open-data",
-    "title": "Open a dataset and registering it to the catalogue",
-    "section": "Some basic ideas on open data",
-    "text": "Some basic ideas on open data\nData should ideally be Findable, Accessible, Interoperable, and Reusable (i.e. FAIR). In essence, it is best that it is shared in a data repository1 that creates a Digital Object Identifiers (or DOI) for the data. This makes it easy for anyone to find the data. Data repositories also support hosting a lot of information and metadata about the dataset and even make it possible to host private datasets where only metadata is available to the wider public. If the dataset needs to be expanded regularly, using a repository will make it easy for others to find both the parent dataset and understand what version of the historic dataset was used.\n\n\n\n\n\n\nInterim recommendation: Use a data repository (if you can) to host open data\n\n\n\nThe project is investigating longer term solutions, however for now, we recommend that an option researchers consider is using a general purpose data repository, although you should always check with your institution first."
+    "objectID": "docs/datasets-guidance/catalogue.html#how-the-price-statistics-open-data-catalogue-works-in-a-nutshell",
+    "href": "docs/datasets-guidance/catalogue.html#how-the-price-statistics-open-data-catalogue-works-in-a-nutshell",
+    "title": "Catalogue of open data in price statistics",
+    "section": "How the Price Statistics Open Data Catalogue works in a nutshell",
+    "text": "How the Price Statistics Open Data Catalogue works in a nutshell\nThe idea is simple. The catalogue lists open datasets relevant to the discipline and is searchable according to standard data types (such as scanner data). It also provides basic information about each dataset that will allow researchers to assess its relevance and know how to access it. Visually this is shown in Figure 1.\n\n\n\nFigure 1: Basic idea of how we see the data catalogue working."
   },
   {
-    "objectID": "docs/datasets-guidance/opening-up-datasets.html#a-quick-process-to-follow-to-register-the-dataset-on-the-catalogue.",
-    "href": "docs/datasets-guidance/opening-up-datasets.html#a-quick-process-to-follow-to-register-the-dataset-on-the-catalogue.",
-    "title": "Open a dataset and registering it to the catalogue",
-    "section": "A quick process to follow to register the dataset on the catalogue.",
-    "text": "A quick process to follow to register the dataset on the catalogue.\nOnce a dataset is hosted somewhere such as a data repository and the catalogue can cite it, we can register the dataset to the catalogue. In a nutshell, it is as simple as making a new dataset record in the /datasets/ folder of the Catalogue GitHub repository!\nA slightly more technical process is outlined in the contributing guidance of the data catalogue."
+    "objectID": "docs/datasets-guidance/catalogue.html#where-is-the-data-catalogue",
+    "href": "docs/datasets-guidance/catalogue.html#where-is-the-data-catalogue",
+    "title": "Catalogue of open data in price statistics",
+    "section": "Where is the data catalogue?",
+    "text": "Where is the data catalogue?\nThe data catalogue can be found here. It is basically a simple static site hosted on GitHub."
   },
   {
-    "objectID": "docs/datasets-guidance/opening-up-datasets.html#footnotes",
-    "href": "docs/datasets-guidance/opening-up-datasets.html#footnotes",
-    "title": "Open a dataset and registering it to the catalogue",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nRead more about data repositories in the Turing Way.↩︎"
+    "objectID": "docs/datasets-guidance/catalogue.html#how-to-register-an-open-dataset-on-the-catalogue",
+    "href": "docs/datasets-guidance/catalogue.html#how-to-register-an-open-dataset-on-the-catalogue",
+    "title": "Catalogue of open data in price statistics",
+    "section": "How to register an open dataset on the catalogue?",
+    "text": "How to register an open dataset on the catalogue?\nThe CONTRIBUTING guidance in the catalogue summarizes it all. Have a look and help register a dataset or recommend one be registered!"
   },
   {
-    "objectID": "docs/about.html",
-    "href": "docs/about.html",
-    "title": "About this project",
+    "objectID": "docs/datasets-guidance/catalogue.html#what-does-the-catalogue-not-do",
+    "href": "docs/datasets-guidance/catalogue.html#what-does-the-catalogue-not-do",
+    "title": "Catalogue of open data in price statistics",
+    "section": "What does the catalogue not do?",
+    "text": "What does the catalogue not do?\nAs the catalogue does not store the dataset itself but simply describes it in detail. In other words, this catalogue is not a data repository.\n\n\n\n\n\n\nThis is an interim catalogue only!\n\n\n\nThis will very likely not be the long-term stable data catalogue the discpline. The idea however it to start with this interim (and very simple open-source) catalogue, while the project investigates a more viable longer term solution."
+  },
+  {
+    "objectID": "docs/faq.html",
+    "href": "docs/faq.html",
+    "title": "Frequently asked questions",
     "section": "",
-    "text": "This project is led by Workstream 5 of the UN Task Team on Scanner data, part of the UN Committee of Experts on Big Data and Data Science for Official Statistics (UN-CEBD)."
+    "text": "Help us fill this page!\n\n\n\nHave an idea for a common topic to add to this FAQ? Give us a shout! Submit an issue to the project and tag the the issue using the “question” label.\n\n\n\nHow do I register a dataset to the catalogue (or recommend a dataset be registered)?\nWe provide guidance on how you can do both here.\n\n\nWhat training can I take to practice technical skills to create and publish a research compendium for my project?\nWe are exploring more targeted support, however for now we recommend that practice is the best training. Try it out! The following guides are great to review and get started:\n\nThe Turing Way\nThe RAP Community of Practice (hosted by the NHS in the UK)\n\n\n\nHow do I select the appropriate tools (GitHub) or data repository?\nFirstly, you should follow the guidance of your organization. They will guide you what you can and cannot do. For instance they may have processes to follow to publish to GitHub or a specific data repository/process to use for data you want to publish.\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "docs/about.html#what-this-project-aims-to-do",
-    "href": "docs/about.html#what-this-project-aims-to-do",
-    "title": "About this project",
-    "section": "What this project aims to do",
-    "text": "What this project aims to do\nResearch in the price statistics discipline is not as reproducible as it could be. Most researchers utilize proprietary datasets and don’t publish the code alongside the research so that a specific methodology or finding can be easily reproduced. The idea of this project is to help in both topics! We aim to:\n\nProvide clear and approachable guidance on how researchers in price statistics can make their projects reproducible (including by learning new skills, by understanding how to publish and cite code, and many other topics)\nSupport cataloging open datasets that can be used as benchmarks to use for research purposes. The idea is to have all findings trialed and demonstrated on open benchmark datasets.\n\nThe project also builds on great efforts of early promoters of open science in the discipline!1 We are aiming to continue to build momentum and make it easier for researchers to work openly!"
-  },
-  {
-    "objectID": "docs/about.html#what-this-project-does-not-aim-to-do",
-    "href": "docs/about.html#what-this-project-does-not-aim-to-do",
-    "title": "About this project",
-    "section": "What this project does not aim to do",
-    "text": "What this project does not aim to do\nAs there is a lot of great guidance on the topic already, including The Turing Way, Reproducible Analytical Pipelines or RAP, and many more resources - the idea is to distilling key information for the price statistics community, not to create a new standard."
-  },
-  {
-    "objectID": "docs/about.html#footnotes",
-    "href": "docs/about.html#footnotes",
-    "title": "About this project",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nNotable early efforts include but are not limited to Frances Krsinich publishing the FEWS package with open data in 2018, Jens Mehrhoff showcasing the open Dominick’s Finer Foods scanner dataset in 2019, Erwin Dielert and Chihiro Shimizu opening a dataset of japanese laptop sales, or Jacek Białek including datasets with the PriceIndices R package.↩︎"
-  },
-  {
-    "objectID": "docs/index.html",
-    "href": "docs/index.html",
-    "title": "Welcome to the Price Statistics Reproducibility Project",
+    "objectID": "project-content/project-charter.html",
+    "href": "project-content/project-charter.html",
+    "title": "Project Charter",
     "section": "",
-    "text": "Welcome to the project aiming to help researchers in the field of price statistics make their projects more reproducible and help push open science in the discipline."
+    "text": "Research in the price statistics discipline is not as reproducible as we feel it should be. Most researchers utilize proprietary datasets (for instance internal datasets owned by their NSOs as part of their official work, or purchased datasets that require considerable financial investment for others to acquire). Research is also done using software available to researchers in a way that is custom to them and the code and detailed processes are typically not made easily available as part of the research project. This consequence is far from the intention of researchers, but is a result of the challenges to do this within the discipline. Specifically, it is not easy to find or access open datasets that can be used for research purposes. Once data is found, the metadata on each dataset will differ, making it challenging to process and use the data, such as for repeatable research processes. Finally, once a researcher has access to the data, it is not clear how code and processing logic should be shared as part of the research project to make the project reproducible. In other words, the process is not Findable, Accessible, Interoperable, or Reusable (or FAIR).\n\n\n\nThe project aims to simplify this situation in the price statistics discipline by tackling the challenges that researchers face. In other words, the project aims to lower the barrier for reproducibility, making it intuitively easy (with some practice) for researchers to work openly. From an open science point of view, making research more routinely reproducible will help accelerate the pace at which consensus is reached on various topics as results can quickly become replicable and even generalizable.\n\n\n\nAs the project tackles the main challenges facing the discipline, it aims to deliver the following aspects:\n\nObjective A: Developing an interim data catalogue tool for several open datasets and publishing several open datasets as a proof of concept. The idea is to start helping researchers know how to reference open datasets for better replicability within the discipline\n\nA.1. Mock up an interim data catalogue on the UNGP GitLab static site that is easy to read through and understand. The catalogue will be made available on its own GitHub repo.\nA.2. Investigate the applicable metadata for publishing/registering a dataset and outline an ingestion/registration process that can be leveraged to onboard datasets to the interim data catalogue.\nA.3. Coordinate the registering of several open datasets that can act as a pilot for the interim data catalogue.\n\nObjective B: Developing a white paper to outline the why, the what, the where, the when (in the research process) and the how. The idea is to create a high level guide for researchers, and could build on the FAIR or reproducibility literature and apply it to our domain. The paper would have several sub components that should be investigated and discussed, such as:\n\nB.1. Investigate processes around data – such as how to reference the data (internal, public, or synthetic), how to incentivize the use of benchmark datasets for specific tasks in the discipline, how to deal with complex use cases (such as confidentiality or privately owned but widely used data).\nB.2. Investigate processes around code and related objects like clear code documentation – such as where to publish code, what should be included in the repository, how to clearly document the process, etc. If applicable, make template repositories or examples available for the community.\nB.3. Investigate administrative topics that are useful for the discipline, such as how to coordinate with the 2 conferences we attend to make sure that we embed and incentivize the use of the processes we would like to develop.\nB.4. Outlining of the white paper/guidance for the discipline on reproducibility\n\n\n\n\n\nTo manage the project, a GitHub projects is used for coordination and transparency."
   },
   {
-    "objectID": "docs/index.html#making-guidance-on-reproducibility-available",
-    "href": "docs/index.html#making-guidance-on-reproducibility-available",
-    "title": "Welcome to the Price Statistics Reproducibility Project",
-    "section": "Making guidance on reproducibility available",
-    "text": "Making guidance on reproducibility available\nThe project thus helps make:\n\nRecommendations on making research code open.\nRecommendations on structured ways to reference and include digital objects.\nRecommendations on specific guidance on how to cite others’ code and how to cite open datasets in your research."
-  },
-  {
-    "objectID": "docs/index.html#cataloguing-all-open-datasets-applicable-to-the-discipline",
-    "href": "docs/index.html#cataloguing-all-open-datasets-applicable-to-the-discipline",
-    "title": "Welcome to the Price Statistics Reproducibility Project",
-    "section": "Cataloguing all open datasets applicable to the discipline",
-    "text": "Cataloguing all open datasets applicable to the discipline\nThe project also makes resources available, such as:\n\nThe Price Statistics Open Data Catalogue.\nGuidance on how the Price Statistics Open Data Catalogue works.\nGuidance on how to publish data openly and contribute to the Price Statistics Data Catalogue."
-  },
-  {
-    "objectID": "docs/index.html#footnotes",
-    "href": "docs/index.html#footnotes",
-    "title": "Welcome to the Price Statistics Reproducibility Project",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nSee Definitions in The The Turing Way for more details.↩︎\nFor instance see sessions by UN ESCAP, UN SIAP, or the University of Luxembourg as example classes.↩︎\nSee Price and Marques (2023) for an overview of RAP to price statistics.↩︎"
-  },
-  {
-    "objectID": "project-content/other-open-materials.html",
-    "href": "project-content/other-open-materials.html",
-    "title": "List of open materials relevant to price statistics",
+    "objectID": "project-content/project-charter.html#project-overview",
+    "href": "project-content/project-charter.html#project-overview",
+    "title": "Project Charter",
     "section": "",
-    "text": "The following list is a mini-compenidum of other materials that may be of interest to reseachers in the prices statistics discipline. The list is meant to be live and up to date, hence if you see any inaccuracies, a broken link, or something missing - please feel free to add!\n\n\n\nAwesome list of official statistics software\nReferences in JOSS paper\nSteve’s stars\n\n\n\n\nhicp package (Eurostat) - provides functions to access and work with HICP data (price indices and weights) from Eurostat’s public database\n‘PriceIndices’ package\nIndexNumR package\npiar package\nCRAN task view for official statistics\n\n\n\n\n\nPriceIndexCalc package - a partially working package to calculate price indices.\n\n\n\n\n\ndff - a repo on Dominick’s Finer Foods showcasing the dataset by Jens Mehrhoff\n\n\n\n\n\n\n\n\nThe Turing Way - an open science/collaboration project\nreproducible-project-template - repo template (i.e cookie cutter template)\n\n\n\n\n\nRAP Companion, by Matthew Gregory and Matthew Upson shows much of the original RAP ideas (for R)\nUdemy course on RAP with R\nReproducible Analytical Pipelines or RAP (NHS) site\nESCAP training on RAP with web scraping application for price statistics"
+    "text": "Research in the price statistics discipline is not as reproducible as we feel it should be. Most researchers utilize proprietary datasets (for instance internal datasets owned by their NSOs as part of their official work, or purchased datasets that require considerable financial investment for others to acquire). Research is also done using software available to researchers in a way that is custom to them and the code and detailed processes are typically not made easily available as part of the research project. This consequence is far from the intention of researchers, but is a result of the challenges to do this within the discipline. Specifically, it is not easy to find or access open datasets that can be used for research purposes. Once data is found, the metadata on each dataset will differ, making it challenging to process and use the data, such as for repeatable research processes. Finally, once a researcher has access to the data, it is not clear how code and processing logic should be shared as part of the research project to make the project reproducible. In other words, the process is not Findable, Accessible, Interoperable, or Reusable (or FAIR)."
   },
   {
-    "objectID": "project-content/other-open-materials.html#packages-applicable-to-price-statistics",
-    "href": "project-content/other-open-materials.html#packages-applicable-to-price-statistics",
-    "title": "List of open materials relevant to price statistics",
+    "objectID": "project-content/project-charter.html#raison-dêtre-of-the-project",
+    "href": "project-content/project-charter.html#raison-dêtre-of-the-project",
+    "title": "Project Charter",
     "section": "",
-    "text": "Awesome list of official statistics software\nReferences in JOSS paper\nSteve’s stars\n\n\n\n\nhicp package (Eurostat) - provides functions to access and work with HICP data (price indices and weights) from Eurostat’s public database\n‘PriceIndices’ package\nIndexNumR package\npiar package\nCRAN task view for official statistics\n\n\n\n\n\nPriceIndexCalc package - a partially working package to calculate price indices.\n\n\n\n\n\ndff - a repo on Dominick’s Finer Foods showcasing the dataset by Jens Mehrhoff"
+    "text": "The project aims to simplify this situation in the price statistics discipline by tackling the challenges that researchers face. In other words, the project aims to lower the barrier for reproducibility, making it intuitively easy (with some practice) for researchers to work openly. From an open science point of view, making research more routinely reproducible will help accelerate the pace at which consensus is reached on various topics as results can quickly become replicable and even generalizable."
   },
   {
-    "objectID": "project-content/other-open-materials.html#reproducibility-resources",
-    "href": "project-content/other-open-materials.html#reproducibility-resources",
-    "title": "List of open materials relevant to price statistics",
+    "objectID": "project-content/project-charter.html#expected-outcomes-in-a-little-more-detail",
+    "href": "project-content/project-charter.html#expected-outcomes-in-a-little-more-detail",
+    "title": "Project Charter",
     "section": "",
-    "text": "The Turing Way - an open science/collaboration project\nreproducible-project-template - repo template (i.e cookie cutter template)\n\n\n\n\n\nRAP Companion, by Matthew Gregory and Matthew Upson shows much of the original RAP ideas (for R)\nUdemy course on RAP with R\nReproducible Analytical Pipelines or RAP (NHS) site\nESCAP training on RAP with web scraping application for price statistics"
+    "text": "As the project tackles the main challenges facing the discipline, it aims to deliver the following aspects:\n\nObjective A: Developing an interim data catalogue tool for several open datasets and publishing several open datasets as a proof of concept. The idea is to start helping researchers know how to reference open datasets for better replicability within the discipline\n\nA.1. Mock up an interim data catalogue on the UNGP GitLab static site that is easy to read through and understand. The catalogue will be made available on its own GitHub repo.\nA.2. Investigate the applicable metadata for publishing/registering a dataset and outline an ingestion/registration process that can be leveraged to onboard datasets to the interim data catalogue.\nA.3. Coordinate the registering of several open datasets that can act as a pilot for the interim data catalogue.\n\nObjective B: Developing a white paper to outline the why, the what, the where, the when (in the research process) and the how. The idea is to create a high level guide for researchers, and could build on the FAIR or reproducibility literature and apply it to our domain. The paper would have several sub components that should be investigated and discussed, such as:\n\nB.1. Investigate processes around data – such as how to reference the data (internal, public, or synthetic), how to incentivize the use of benchmark datasets for specific tasks in the discipline, how to deal with complex use cases (such as confidentiality or privately owned but widely used data).\nB.2. Investigate processes around code and related objects like clear code documentation – such as where to publish code, what should be included in the repository, how to clearly document the process, etc. If applicable, make template repositories or examples available for the community.\nB.3. Investigate administrative topics that are useful for the discipline, such as how to coordinate with the 2 conferences we attend to make sure that we embed and incentivize the use of the processes we would like to develop.\nB.4. Outlining of the white paper/guidance for the discipline on reproducibility"
   },
   {
-    "objectID": "CODE_OF_CONDUCT.html",
-    "href": "CODE_OF_CONDUCT.html",
-    "title": "Code of Conduct",
+    "objectID": "project-content/project-charter.html#project-management",
+    "href": "project-content/project-charter.html#project-management",
+    "title": "Project Charter",
     "section": "",
-    "text": "Code of Conduct\nWe are a community based on openness, as well as friendly and didactic discussions.\nWe aspire to treat everybody equally, and value their contributions.\nDecisions are made based on technical merit and consensus.\nCode is not the only way to help the project. Reviewing pull requests, answering questions to help others on mailing lists or issues, organizing and teaching tutorials, working on the website, improving the documentation, are all priceless contributions.\nWe abide by the principles of openness, respect, and consideration of others of the Python Software Foundation: https://www.python.org/psf/codeofconduct/\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "CONTRIBUTING.html",
-    "href": "CONTRIBUTING.html",
-    "title": "Contributing",
-    "section": "",
-    "text": "When contributing, post comments and discussion changes you wish to make via Issues.\nFeel free to propose changes by creating Pull Requests. If you don’t have write access, editing a file will create a Fork of this project for you to save your proposed changes to. Submitting a change to a file will write it to a new Branch in your Fork, so you can send a Pull Request."
-  },
-  {
-    "objectID": "CONTRIBUTING.html#how-to-contribute",
-    "href": "CONTRIBUTING.html#how-to-contribute",
-    "title": "Contributing",
-    "section": "",
-    "text": "When contributing, post comments and discussion changes you wish to make via Issues.\nFeel free to propose changes by creating Pull Requests. If you don’t have write access, editing a file will create a Fork of this project for you to save your proposed changes to. Submitting a change to a file will write it to a new Branch in your Fork, so you can send a Pull Request."
+    "text": "To manage the project, a GitHub projects is used for coordination and transparency."
   },
   {
     "objectID": "project-content/meeting-minutes.html",
@@ -203,60 +154,102 @@
     "text": "Review of skeleton data catalogue\nReview of the changes to the project site, specifically how to cite code and how to cite data sections\nReview roadmap and discussion of topics left to finish in this phase of the project\n\n\n\n\n\nThe team discussed the skeleton of the proof of concecept data catalogue. The technical process to register new datasets is basically to (1) draft a new yaml file in the datasets/ folder using the datacontrac.cli specifications, and then (2) when the PR is accepted (after releveant review) and merged with the main branch, the runner will rerender the catalogue and the dataset will show up.\nThe team discussed next steps. The dataset in #6 is still the third we’d want for presentation at CPI EG.\nThere is a need to differentiate open versus proprietary but popular datasets. Open datasets will be the focus for now with potential for expansion after the conference.\nThe team discussed how to cite datasets and how to cite code topics, and based on the example by the recent Baker et al (2022) FAIR principles for software paper, we decided to go with a nuanced recomemndation for now:\n\nif data or code that a research uses exists should be included in the bibliography\ndata or code that is created as part of the paper should be (ideally published to something that mints a DOI) but the links to the dataset or code are included at the end of the paper under “Data availability” and “Code availability” headers.\nThe idea of topics to discuss after the confernece was also brought up - the process of creating synthetic datasets.\n\nTo support researchers to structure their code, the team also discussed and endoresed recommendign a template RAP."
   },
   {
-    "objectID": "project-content/project-charter.html",
-    "href": "project-content/project-charter.html",
-    "title": "Project Charter",
+    "objectID": "CONTRIBUTING.html",
+    "href": "CONTRIBUTING.html",
+    "title": "Contributing",
     "section": "",
-    "text": "Research in the price statistics discipline is not as reproducible as we feel it should be. Most researchers utilize proprietary datasets (for instance internal datasets owned by their NSOs as part of their official work, or purchased datasets that require considerable financial investment for others to acquire). Research is also done using software available to researchers in a way that is custom to them and the code and detailed processes are typically not made easily available as part of the research project. This consequence is far from the intention of researchers, but is a result of the challenges to do this within the discipline. Specifically, it is not easy to find or access open datasets that can be used for research purposes. Once data is found, the metadata on each dataset will differ, making it challenging to process and use the data, such as for repeatable research processes. Finally, once a researcher has access to the data, it is not clear how code and processing logic should be shared as part of the research project to make the project reproducible. In other words, the process is not Findable, Accessible, Interoperable, or Reusable (or FAIR).\n\n\n\nThe project aims to simplify this situation in the price statistics discipline by tackling the challenges that researchers face. In other words, the project aims to lower the barrier for reproducibility, making it intuitively easy (with some practice) for researchers to work openly. From an open science point of view, making research more routinely reproducible will help accelerate the pace at which consensus is reached on various topics as results can quickly become replicable and even generalizable.\n\n\n\nAs the project tackles the main challenges facing the discipline, it aims to deliver the following aspects:\n\nObjective A: Developing an interim data catalogue tool for several open datasets and publishing several open datasets as a proof of concept. The idea is to start helping researchers know how to reference open datasets for better replicability within the discipline\n\nA.1. Mock up an interim data catalogue on the UNGP GitLab static site that is easy to read through and understand. The catalogue will be made available on its own GitHub repo.\nA.2. Investigate the applicable metadata for publishing/registering a dataset and outline an ingestion/registration process that can be leveraged to onboard datasets to the interim data catalogue.\nA.3. Coordinate the registering of several open datasets that can act as a pilot for the interim data catalogue.\n\nObjective B: Developing a white paper to outline the why, the what, the where, the when (in the research process) and the how. The idea is to create a high level guide for researchers, and could build on the FAIR or reproducibility literature and apply it to our domain. The paper would have several sub components that should be investigated and discussed, such as:\n\nB.1. Investigate processes around data – such as how to reference the data (internal, public, or synthetic), how to incentivize the use of benchmark datasets for specific tasks in the discipline, how to deal with complex use cases (such as confidentiality or privately owned but widely used data).\nB.2. Investigate processes around code and related objects like clear code documentation – such as where to publish code, what should be included in the repository, how to clearly document the process, etc. If applicable, make template repositories or examples available for the community.\nB.3. Investigate administrative topics that are useful for the discipline, such as how to coordinate with the 2 conferences we attend to make sure that we embed and incentivize the use of the processes we would like to develop.\nB.4. Outlining of the white paper/guidance for the discipline on reproducibility\n\n\n\n\n\nTo manage the project, a GitHub projects is used for coordination and transparency."
+    "text": "When contributing, post comments and discussion changes you wish to make via Issues.\nFeel free to propose changes by creating Pull Requests. If you don’t have write access, editing a file will create a Fork of this project for you to save your proposed changes to. Submitting a change to a file will write it to a new Branch in your Fork, so you can send a Pull Request."
   },
   {
-    "objectID": "project-content/project-charter.html#project-overview",
-    "href": "project-content/project-charter.html#project-overview",
-    "title": "Project Charter",
+    "objectID": "CONTRIBUTING.html#how-to-contribute",
+    "href": "CONTRIBUTING.html#how-to-contribute",
+    "title": "Contributing",
     "section": "",
-    "text": "Research in the price statistics discipline is not as reproducible as we feel it should be. Most researchers utilize proprietary datasets (for instance internal datasets owned by their NSOs as part of their official work, or purchased datasets that require considerable financial investment for others to acquire). Research is also done using software available to researchers in a way that is custom to them and the code and detailed processes are typically not made easily available as part of the research project. This consequence is far from the intention of researchers, but is a result of the challenges to do this within the discipline. Specifically, it is not easy to find or access open datasets that can be used for research purposes. Once data is found, the metadata on each dataset will differ, making it challenging to process and use the data, such as for repeatable research processes. Finally, once a researcher has access to the data, it is not clear how code and processing logic should be shared as part of the research project to make the project reproducible. In other words, the process is not Findable, Accessible, Interoperable, or Reusable (or FAIR)."
+    "text": "When contributing, post comments and discussion changes you wish to make via Issues.\nFeel free to propose changes by creating Pull Requests. If you don’t have write access, editing a file will create a Fork of this project for you to save your proposed changes to. Submitting a change to a file will write it to a new Branch in your Fork, so you can send a Pull Request."
   },
   {
-    "objectID": "project-content/project-charter.html#raison-dêtre-of-the-project",
-    "href": "project-content/project-charter.html#raison-dêtre-of-the-project",
-    "title": "Project Charter",
+    "objectID": "CODE_OF_CONDUCT.html",
+    "href": "CODE_OF_CONDUCT.html",
+    "title": "Code of Conduct",
     "section": "",
-    "text": "The project aims to simplify this situation in the price statistics discipline by tackling the challenges that researchers face. In other words, the project aims to lower the barrier for reproducibility, making it intuitively easy (with some practice) for researchers to work openly. From an open science point of view, making research more routinely reproducible will help accelerate the pace at which consensus is reached on various topics as results can quickly become replicable and even generalizable."
+    "text": "Code of Conduct\nWe are a community based on openness, as well as friendly and didactic discussions.\nWe aspire to treat everybody equally, and value their contributions.\nDecisions are made based on technical merit and consensus.\nCode is not the only way to help the project. Reviewing pull requests, answering questions to help others on mailing lists or issues, organizing and teaching tutorials, working on the website, improving the documentation, are all priceless contributions.\nWe abide by the principles of openness, respect, and consideration of others of the Python Software Foundation: https://www.python.org/psf/codeofconduct/\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "project-content/project-charter.html#expected-outcomes-in-a-little-more-detail",
-    "href": "project-content/project-charter.html#expected-outcomes-in-a-little-more-detail",
-    "title": "Project Charter",
+    "objectID": "project-content/other-open-materials.html",
+    "href": "project-content/other-open-materials.html",
+    "title": "List of open materials relevant to price statistics",
     "section": "",
-    "text": "As the project tackles the main challenges facing the discipline, it aims to deliver the following aspects:\n\nObjective A: Developing an interim data catalogue tool for several open datasets and publishing several open datasets as a proof of concept. The idea is to start helping researchers know how to reference open datasets for better replicability within the discipline\n\nA.1. Mock up an interim data catalogue on the UNGP GitLab static site that is easy to read through and understand. The catalogue will be made available on its own GitHub repo.\nA.2. Investigate the applicable metadata for publishing/registering a dataset and outline an ingestion/registration process that can be leveraged to onboard datasets to the interim data catalogue.\nA.3. Coordinate the registering of several open datasets that can act as a pilot for the interim data catalogue.\n\nObjective B: Developing a white paper to outline the why, the what, the where, the when (in the research process) and the how. The idea is to create a high level guide for researchers, and could build on the FAIR or reproducibility literature and apply it to our domain. The paper would have several sub components that should be investigated and discussed, such as:\n\nB.1. Investigate processes around data – such as how to reference the data (internal, public, or synthetic), how to incentivize the use of benchmark datasets for specific tasks in the discipline, how to deal with complex use cases (such as confidentiality or privately owned but widely used data).\nB.2. Investigate processes around code and related objects like clear code documentation – such as where to publish code, what should be included in the repository, how to clearly document the process, etc. If applicable, make template repositories or examples available for the community.\nB.3. Investigate administrative topics that are useful for the discipline, such as how to coordinate with the 2 conferences we attend to make sure that we embed and incentivize the use of the processes we would like to develop.\nB.4. Outlining of the white paper/guidance for the discipline on reproducibility"
+    "text": "The following list is a mini-compenidum of other materials that may be of interest to reseachers in the prices statistics discipline. The list is meant to be live and up to date, hence if you see any inaccuracies, a broken link, or something missing - please feel free to add!\n\n\n\nAwesome list of official statistics software\nReferences in JOSS paper\nSteve’s stars\n\n\n\n\nhicp package (Eurostat) - provides functions to access and work with HICP data (price indices and weights) from Eurostat’s public database\n‘PriceIndices’ package\nIndexNumR package\npiar package\nCRAN task view for official statistics\n\n\n\n\n\nPriceIndexCalc package - a partially working package to calculate price indices.\n\n\n\n\n\ndff - a repo on Dominick’s Finer Foods showcasing the dataset by Jens Mehrhoff\n\n\n\n\n\n\n\n\nThe Turing Way - an open science/collaboration project\nreproducible-project-template - repo template (i.e cookie cutter template)\n\n\n\n\n\nRAP Companion, by Matthew Gregory and Matthew Upson shows much of the original RAP ideas (for R)\nUdemy course on RAP with R\nReproducible Analytical Pipelines or RAP (NHS) site\nESCAP training on RAP with web scraping application for price statistics"
   },
   {
-    "objectID": "project-content/project-charter.html#project-management",
-    "href": "project-content/project-charter.html#project-management",
-    "title": "Project Charter",
+    "objectID": "project-content/other-open-materials.html#packages-applicable-to-price-statistics",
+    "href": "project-content/other-open-materials.html#packages-applicable-to-price-statistics",
+    "title": "List of open materials relevant to price statistics",
     "section": "",
-    "text": "To manage the project, a GitHub projects is used for coordination and transparency."
+    "text": "Awesome list of official statistics software\nReferences in JOSS paper\nSteve’s stars\n\n\n\n\nhicp package (Eurostat) - provides functions to access and work with HICP data (price indices and weights) from Eurostat’s public database\n‘PriceIndices’ package\nIndexNumR package\npiar package\nCRAN task view for official statistics\n\n\n\n\n\nPriceIndexCalc package - a partially working package to calculate price indices.\n\n\n\n\n\ndff - a repo on Dominick’s Finer Foods showcasing the dataset by Jens Mehrhoff"
   },
   {
-    "objectID": "docs/faq.html",
-    "href": "docs/faq.html",
-    "title": "Frequently asked questions",
+    "objectID": "project-content/other-open-materials.html#reproducibility-resources",
+    "href": "project-content/other-open-materials.html#reproducibility-resources",
+    "title": "List of open materials relevant to price statistics",
     "section": "",
-    "text": "Help us fill this page!\n\n\n\nHave an idea for a common topic to add to this FAQ? Give us a shout! Submit an issue to the project and tag the the issue using the “question” label.\n\n\n\nHow do I register a dataset to the catalogue (or recommend a dataset be registered)?\nWe provide guidance on how you can do both here.\n\n\nWhat training can I take to practice technical skills to create and publish a research compendium for my project?\nWe are exploring more targeted support, however for now we recommend that practice is the best training. Try it out! The following guides are great to review and get started:\n\nThe Turing Way\nThe RAP Community of Practice (hosted by the NHS in the UK)\n\n\n\nHow do I select the appropriate tools (GitHub) or data repository?\nFirstly, you should follow the guidance of your organization. They will guide you what you can and cannot do. For instance they may have processes to follow to publish to GitHub or a specific data repository/process to use for data you want to publish.\n\n\n\n\n Back to top"
+    "text": "The Turing Way - an open science/collaboration project\nreproducible-project-template - repo template (i.e cookie cutter template)\n\n\n\n\n\nRAP Companion, by Matthew Gregory and Matthew Upson shows much of the original RAP ideas (for R)\nUdemy course on RAP with R\nReproducible Analytical Pipelines or RAP (NHS) site\nESCAP training on RAP with web scraping application for price statistics"
   },
   {
-    "objectID": "docs/datasets-guidance/catalogue.html",
-    "href": "docs/datasets-guidance/catalogue.html",
-    "title": "Catalogue of open data in price statistics",
+    "objectID": "docs/index.html",
+    "href": "docs/index.html",
+    "title": "Welcome to the Price Statistics Reproducibility Project",
     "section": "",
-    "text": "Researchers looking to leverage open data often struggle to find the right datasets to conduct their analysis and thus naturally adopt datasets that are (often) made available by their organization. Furthemore, if working with open data is hard, this disincentives the dissemination of new open datasets, further reinforcing the negative feedback loop!\nTo help alleviate this, the project has developed a basic discipline specific data catalogue!"
+    "text": "Welcome to the project aiming to help researchers in the field of price statistics make their projects more reproducible and help push open science in the discipline."
   },
   {
-    "objectID": "docs/datasets-guidance/catalogue.html#price-statistics-open-data-catalogue",
-    "href": "docs/datasets-guidance/catalogue.html#price-statistics-open-data-catalogue",
-    "title": "Catalogue of open data in price statistics",
-    "section": "Price Statistics Open Data Catalogue",
-    "text": "Price Statistics Open Data Catalogue\nThe idea is simple. The catalogue simply lists open datasets of high value to the discipline, and describes each in a standardized way! Figure 1 (below) visually explains how the process works.\n\n\n\nFigure 1: Basic idea of how we see the data catalogue working.\n\n\n\nWhat the catalogue does\nThe purpose of the catalogue is to be a very simple listing of open datasets applicable for research purposes. It is searchable according to standard data types (such as scanner data), and describes the metadata necessary for researchers to understand and select the dataset most applicable to them.\n\n\nWhat the catalogue does not do\nThe catalogue does not store the dataset itself but simply describes it in detail. The catalogue does provide a simple interface to common researcher questions, such as how to cite the dataset, limitations to its use, etc.\n\n\n\n\n\n\nThis is an interim catalogue only!\n\n\n\nThis will very likely not be the long-term stable data catalogue the discpline. The idea however it to start with this interim (and very simple open-source) catalogue, while the project investigates a more viable longer term solution.\n\n\nHave a dataset that should be included? We have some guidance on the topic!"
+    "objectID": "docs/index.html#making-guidance-on-reproducibility-available",
+    "href": "docs/index.html#making-guidance-on-reproducibility-available",
+    "title": "Welcome to the Price Statistics Reproducibility Project",
+    "section": "Making guidance on reproducibility available",
+    "text": "Making guidance on reproducibility available\nThe project thus helps make:\n\nRecommendations on making research code open.\nRecommendations on structured ways to reference and include digital objects.\nRecommendations on specific guidance on how to cite others’ code and how to cite open datasets in your research."
+  },
+  {
+    "objectID": "docs/index.html#cataloguing-all-open-datasets-applicable-to-the-discipline",
+    "href": "docs/index.html#cataloguing-all-open-datasets-applicable-to-the-discipline",
+    "title": "Welcome to the Price Statistics Reproducibility Project",
+    "section": "Cataloguing all open datasets applicable to the discipline",
+    "text": "Cataloguing all open datasets applicable to the discipline\nThe project also makes resources available, such as:\n\nThe Price Statistics Open Data Catalogue.\nGuidance on how the Price Statistics Open Data Catalogue works.\nGuidance on how to register open dataset to the Price Statistics Data Catalogue."
+  },
+  {
+    "objectID": "docs/index.html#footnotes",
+    "href": "docs/index.html#footnotes",
+    "title": "Welcome to the Price Statistics Reproducibility Project",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nSee Definitions in The The Turing Way for more details.↩︎\nFor instance see sessions by UN ESCAP, UN SIAP, or the University of Luxembourg as example classes.↩︎\nSee Price and Marques (2023) for an overview of RAP to price statistics.↩︎"
+  },
+  {
+    "objectID": "docs/about.html",
+    "href": "docs/about.html",
+    "title": "About this project",
+    "section": "",
+    "text": "This project is led by Workstream 5 of the UN Task Team on Scanner data, part of the UN Committee of Experts on Big Data and Data Science for Official Statistics (UN-CEBD)."
+  },
+  {
+    "objectID": "docs/about.html#what-this-project-aims-to-do",
+    "href": "docs/about.html#what-this-project-aims-to-do",
+    "title": "About this project",
+    "section": "What this project aims to do",
+    "text": "What this project aims to do\nResearch in the price statistics discipline is not as reproducible as it could be. Most researchers utilize proprietary datasets and don’t publish the code alongside the research so that a specific methodology or finding can be easily reproduced. The idea of this project is to help in both topics! We aim to:\n\nProvide clear and approachable guidance on how researchers in price statistics can make their projects reproducible (including by learning new skills, by understanding how to publish and cite code, and many other topics)\nSupport cataloging open datasets that can be used as benchmarks to use for research purposes. The idea is to have all findings trialed and demonstrated on open benchmark datasets.\n\nThe project also builds on great efforts of early promoters of open science in the discipline!1 We are aiming to continue to build momentum and make it easier for researchers to work openly!"
+  },
+  {
+    "objectID": "docs/about.html#what-this-project-does-not-aim-to-do",
+    "href": "docs/about.html#what-this-project-does-not-aim-to-do",
+    "title": "About this project",
+    "section": "What this project does not aim to do",
+    "text": "What this project does not aim to do\nAs there is a lot of great guidance on the topic already, including The Turing Way, Reproducible Analytical Pipelines or RAP, and many more resources - the idea is to distilling key information for the price statistics community, not to create a new standard."
+  },
+  {
+    "objectID": "docs/about.html#footnotes",
+    "href": "docs/about.html#footnotes",
+    "title": "About this project",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nNotable early efforts include but are not limited to Frances Krsinich publishing the FEWS package with open data in 2018, Jens Mehrhoff showcasing the open Dominick’s Finer Foods scanner dataset in 2019, Erwin Dielert and Chihiro Shimizu opening a dataset of japanese laptop sales, or Jacek Białek including datasets with the PriceIndices R package.↩︎"
   },
   {
     "objectID": "docs/reproducibility-guidance/citing-code.html",

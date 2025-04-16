@@ -122,21 +122,10 @@ ul.task-list li input[type="checkbox"] {
   </li>  
     </ul>
   </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-open-data" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Open Data</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-open-data">    
-        <li>
-    <a class="dropdown-item" href="../../docs/datasets-guidance/catalogue.html">
- <span class="dropdown-text">Catalogue of open data in price statistics</span></a>
+  <li class="nav-item">
+    <a class="nav-link active" href="../../docs/datasets-guidance/catalogue.html" aria-current="page"> 
+<span class="menu-text">About the Open Data Catalogue</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="../../docs/datasets-guidance/opening-up-datasets.html">
- <span class="dropdown-text">Open a dataset and registering it to the catalogue</span></a>
-  </li>  
-    </ul>
-  </li>
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -157,11 +146,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#price-statistics-open-data-catalogue" id="toc-price-statistics-open-data-catalogue" class="nav-link active" data-scroll-target="#price-statistics-open-data-catalogue">Price Statistics Open Data Catalogue</a>
-  <ul class="collapse">
-  <li><a href="#what-the-catalogue-does" id="toc-what-the-catalogue-does" class="nav-link" data-scroll-target="#what-the-catalogue-does">What the catalogue does</a></li>
-  <li><a href="#what-the-catalogue-does-not-do" id="toc-what-the-catalogue-does-not-do" class="nav-link" data-scroll-target="#what-the-catalogue-does-not-do">What the catalogue does not do</a></li>
-  </ul></li>
+  <li><a href="#how-the-price-statistics-open-data-catalogue-works-in-a-nutshell" id="toc-how-the-price-statistics-open-data-catalogue-works-in-a-nutshell" class="nav-link active" data-scroll-target="#how-the-price-statistics-open-data-catalogue-works-in-a-nutshell">How the Price Statistics Open Data Catalogue works in a nutshell</a></li>
+  <li><a href="#where-is-the-data-catalogue" id="toc-where-is-the-data-catalogue" class="nav-link" data-scroll-target="#where-is-the-data-catalogue">Where is the data catalogue?</a></li>
+  <li><a href="#how-to-register-an-open-dataset-on-the-catalogue" id="toc-how-to-register-an-open-dataset-on-the-catalogue" class="nav-link" data-scroll-target="#how-to-register-an-open-dataset-on-the-catalogue">How to register an open dataset on the catalogue?</a></li>
+  <li><a href="#what-does-the-catalogue-not-do" id="toc-what-does-the-catalogue-not-do" class="nav-link" data-scroll-target="#what-does-the-catalogue-not-do">What does the catalogue not do?</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/UN-Task-Team-for-Scanner-Data/reproducibility-project/blob/main/docs/datasets-guidance/catalogue.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/UN-Task-Team-for-Scanner-Data/reproducibility-project/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -193,24 +181,29 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Researchers looking to leverage open data often struggle to find the right datasets to conduct their analysis and thus naturally adopt datasets that are (often) made available by their organization. Furthemore, if working with open data is hard, this disincentives the dissemination of new open datasets, further reinforcing the negative feedback loop!</p>
-<p>To help alleviate this, the project has developed a basic discipline specific data catalogue!</p>
-<section id="price-statistics-open-data-catalogue" class="level2">
-<h2 class="anchored" data-anchor-id="price-statistics-open-data-catalogue"><a href="https://un-task-team-for-scanner-data.github.io/price-stats-data-catalogue/index.html">Price Statistics Open Data Catalogue</a></h2>
-<p>The idea is simple. The catalogue simply lists open datasets of high value to the discipline, and describes each in a standardized way! Figure 1 (below) visually explains how the process works.</p>
+<p>Researchers often struggle to use open data. They may find it hard to find open datasets for their research projects. If they find open datasets, they may struggle to easily understand them in order to judge that the datasets easily work for their research. Finally they may find it challenging to know how to work with or even how to cite the dataset.</p>
+<p>To help find, assess, and understand how to access open datasets, this project has developed a basic discipline specific catalogue.</p>
+<section id="how-the-price-statistics-open-data-catalogue-works-in-a-nutshell" class="level2">
+<h2 class="anchored" data-anchor-id="how-the-price-statistics-open-data-catalogue-works-in-a-nutshell">How the Price Statistics Open Data Catalogue works in a nutshell</h2>
+<p>The idea is simple. The catalogue lists open datasets relevant to the discipline and is searchable according to standard data types (such as scanner data). It also provides basic information about each dataset that will allow researchers to assess its relevance and know how to access it. Visually this is shown in Figure 1.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../../docs/images/data-catalogue-idea.svg" class="img-fluid figure-img"></p>
 <figcaption>Figure 1: Basic idea of how we see the data catalogue working.</figcaption>
 </figure>
 </div>
-<section id="what-the-catalogue-does" class="level3">
-<h3 class="anchored" data-anchor-id="what-the-catalogue-does">What the catalogue does</h3>
-<p>The purpose of the catalogue is to be a very simple listing of open datasets applicable for research purposes. It is searchable according to standard data types (such as scanner data), and describes the metadata necessary for researchers to understand and select the dataset most applicable to them.</p>
 </section>
-<section id="what-the-catalogue-does-not-do" class="level3">
-<h3 class="anchored" data-anchor-id="what-the-catalogue-does-not-do">What the catalogue does not do</h3>
-<p>The catalogue does not store the dataset itself but simply describes it in detail. The catalogue does provide a simple interface to common researcher questions, such as how to cite the dataset, limitations to its use, etc.</p>
+<section id="where-is-the-data-catalogue" class="level2">
+<h2 class="anchored" data-anchor-id="where-is-the-data-catalogue">Where is the data catalogue?</h2>
+<p>The data catalogue can be found here. It is basically a simple static site hosted on GitHub.</p>
+</section>
+<section id="how-to-register-an-open-dataset-on-the-catalogue" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-register-an-open-dataset-on-the-catalogue">How to register an open dataset on the catalogue?</h2>
+<p>The <a href="https://github.com/UN-Task-Team-for-Scanner-Data/price-stats-data-catalogue/blob/main/CONTRIBUTING.md">CONTRIBUTING guidance in the catalogue</a> summarizes it all. Have a look and help register a dataset or recommend one be registered!</p>
+</section>
+<section id="what-does-the-catalogue-not-do" class="level2">
+<h2 class="anchored" data-anchor-id="what-does-the-catalogue-not-do">What does the catalogue not do?</h2>
+<p>As the catalogue does not store the dataset itself but simply describes it in detail. In other words, this catalogue is <a href="https://book.the-turing-way.org/reproducible-research/rdm/rdm-repository#rr-rdm-repository-select">not a data repository</a>.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -224,10 +217,8 @@ This is an interim catalogue only!
 <p>This will very likely not be the long-term stable data catalogue the discpline. The idea however it to start with this interim (and very simple open-source) catalogue, while the project investigates a more viable longer term solution.</p>
 </div>
 </div>
-<p>Have a dataset that should be included? We have <a href="../../docs/datasets-guidance/opening-up-datasets.html">some guidance on the topic</a>!</p>
 
 
-</section>
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
