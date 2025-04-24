@@ -165,7 +165,14 @@
     "href": "docs/reproducibility-guidance/how-to-cite-digital-objects.html#how-to-reference-datasets-you-use-or-other-peoples-code",
     "title": "How to reference digital objects in your paper",
     "section": "How to reference datasets you use or other people’s code?",
-    "text": "How to reference datasets you use or other people’s code?\nThe best place to reference other’s code or open datasets is in the bibliography. Ideally either has a Digitial Object Identifier (or DOI) so it is unique and can be easily found. There may be harder cases, which are detailed out in more detail in separate articles:\n\nHow to cite data\nHow to cite others’ code\n\n\nHow to reference data or code created as part of the research?\nAs there will be digital byproducts that are made available alongside the research (the research compendium and any new datasets created), inspired by the FAIR research code approach, the project has guidance on how to reference that in the paper so that others can easily find it. We recommend adding two headers just after the conclusion and before the references section\n\n… conclusion of the paper\nData availability\nSummarize where datasets created as part of the paper are published. This could be on a data repository like Zenodo for instance.\nCode availability\nAdd link to the GitHub repository where the research compendium is published.\nReferences\n… rest of the references"
+    "text": "How to reference datasets you use or other people’s code?\nThe best place to reference other’s code or open datasets is in the bibliography. Ideally either has a Digitial Object Identifier (or DOI) so it is unique and can be easily found. There may be harder cases, which are detailed out in more detail in separate articles:\n\nHow to cite data\nHow to cite others’ code"
+  },
+  {
+    "objectID": "docs/reproducibility-guidance/how-to-cite-digital-objects.html#how-to-reference-data-or-code-created-as-part-of-the-research",
+    "href": "docs/reproducibility-guidance/how-to-cite-digital-objects.html#how-to-reference-data-or-code-created-as-part-of-the-research",
+    "title": "How to reference digital objects in your paper",
+    "section": "How to reference data or code created as part of the research?",
+    "text": "How to reference data or code created as part of the research?\nAs there will be digital byproducts that are made available alongside the research (the research compendium and any new datasets created), inspired by the FAIR research code approach, the project has guidance on how to reference that in the paper so that others can easily find it. We recommend adding two headers just after the conclusion and before the references section\n\n… conclusion of the paper\nData availability\nSummarize where datasets created as part of the paper are published. This could be on a data repository like Zenodo for instance.\nCode availability\nAdd link to the GitHub repository where the research compendium is published.\nReferences\n… rest of the references"
   },
   {
     "objectID": "docs/reproducibility-guidance/citing-code.html",
