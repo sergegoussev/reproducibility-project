@@ -8,24 +8,29 @@ format:
     toc-expand: 3
 ---
 
-## What is the idea of reproducibility?
+## What is reproducibility?
 
-The goal of reproducible research projects is to make all elements of the research openly available to others so that results can be reproduced. This is achieved by creating and publishing a [**research compendium**](https://book.the-turing-way.org/reproducible-research/compendia) (a collection of digital parts of the research project that supports reuse, including data, code, protocols, metadata, etc) alongside the research paper.[^1]
+For robust scientific progress, new methods or approaches should be confirmed independently before they are widely adopted. The goal of appropriately structuring and sharing research objects in a transparent fashion is to simplify this peer review process.[^1] The primary way this is achieved by creating and publicly publishing a [**research compendium**](https://book.the-turing-way.org/reproducible-research/compendia) along with the paper. A **research compendium** is a collection of digital parts of the research project that supports reuse, including data, code, protocols, metadata, etc.[^2]
 
-[^1]: See [Research Compendia in The Turing Way](https://book.the-turing-way.org/reproducible-research/compendia) for more detail on this concept.
+[^1]: A good overview of [reproducible research is done by the Turing Way](https://book.the-turing-way.org/reproducible-research/overview). The book also covers [open research](https://book.the-turing-way.org/reproducible-research/open) and many other topics.
+
+[^2]: See [Research Compendia in The Turing Way](https://book.the-turing-way.org/reproducible-research/compendia) for more detail on this concept.
 
 ## Why does it help?
 
-The main principle of the [research compendium](https://book.the-turing-way.org/reproducible-research/compendia) is to provide all the information about the project with an applicable structure so that someone can understand and reuse all aspects of the project in some way. If done properly, the research compendium will help:
+The main principle of the [**research compendium**](https://book.the-turing-way.org/reproducible-research/compendia) is to provide all the information about the project publicly and structured in a clear and logical way to ensure that its use is straightforward. This helps researchers themselves as they can easily jump back to a previous project, simplify the task for reviewers or those who want to extend the research, as well as those simply looking to learn. If done properly, the research compendium will help:[^3]
 
--   Improve the transparency, reliability and reproducibility of research, as well as help its peer review.
+[^3]: See a more in depth overview of the [benefits of reproducible research](https://book.the-turing-way.org/reproducible-research/overview/overview-benefit), as well as [common barriers](https://book.the-turing-way.org/reproducible-research/overview/overview-barriers).
+
+-   Improve the transparency, reliability and reproducibility of research
+-   Simplify peer review
 -   Facilitate data and code sharing
 -   Allow easy extension of the research
 -   Enable learners to understand the research
--   Make it much easier to transition a new method to production[^2]
+-   Make it much easier to transition a new method to production[^4]
 -   Increase research visibility and citations
 
-[^2]: Research compendia are conceptually quite similar to **Reproducible Analytical Pipelines (RAPs)**, although the latter focuses more on production proceses. Hence if the research is easy to reproduce by adopting a compendium structure and making everything easily reproducible, operationalizing of a new method could be dramatically simplified. For more on RAPs in price statistics, see a [RAP class recently done by ESCAP](https://escap-sd.github.io/ESCAP_RAP_class/docs/), as well as a good paper by [Price and Marques (2023)](https://unece.org/sites/default/files/2023-05/7.4%20UK_un_systems_railfares_paper.pdf) showcasing RAP for production processes.
+[^4]: Research compendia are conceptually quite similar to **Reproducible Analytical Pipelines (RAPs)**, although the latter focuses more on production proceses. Hence if the research is easy to reproduce by adopting a compendium structure and making everything easily reproducible, operationalizing of a new method could be dramatically simplified. For more on RAPs in price statistics, see a [RAP class recently done by ESCAP](https://escap-sd.github.io/ESCAP_RAP_class/docs/), as well as a good paper by [Price and Marques (2023)](https://unece.org/sites/default/files/2023-05/7.4%20UK_un_systems_railfares_paper.pdf) showcasing RAP for production processes.
 
 ## How to structure the research compendium
 
@@ -59,7 +64,7 @@ Technically, this means making sure that the `.gitignore` skips this data file
 
 **A folder for documentation to that explain key aspects of the research**. This folder stores [project documentation](https://book.the-turing-way.org/reproducible-research/code-documentation/code-documentation-project) or [the project design](https://book.the-turing-way.org/project-design/pd-overview), however [code should also be documented](https://book.the-turing-way.org/reproducible-research/code-documentation/code-documentation-code) well.
 
-**A licence**. This will tell users how they can use the code.
+**A license**. This will tell users how they can use the code.
 
 **`A .gitignore` file.** There are some files and folders that should not be version controlled. Notable example is datasets
 
@@ -69,9 +74,9 @@ Technically, this means making sure that the `.gitignore` skips this data file
 
 ## How to share a research compendium?
 
-Version controlling the research compendium is key.[^3] Once version controlled, it is best to push it to a hosting service like GitHub. Working with something like GitHub makes it easy for researchers to ensure their projects are well structured and robust.
+Version controlling the research compendium is key.[^5] Once version controlled, it is best to push it to a hosting service like GitHub. Working with something like GitHub makes it easy for researchers to ensure their projects are well structured and robust.
 
-[^3]: See overview and explanations of [version control in The Turing Way](https://book.the-turing-way.org/reproducible-research/vcs) for more info.
+[^5]: See overview and explanations of [version control in The Turing Way](https://book.the-turing-way.org/reproducible-research/vcs) for more info.
 
 ## Notable example
 
