@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.29">
+<meta name="generator" content="quarto-1.7.30">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -37,14 +37,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-0815c480559380816a4d1ea211a47e91.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-748b535e376f14d4692bf2b2e5fd6380.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-0815c480559380816a4d1ea211a47e91.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-de070a7b0ab54f8780927367ac907214.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-2b3e328b71be8d25427581baeb23079b.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-de070a7b0ab54f8780927367ac907214.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-ebee27e34c307dd2a7394e9a447237ea.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-d91291b7bc0ce7d6375560e67027182a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-ebee27e34c307dd2a7394e9a447237ea.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-68973f87371bbb9c5c0812d3c7110dbb.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-047e1a2cade6a486b3e95597964eb7f5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-68973f87371bbb9c5c0812d3c7110dbb.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -231,6 +231,7 @@ ul.task-list li input[type="checkbox"] {
       toggleColorMode(toAlternate);
       setStyleSentinel(toAlternate);
       toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
     };
     // Switch to dark mode if need be
     if (hasAlternateSentinel()) {
@@ -296,8 +297,8 @@ ul.task-list li input[type="checkbox"] {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
-  <div id="quarto-announcement" data-announcement-id="266aec6b58d5650d614a22fe38eb5fff" class="alert alert-secondary hidden"><i class="bi bi-info-circle quarto-announcement-icon"></i><div class="quarto-announcement-content">
-<p><strong>Site work is being developed</strong> - this website is will have its soft launch at <a href="https://unece.org/info/events/event/394156">2025 Meeting of the Group of Experts on Consumer Price Indices</a>. Please come back soon!</p>
+  <div id="quarto-announcement" data-announcement-id="1ced058f699c73dfae53a0721bb67d2b" class="alert alert-secondary hidden"><i class="bi bi-info-circle quarto-announcement-icon"></i><div class="quarto-announcement-content">
+<p>**This site shows interim guidance. We are actively updating this site. See our <a href="https://github.com/UN-Task-Team-for-Scanner-Data/reproducibility-project/blob/main/project-content/project-charter.md">project charter</a> and <a href="https://github.com/orgs/UN-Task-Team-for-Scanner-Data/projects/1">the GitHub project</a> for more info about what we are working on.</p>
 </div><i class="bi bi-x-lg quarto-announcement-action"></i></div>
 </header>
 <!-- content -->
@@ -313,6 +314,16 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#what-this-project-aims-to-do" id="toc-what-this-project-aims-to-do" class="nav-link" data-scroll-target="#what-this-project-aims-to-do">What this project aims to do</a></li>
   <li><a href="#what-this-project-does-not-aim-to-do" id="toc-what-this-project-does-not-aim-to-do" class="nav-link" data-scroll-target="#what-this-project-does-not-aim-to-do">What this project does not aim to do</a></li>
+  </ul></li>
+  <li><a href="#project-team-members" id="toc-project-team-members" class="nav-link" data-scroll-target="#project-team-members">Project team members</a>
+  <ul class="collapse">
+  <li><a href="#serge-goussev" id="toc-serge-goussev" class="nav-link" data-scroll-target="#serge-goussev">Serge Goussev</a></li>
+  <li><a href="#steve-martin" id="toc-steve-martin" class="nav-link" data-scroll-target="#steve-martin">Steve Martin</a></li>
+  <li><a href="#claude-lamboray" id="toc-claude-lamboray" class="nav-link" data-scroll-target="#claude-lamboray">Claude Lamboray</a></li>
+  <li><a href="#christophe-bontemps" id="toc-christophe-bontemps" class="nav-link" data-scroll-target="#christophe-bontemps">Christophe Bontemps</a></li>
+  <li><a href="#tanya-flower" id="toc-tanya-flower" class="nav-link" data-scroll-target="#tanya-flower">Tanya Flower</a></li>
+  <li><a href="#ben-hillman" id="toc-ben-hillman" class="nav-link" data-scroll-target="#ben-hillman">Ben Hillman</a></li>
+  <li><a href="#jens-mehrhoff" id="toc-jens-mehrhoff" class="nav-link" data-scroll-target="#jens-mehrhoff">Jens Mehrhoff</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/UN-Task-Team-for-Scanner-Data/reproducibility-project/blob/main/docs/about.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/UN-Task-Team-for-Scanner-Data/reproducibility-project/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div><div class="quarto-other-links"><h2>Other Links</h2><ul><li><a href="https://unstats.un.org/bigdata/task-teams/scanner/index.cshtml"><i class="bi bi-link-45deg"></i>Home page of the Scanner Data Task Team on the UN CEBD site</a></li></ul></div></nav>
@@ -354,7 +365,69 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="what-this-project-does-not-aim-to-do" class="level2">
 <h2 class="anchored" data-anchor-id="what-this-project-does-not-aim-to-do">What this project does not aim to do</h2>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+This section is still a WIP
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Not all team members are listed, we will update this section soon.</p>
+</div>
+</div>
 <p>As there is a lot of great guidance on the topic already, including <a href="https://book.the-turing-way.org/">The Turing Way</a>, <a href="https://nhsdigital.github.io/rap-community-of-practice/introduction_to_RAP/what_is_RAP/">Reproducible Analytical Pipelines or RAP</a>, and many more resources—the idea is to distilling key information for the price statistics community, not to create a new standard.</p>
+</section>
+</section>
+<section id="project-team-members" class="level1">
+<h1>Project team members</h1>
+<p>The following are current or historic members of Wortkream 5 of the UN Task Team.</p>
+<section id="serge-goussev" class="level2">
+<h2 class="anchored" data-anchor-id="serge-goussev">Serge Goussev</h2>
+<ul>
+<li>Role: Workstream lead (2024 - current)</li>
+<li>GitHub id: <a href="https://github.com/sergegoussev">sergegoussev</a></li>
+</ul>
+</section>
+<section id="steve-martin" class="level2">
+<h2 class="anchored" data-anchor-id="steve-martin">Steve Martin</h2>
+<ul>
+<li>Role: Contributor (2024 - current)</li>
+<li>GitHub id: <a href="https://github.com/marberts">marberts</a></li>
+</ul>
+</section>
+<section id="claude-lamboray" class="level2">
+<h2 class="anchored" data-anchor-id="claude-lamboray">Claude Lamboray</h2>
+<ul>
+<li>Role: Contributor (2024 - current)</li>
+</ul>
+</section>
+<section id="christophe-bontemps" class="level2">
+<h2 class="anchored" data-anchor-id="christophe-bontemps">Christophe Bontemps</h2>
+<ul>
+<li>Role: Contributor (2024 - current)</li>
+</ul>
+</section>
+<section id="tanya-flower" class="level2">
+<h2 class="anchored" data-anchor-id="tanya-flower">Tanya Flower</h2>
+<ul>
+<li>Role: Contributor (2024 - current)</li>
+</ul>
+</section>
+<section id="ben-hillman" class="level2">
+<h2 class="anchored" data-anchor-id="ben-hillman">Ben Hillman</h2>
+<ul>
+<li>Role: Contributor (2024 - current)</li>
+</ul>
+</section>
+<section id="jens-mehrhoff" class="level2">
+<h2 class="anchored" data-anchor-id="jens-mehrhoff">Jens Mehrhoff</h2>
+<ul>
+<li>Role: Contributor (2024 - current)</li>
+<li>Email: <a href="mailto:jens.mehrhoff@bundesbank.de">jens.mehrhoff@bundesbank.de</a></li>
+</ul>
 
 
 </section>
