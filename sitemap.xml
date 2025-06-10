@@ -1,55 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://UN-Task-Team-for-Scanner-Data.github.io/reproducibility-project/CODE_OF_CONDUCT.html</loc>
-    <lastmod>2025-06-10T03:42:57.383Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UN-Task-Team-for-Scanner-Data.github.io/reproducibility-project/project-content/meeting-minutes.html</loc>
-    <lastmod>2025-06-10T03:42:57.392Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UN-Task-Team-for-Scanner-Data.github.io/reproducibility-project/docs/index.html</loc>
-    <lastmod>2025-06-10T03:42:57.391Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UN-Task-Team-for-Scanner-Data.github.io/reproducibility-project/docs/reproducibility-guidance/how-to-cite-digital-objects.html</loc>
-    <lastmod>2025-06-10T03:42:57.391Z</lastmod>
+    <loc>https://UN-Task-Team-for-Scanner-Data.github.io/reproducibility-project/docs/reproducibility-guidance/intro.html</loc>
+    <lastmod>2025-06-10T12:09:14.170Z</lastmod>
   </url>
   <url>
     <loc>https://UN-Task-Team-for-Scanner-Data.github.io/reproducibility-project/docs/reproducibility-guidance/citing-code.html</loc>
-    <lastmod>2025-06-10T03:42:57.391Z</lastmod>
+    <lastmod>2025-06-10T12:09:14.169Z</lastmod>
   </url>
   <url>
     <loc>https://UN-Task-Team-for-Scanner-Data.github.io/reproducibility-project/docs/datasets-guidance/catalogue.html</loc>
-    <lastmod>2025-06-10T03:42:57.385Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UN-Task-Team-for-Scanner-Data.github.io/reproducibility-project/CONTRIBUTING.html</loc>
-    <lastmod>2025-06-10T03:42:57.383Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UN-Task-Team-for-Scanner-Data.github.io/reproducibility-project/docs/about.html</loc>
-    <lastmod>2025-06-10T03:42:57.384Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UN-Task-Team-for-Scanner-Data.github.io/reproducibility-project/docs/reproducibility-guidance/citing-data.html</loc>
-    <lastmod>2025-06-10T03:42:57.391Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UN-Task-Team-for-Scanner-Data.github.io/reproducibility-project/docs/reproducibility-guidance/intro.html</loc>
-    <lastmod>2025-06-10T03:42:57.391Z</lastmod>
+    <lastmod>2025-06-10T12:09:14.163Z</lastmod>
   </url>
   <url>
     <loc>https://UN-Task-Team-for-Scanner-Data.github.io/reproducibility-project/docs/faq.html</loc>
-    <lastmod>2025-06-10T03:42:57.385Z</lastmod>
+    <lastmod>2025-06-10T12:09:14.163Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UN-Task-Team-for-Scanner-Data.github.io/reproducibility-project/CONTRIBUTING.html</loc>
+    <lastmod>2025-06-10T12:09:14.162Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UN-Task-Team-for-Scanner-Data.github.io/reproducibility-project/project-content/meeting-minutes.html</loc>
+    <lastmod>2025-06-10T12:09:14.170Z</lastmod>
   </url>
   <url>
     <loc>https://UN-Task-Team-for-Scanner-Data.github.io/reproducibility-project/project-content/project-charter.html</loc>
-    <lastmod>2025-06-10T03:42:57.392Z</lastmod>
+    <lastmod>2025-06-10T12:09:14.170Z</lastmod>
   </url>
   <url>
     <loc>https://UN-Task-Team-for-Scanner-Data.github.io/reproducibility-project/project-content/other-open-materials.html</loc>
-    <lastmod>2025-06-10T03:42:57.392Z</lastmod>
+    <lastmod>2025-06-10T12:09:14.170Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UN-Task-Team-for-Scanner-Data.github.io/reproducibility-project/CODE_OF_CONDUCT.html</loc>
+    <lastmod>2025-06-10T12:09:14.162Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UN-Task-Team-for-Scanner-Data.github.io/reproducibility-project/docs/about.html</loc>
+    <lastmod>2025-06-10T12:09:14.163Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UN-Task-Team-for-Scanner-Data.github.io/reproducibility-project/docs/index.html</loc>
+    <lastmod>2025-06-10T12:09:14.169Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UN-Task-Team-for-Scanner-Data.github.io/reproducibility-project/docs/reproducibility-guidance/citing-data.html</loc>
+    <lastmod>2025-06-10T12:09:14.169Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UN-Task-Team-for-Scanner-Data.github.io/reproducibility-project/docs/reproducibility-guidance/how-to-cite-digital-objects.html</loc>
+    <lastmod>2025-06-10T12:09:14.170Z</lastmod>
   </url>
 </urlset>
