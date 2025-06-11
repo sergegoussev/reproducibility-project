@@ -28,6 +28,11 @@ statistics.
 
 ## Software for price statistics
 
+::: {.callout-note title = "This list is a work in progress"}
+Please let us know about any software packages for making price indexes that
+we missed.
+:::
+
 Open source software for price statistics can be split into packages for
 computing index numbers and software to facilitate accessible official
 statistics. Most software for price statistics is implemented in R, with the
