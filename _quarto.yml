@@ -26,17 +26,42 @@ website:
     logo-href: https://un-task-team-for-scanner-data.github.io/reproducibility-project/docs/
     search: true
     title: "Price Statistics Reproducibility Project"
+
+    right:
+      - icon: globe
+        href: https://unstats.un.org/wiki/display/GWGSD/Handbook+on+utilising+new+data+sources+in+the+production+of+consumer+price+statistics
+      - icon: person-raised-hand
+        href: https://unstats.un.org/bigdata/task-teams/scanner/index.cshtml
     left:
       - href: docs/index.qmd
         text: Home
       - text: "Reproducibility Guidance"
+        href: docs/reproducibility-guidance/intro.qmd
+      - text: "Data Catalogue"
+        menu: 
+          - docs/catalogue/catalogue.qmd
+          - docs/catalogue/about.qmd
+      - text: "About"
         menu:
-          - href: docs/reproducibility-guidance/intro.qmd
-          - href: docs/reproducibility-guidance/how-to-cite-digital-objects.qmd
-          - href: docs/reproducibility-guidance/citing-code.qmd
-          - href: docs/reproducibility-guidance/citing-data.qmd
-      - text: "About the Open Data Catalogue"
-        href: docs/datasets-guidance/catalogue.qmd
+          - docs/about.qmd
+          - docs/faq.qmd
+  sidebar:
+    - title: Reproducibility Guidance
+      id: reproducibility-guidance
+      contents:
+        - href: docs/reproducibility-guidance/intro.qmd
+          text: What is reproducibility?
+        - section: Getting started
+          contents:
+          - docs/reproducibility-guidance/how-to-start.qmd
+          - docs/reproducibility-guidance/maturity-model.qmd
+        - section: Targeted guides
+          contents:
+          - docs/reproducibility-guidance/how-to-cite-digital-objects.qmd
+          - docs/reproducibility-guidance/citing-code.qmd
+          - docs/reproducibility-guidance/citing-data.qmd
+          - docs/reproducibility-guidance/licences.qmd
+
 
   announcement: 
     icon: info-circle
@@ -45,13 +70,7 @@ website:
     type: secondary
     position: below-navbar
       
-    tools:
-      - icon: globe
-        href: https://unstats.un.org/wiki/display/GWGSD/Handbook+on+utilising+new+data+sources+in+the+production+of+consumer+price+statistics
-        text: "UN Task Team e-handbook home"
-      - icon: person-raised-hand
-        href: https://unstats.un.org/bigdata/task-teams/scanner/index.cshtml
-        text: "Find out more about the UN Task Team"
+
 
 
 format:
