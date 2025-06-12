@@ -36,7 +36,9 @@ we missed.
 Open source software for price statistics can be split into packages for
 computing index numbers and software to facilitate accessible official
 statistics. Most software for price statistics is implemented in R, with the
-remainder in Python.
+remainder in Python. Note that this list is for software _packages_ related to
+price statistics that are broadly available on, e.g., CRAN tor PyPI, not data
+analysis _scripts_ used to derive a price index.
 
 ### Computing price indexes
 
@@ -65,7 +67,7 @@ remainder in Python.
 - [hicp {{< fa brands r-project >}}](https://cran.r-project.org/package=hicp)
 - [palewire {{< fa brands python >}}](https://github.com/palewire/cpi)
 
-### Papers
+### Software papers
 
 - [dff](https://github.com/eurostat/dff)
 - [IndexNumber: An R Package for Measuring the Evolution of Magnitudes](https://doi.org/10.32614/RJ-2021-038)
