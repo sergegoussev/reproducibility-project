@@ -1,11 +1,18 @@
 ---
 title: "How to cite code leveraged as part of the research"
+subtitle: "citation..."
 date: 2025-04-28
-date-format: YYYY-MM-DD
+summary: "summary of how to cite"
 format:
   html:
     toc: true
     toc-expand: 2
+execute: 
+  echo: false
+  
+categories:
+  - citation
+  - findability
 ---
 
 Citing software is historically not something that researchers have done. Code can

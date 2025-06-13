@@ -1,11 +1,17 @@
 ---
 title: "What licences could I use?"
-date: 2025-XX-XX
-date-format: YYYY-MM-DD
+subtitle: "licences..."
+sidebar: true
+date: 2025-06-13
+summary: "summary of how to approach licences"
 format:
   html:
     toc: true
     toc-expand: 3
+
+categories:
+  - licences
+  - reusability
 ---
 
 ::: callout-caution

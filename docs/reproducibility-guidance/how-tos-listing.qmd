@@ -1,0 +1,22 @@
+---
+title: "Quick how-tos and guides"
+listing:
+  id: how-to-list
+  type: table
+  categories: true
+  contents: 
+    - "howtos/*.qmd"
+  sort: 
+    - "title asc"
+  fields: [title, categories]
+
+format:
+  html:
+    toc: true
+    toc-expand: 2
+---
+
+A few targeted guides are provided to help researchers start or address targeted topics.
+
+::: {#how-to-list}
+:::

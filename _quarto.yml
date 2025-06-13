@@ -49,18 +49,12 @@ website:
     - title: Reproducibility Guidance
       id: reproducibility-guidance
       contents:
-        - href: docs/reproducibility-guidance/intro.qmd
-          text: What is reproducibility?
         - section: Getting started
+          href: docs/reproducibility-guidance/intro.qmd
           contents:
           - docs/reproducibility-guidance/how-to-start.qmd
           - docs/reproducibility-guidance/maturity-model.qmd
-        - section: Targeted guides
-          contents:
-          - docs/reproducibility-guidance/how-to-cite-digital-objects.qmd
-          - docs/reproducibility-guidance/citing-code.qmd
-          - docs/reproducibility-guidance/citing-data.qmd
-          - docs/reproducibility-guidance/licences.qmd
+        - href: docs/reproducibility-guidance/how-tos-listing.qmd
 
 
   announcement: 
