@@ -1,5 +1,5 @@
 ---
-title: "About the catalogue"
+title: "Understand how it works"
 date: 2025-04-28
 date-format: YYYY-MM-DD
 format:

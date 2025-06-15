@@ -14,6 +14,7 @@ website:
   page-navigation: true
   back-to-top-navigation: true
   search: true
+  draft-mode: visible
   page-footer:
     center:
       - text: "About"
@@ -35,26 +36,43 @@ website:
     left:
       - href: docs/index.qmd
         text: Home
-      - text: "Reproducibility Guidance"
+      - text: "How to be reproducible"
         href: docs/reproducibility-guidance/intro.qmd
       - text: "Data Catalogue"
-        menu: 
-          - docs/catalogue/catalogue.qmd
-          - docs/catalogue/about.qmd
+        href: docs/catalogue/catalogue.qmd
       - text: "About"
         menu:
           - docs/about.qmd
           - docs/faq.qmd
   sidebar:
-    - title: Reproducibility Guidance
-      id: reproducibility-guidance
+    - id: reproducibility-guidance
+      style: "floating"
+      collapse-level: 2
+      align: left
       contents:
         - section: Getting started
           href: docs/reproducibility-guidance/intro.qmd
           contents:
           - docs/reproducibility-guidance/how-to-start.qmd
           - docs/reproducibility-guidance/maturity-model.qmd
-        - href: docs/reproducibility-guidance/how-tos-listing.qmd
+        - "---"
+        - section: "Guides and how-tos"
+          contents:
+            - docs/reproducibility-guidance/howtos/citing-code.qmd
+            - docs/reproducibility-guidance/howtos/citing-data.qmd
+            - docs/reproducibility-guidance/howtos/licences.qmd
+            - docs/reproducibility-guidance/howtos/how-to-cite-digital-objects.qmd
+    - id: data-catalogue
+      style: "floating"
+      collapse-level: 2
+      align: left
+      contents:
+        - docs/catalogue/catalogue.qmd
+        - "---"
+        - docs/catalogue/about.qmd
+        - docs/catalogue/contributing.qmd
+
+    
 
 
   announcement: 
