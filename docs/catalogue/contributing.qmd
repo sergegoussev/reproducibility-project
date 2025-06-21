@@ -1,5 +1,5 @@
 ---
-title: "Contribute to the catalogue"
+title: "How to contribute"
 date: 2025-XX-XX
 date-format: YYYY-MM-DD
 draft: true
