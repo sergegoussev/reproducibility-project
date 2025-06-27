@@ -14,7 +14,6 @@ There are many open-source software packages for official statistics and survey
 statistics. The two best lists are:
 
 - [Awesome list of official statistics software](https://github.com/SNStatComp/awesome-official-statistics-software)
-
 - [CRAN task view for Official Statistics](https://CRAN.R-project.org/view=OfficialStatistics)
 
 Eurostat also has a similar list that's worth exploring:
@@ -23,8 +22,8 @@ Eurostat also has a similar list that's worth exploring:
 
 Although some of the packages on these lists are for computing
 index numbers (and are enumerated in the next section), there are several
-complementary tools for, e.g., sampling that are nonetheless important for price
-statistics.
+complementary tools for, e.g., sampling, seasonal adjustment, that are
+nonetheless important for price statistics.
 
 ## Software for price statistics
 
@@ -88,14 +87,22 @@ analysis _scripts_ used to derive a price index.
 
 ## Reproducibility resources
 
+There are several good resources for how to make data analysis and research
+projects reproducible. These are not about price statistics _per se_, but the
+ideas and tools are broadly applicable to the field. The [example of a price-index pipeline](https://github.com/UN-Task-Team-for-Scanner-Data/price-index-pipeline)
+shows how these ideas around reproducibility can pair with the software listed
+above.
+
 ### General
 
 - [The Turing Way](https://book.the-turing-way.org/)
+- [Awesome Reproducible Research](https://github.com/leipzig/awesome-reproducible-research)
 
 ### Reproducible analytical pipelines
 
-- [RAP Companion, by Matthew Gregory and Matthew Upson shows much of the original RAP ideas (for R)](https://ukgovdatascience.github.io/rap_companion/)
+- [RAP Companion](https://ukgovdatascience.github.io/rap_companion/)
 - [Udemy course on RAP with R](https://www.udemy.com/course/reproducible-analytical-pipelines/)
 - [Reproducible Analytical Pipelines or RAP (NHS) site](https://nhsdigital.github.io/rap-community-of-practice/introduction_to_RAP/what_is_RAP/)
 - [ESCAP training on RAP with web scraping application for price statistics](https://escap-sd.github.io/ESCAP_RAP_class/docs/)
 - [Building reproducible analytical pipelines with R](https://raps-with-r.dev/)
+- [Projects with targets](https://books.ropensci.org/targets/projects.html)
