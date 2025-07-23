@@ -25,6 +25,10 @@ index numbers (and are enumerated in the next section), there are several
 complementary tools for, e.g., sampling, seasonal adjustment, that are
 nonetheless important for price statistics.
 
+The [UNECE High-Level Group for the Modernisation of Official Statistics](https://unece.github.io/OSS/)
+gives a good overview of the role of open-source software in the production official statistics, and
+can help contextualize the software on these lists.
+
 ## Software for price statistics
 
 ::: {.callout-note title = "This list is a work in progress"}
@@ -36,7 +40,7 @@ Open source software for price statistics can be split into packages for
 computing index numbers and software to facilitate accessible official
 statistics. Most software for price statistics is implemented in R, with the
 remainder in Python. Note that this list is for software _packages_ related to
-price statistics that are broadly available on, e.g., CRAN tor PyPI, not data
+price statistics that are broadly available on, e.g., CRAN or PyPI, not data
 analysis _scripts_ used to derive a price index.
 
 ### Computing price indexes
