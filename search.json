@@ -89,16 +89,29 @@
     ]
   },
   {
-    "objectID": "docs/reproducibility-guidance/howtos/publishing-research-compendium.html",
-    "href": "docs/reproducibility-guidance/howtos/publishing-research-compendium.html",
-    "title": "Publishing your research compendium",
+    "objectID": "docs/reproducibility-guidance/howtos/synthetic-data.html",
+    "href": "docs/reproducibility-guidance/howtos/synthetic-data.html",
+    "title": "How to approach synthetic data",
     "section": "",
     "text": "WIP\n\n\n\nThis page is still in the works\n\n\n\n\n\n Back to top",
     "crumbs": [
       "How to be reproducible",
       "Guides and how-tos",
-      "About the research compendium",
-      "Publishing your research compendium"
+      "More about data",
+      "How to approach synthetic data"
+    ]
+  },
+  {
+    "objectID": "docs/reproducibility-guidance/howtos/how-to-open-data.html",
+    "href": "docs/reproducibility-guidance/howtos/how-to-open-data.html",
+    "title": "Using or opening data",
+    "section": "",
+    "text": "WIP\n\n\n\nThis page is still in the works. Possible topics: * How to save data in the /data/ folder * when to push your /output/ data to zenodo\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "How to be reproducible",
+      "Guides and how-tos",
+      "More about data",
+      "Using or opening data"
     ]
   },
   {
@@ -595,16 +608,29 @@
     ]
   },
   {
-    "objectID": "docs/reproducibility-guidance/howtos/synthetic-data.html",
-    "href": "docs/reproducibility-guidance/howtos/synthetic-data.html",
-    "title": "How to approach synthetic data",
+    "objectID": "docs/reproducibility-guidance/howtos/publishing-research-compendium.html",
+    "href": "docs/reproducibility-guidance/howtos/publishing-research-compendium.html",
+    "title": "Publishing your research compendium",
     "section": "",
     "text": "WIP\n\n\n\nThis page is still in the works\n\n\n\n\n\n Back to top",
     "crumbs": [
       "How to be reproducible",
       "Guides and how-tos",
+      "About the research compendium",
+      "Publishing your research compendium"
+    ]
+  },
+  {
+    "objectID": "docs/reproducibility-guidance/howtos/sensitive-data.html",
+    "href": "docs/reproducibility-guidance/howtos/sensitive-data.html",
+    "title": "Using sensitive data",
+    "section": "",
+    "text": "WIP\n\n\n\nThis page is still in the works. Possible topics: * using .gitignore and precommit hooks to ensure privacy\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "How to be reproducible",
+      "Guides and how-tos",
       "More about data",
-      "How to approach synthetic data"
+      "Using sensitive data"
     ]
   },
   {
