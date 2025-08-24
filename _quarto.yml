@@ -72,6 +72,7 @@ website:
               - docs/reproducibility-guidance/howtos/licences.qmd
         - "---"
         - title: Other useful resources
+          href: docs/reproducibility-guidance/open-material.qmd
     - id: data-catalogue
       style: "floating"
       collapse-level: 2
@@ -83,9 +84,6 @@ website:
           contents:
           - docs/catalogue/about.qmd
           - docs/catalogue/contributing.qmd
-
-    
-
 
   announcement: 
     icon: info-circle
