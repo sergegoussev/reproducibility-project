@@ -15,5 +15,31 @@ format:
 This page is still in the works - will have a process flow for researchers
 :::
 
-Even if you start at level 1, there are a few things you can do:
-...
+The strategy to make a computational research project reproducible is to cast it into the framework of a [reproducible analytical pipeline (RAP)](https://nhsdigital.github.io/rap-community-of-practice/). This is a natural framework to represent a research project and, by following the framework, the research project inherits good properties for open and reproducible research. Structuring a research project as a RAP fits with the model of a [research compendium](https://book.the-turing-way.org/reproducible-research/compendia/), with the latter encompassing all parts of the project.
+
+Structuring a project as a RAP involves adopting some tools traditionally found in the realm of software development and using these to structure and automate many parts of a research project, enabling it to be reproducible. Although this has proven to be a popular and useful strategy in the world of open science, it comes with the disadvantage that it involves many new tools and ideas. Consequently, it can be difficult and time consuming to adopt the RAP framework. The purpose of this guide is to give a gentler introduction that is useful for projects in the domain of price statistics.
+
+## Getting started
+
+The [RAP maturity framework](https://nhsdigital.github.io/rap-community-of-practice/introduction_to_RAP/levels_of_RAP/) has three levels of maturity---baseline, silver, gold---that characterize the sophistication of a reproducible analytical pipeline. Incorporating all the features of a gold-level pipeline is a lot of work and not always appropriate for all projects. The guidance here is how to get started on making reproducible projects in the price-statistics domain that aligns with the RAP framework while focusing on the key pieces early.
+
+The cornerstone of any reproducible project rests on four key idea.
+
+1.  Use open tools for research so that anyone is free to use those same tools. In practice this tends to mean R and Python for empirical work.
+2.  Keep track of the version of the project so that it is unambiguous how the research was done. In practice this means using git to manage the evolution of a project.
+3.  Explain how to reproduce the project. In practice this means making a file called `README.md` to outlines the steps to reproduce the project (.md stands for markdown, an easy way to markup text).
+4.  Make the project available for others. In practice this leverages 1, 2, and 3 by putting the steps to recreate a research project on a service like github or gitlab.
+
+Although the baseline level for a RAP involves more than just these four things, these are the core features of any reproducible project.
+
+The biggest hurdle to making a project reproducible is using git. This is a complex piece of software intended for software developers and can feel frustrating and unnecessary if you're not used to it. (But trust me: once you get it, you'll never want to turn back.) [The Turing Way](https://book.the-turing-way.org/reproducible-research/vcs) has a nice introduction to version control and git for researchers. [Happy Git and GitHub for the useR](https://happygitwithr.com/) is more involved introduction to git and github. Although it is targeted primary at users of R, most of the ideas are not restricted to R.
+
+## Levelling up
+
+The next step towards making a project reproducible involves putting some structure on the project and following certain conventions. This makes it easier for someone to consumer your research, but it also much easier to execute your project because it follows a proven recipe—no need to reinvent it.
+
+The key improvements involve structuring how your project is organized following a [standard directory structure](https://nhsdigital.github.io/rap-community-of-practice/training_resources/python/project-structure-and-packaging/), managing the [computation environment](https://book.the-turing-way.org/reproducible-research/renv/), and [automating the execution of the project](https://book.the-turing-way.org/reproducible-research/make/). In each case there are several ways to accomplish these things. For example, R and Python have different (but not disjoint) tools for managing packages with an eye towards reproducibility, each with their own tradeoffs and resulting degree of reproducibility. However, while the details may differ depending on the specific tools, the overall idea is the same.
+
+## Mastering reproducibility
+
+The final steps to make a research project highly reproducible are less about structure and more about how the computational parts of the research are done. Much like having clean and well-structured proofs is important for theory work, the scripts and code for an empirical project should not just be executable but also understandable. This involves following a [style guide](https://book.the-turing-way.org/reproducible-research/code-quality/code-quality-style/), [structuring](https://book.the-turing-way.org/reproducible-research/code-quality/) and [documenting](https://book.the-turing-way.org/reproducible-research/code-documentation/) code in a way that makes it easy to follow, and having [automated tests](https://book.the-turing-way.org/reproducible-research/testing/). Although this may feel like a foray away from research and into software development, once you adopt these workflows it is hard to go back. [Building reproducible analytical pipelines with R](https://raps-with-r.dev/) gives a book-length treatment of RAPs with a nice focus on these elements of reproducibility.
