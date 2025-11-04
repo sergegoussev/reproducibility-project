@@ -215,7 +215,7 @@
     "href": "docs/catalogue/catalogue.html",
     "title": "Browse the catalogue",
     "section": "",
-    "text": "Back to top",
+    "text": "TipThe catalogue is actually a standalone site\n\n\n\nThis page integrates the catalogue into the page for simplicity – however if you wish to browse the catalogue directly outside this site, check out its site here.\n\n\n\n\n\n\n Back to top",
     "crumbs": [
       "Data Catalogue",
       "Browse the catalogue"
@@ -463,61 +463,61 @@
   {
     "objectID": "docs/catalogue/about.html",
     "href": "docs/catalogue/about.html",
-    "title": "Understand how it works",
+    "title": "How does the catalogue work?",
     "section": "",
-    "text": "Researchers often struggle to use open data. They may find it hard to find open datasets for their research projects. If they find open datasets, they may struggle to easily understand them in order to judge that the datasets easily work for their research. Finally they may find it challenging to know how to work with or even how to cite the dataset.\nTo help find, assess, and understand how to access open datasets, this project has developed a basic discipline specific catalogue.",
+    "text": "Researchers often struggle to use open data. They may find it hard to find open datasets for their research projects. If they find open datasets, they may struggle to easily understand them in order to confirm which works best for their research. Finally they may find it challenging to know how to work with or even how to cite the dataset.\nThe Price Statistics Open Data Catlogue helps find, assess, and understand how to access open datasets.",
     "crumbs": [
       "Data Catalogue",
       "About the catalogue",
-      "Understand how it works"
+      "How does the catalogue work?"
     ]
   },
   {
     "objectID": "docs/catalogue/about.html#how-the-price-statistics-open-data-catalogue-works-in-a-nutshell",
     "href": "docs/catalogue/about.html#how-the-price-statistics-open-data-catalogue-works-in-a-nutshell",
-    "title": "Understand how it works",
+    "title": "How does the catalogue work?",
     "section": "How the Price Statistics Open Data Catalogue works in a nutshell",
-    "text": "How the Price Statistics Open Data Catalogue works in a nutshell\nThe idea is simple. The catalogue lists open datasets relevant to the discipline and is searchable according to standard data types (such as scanner data). It also provides basic information about each dataset that will allow researchers to assess its relevance and know how to access it. Visually this is shown in Figure 1.\n\n\n\n\n\n\nFigure 1: Basic idea of how we see the data catalogue working.",
+    "text": "How the Price Statistics Open Data Catalogue works in a nutshell\nThe idea is simple. The catalogue lists open datasets relevant to the discipline and is searchable according to standard tags (more on tags below). It also provides basic information about each dataset that allows researchers to assess its relevance and know how to access it. Visually this is shown in Figure 1.\n\n\n\n\n\n\nFigure 1: Basic idea of how we see the data catalogue working.",
     "crumbs": [
       "Data Catalogue",
       "About the catalogue",
-      "Understand how it works"
+      "How does the catalogue work?"
     ]
   },
   {
-    "objectID": "docs/catalogue/about.html#where-is-the-data-catalogue",
-    "href": "docs/catalogue/about.html#where-is-the-data-catalogue",
-    "title": "Understand how it works",
-    "section": "Where is the data catalogue?",
-    "text": "Where is the data catalogue?\nThe data catalogue can be found here. It is basically a simple static site hosted on GitHub.",
+    "objectID": "docs/catalogue/about.html#what-are-the-tags-used-in-the-catalogue",
+    "href": "docs/catalogue/about.html#what-are-the-tags-used-in-the-catalogue",
+    "title": "How does the catalogue work?",
+    "section": "What are the tags used in the catalogue?",
+    "text": "What are the tags used in the catalogue?\nThe catalogue uses the following tag structure to help categorize the datasets.\n\n\n\n\n\n\nNoteTags may change\n\n\n\nTags will evolve and change over time, especially as new datasets are registered.\n\n\n\nData type\nThe first set of tags categorize the dataset whether it fits our norm\n\nscanner\nweb-scraped\nadministrative\nfield-or-sample\n\n\n\nAssociated Tasks\nThis set of tags add information for known possible uses of the data\n\nbilaterals\nmultilaterals\nclassification\nseasonalily\nquality-adjustment",
     "crumbs": [
       "Data Catalogue",
       "About the catalogue",
-      "Understand how it works"
+      "How does the catalogue work?"
     ]
   },
   {
-    "objectID": "docs/catalogue/about.html#how-to-register-an-open-dataset-on-the-catalogue",
-    "href": "docs/catalogue/about.html#how-to-register-an-open-dataset-on-the-catalogue",
-    "title": "Understand how it works",
-    "section": "How to register an open dataset on the catalogue?",
-    "text": "How to register an open dataset on the catalogue?\nThe CONTRIBUTING guidance in the catalogue summarizes it all. Have a look and help register a dataset or recommend one be registered!",
+    "objectID": "docs/catalogue/about.html#where-is-the-stadalone-data-catalogue",
+    "href": "docs/catalogue/about.html#where-is-the-stadalone-data-catalogue",
+    "title": "How does the catalogue work?",
+    "section": "Where is the stadalone data catalogue?",
+    "text": "Where is the stadalone data catalogue?\nThe data catalogue can be found here. It is basically a simple static site hosted on a separate GitHub repo.",
     "crumbs": [
       "Data Catalogue",
       "About the catalogue",
-      "Understand how it works"
+      "How does the catalogue work?"
     ]
   },
   {
     "objectID": "docs/catalogue/about.html#what-does-the-catalogue-not-do",
     "href": "docs/catalogue/about.html#what-does-the-catalogue-not-do",
-    "title": "Understand how it works",
+    "title": "How does the catalogue work?",
     "section": "What does the catalogue not do?",
-    "text": "What does the catalogue not do?\nAs the catalogue does not store the dataset itself but simply describes it in detail. In other words, this catalogue is not a data repository.\n\n\n\n\n\n\nNoteThis is an interim catalogue only!\n\n\n\nThis will very likely not be the long-term stable data catalogue used in the discpline. The idea, however, it to start with this interim (and very simple open-source) catalogue, while the project investigates a more viable longer term solution.",
+    "text": "What does the catalogue not do?\nAs the catalogue does not store the dataset itself or make decisions on key aspects of the datses’but simply describes it in detail. In other words, this catalogue is not a data repository.\n\n\n\n\n\n\nNoteThis is an interim catalogue only!\n\n\n\nThis will likely not be the long-term stable data catalogue used in the discipline. The idea, however, it to start with this interim (and very simple open-source) catalogue, while the project investigates a more viable longer term solution.",
     "crumbs": [
       "Data Catalogue",
       "About the catalogue",
-      "Understand how it works"
+      "How does the catalogue work?"
     ]
   },
   {
