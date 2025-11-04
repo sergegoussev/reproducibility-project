@@ -1,6 +1,7 @@
 ---
-    title: "How does the catalogue work?"
+title: "How does the catalogue work?"
 date: 2025-04-28
+date-modified: last-modified
 date-format: YYYY-MM-DD
 format:
   html:
@@ -20,7 +21,13 @@ The idea is simple. The catalogue lists open datasets relevant to the discipline
 
 ## What are the tags used in the catalogue?
 
-The catalogue uses the following tag structure to categorize the datasets:
+The catalogue uses the following tag structure to help categorize the datasets.
+
+::: callout-note
+## Tags may change
+
+Tags will evolve and change over time, especially as new datasets are registered.
+:::
 
 ### Data type
 
@@ -38,16 +45,16 @@ This set of tags add information for known possible uses of the data
 -   `bilaterals`
 -   `multilaterals`
 -   `classification`
--   `seasonal`
+-   `seasonalily`
 -   `quality-adjustment`
 
-## Where is the data catalogue?
+## Where is the stadalone data catalogue?
 
-The [data catalogue can be found here](https://un-task-team-for-scanner-data.github.io/price-stats-data-catalogue/). It is basically a simple static site hosted on GitHub.
+The [data catalogue can be found here](https://un-task-team-for-scanner-data.github.io/price-stats-data-catalogue/). It is basically a simple static site hosted on a separate GitHub repo.
 
 ## What does the catalogue not do?
 
-As the catalogue does not store the dataset itself but simply describes it in detail. In other words, this catalogue is [not a data repository](https://book.the-turing-way.org/reproducible-research/rdm/rdm-repository#rr-rdm-repository-select).
+As the catalogue does not store the dataset itself or make decisions on key aspects of the datses'but simply describes it in detail. In other words, this catalogue is [not a data repository](https://book.the-turing-way.org/reproducible-research/rdm/rdm-repository#rr-rdm-repository-select).
 
 ::: callout-note
 ## This is an interim catalogue only!
