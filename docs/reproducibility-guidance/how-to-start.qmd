@@ -1,6 +1,6 @@
 ---
 title: "How do I start?"
-date: 2025-XX-XX
+date: 2025-11-07
 date-format: YYYY-MM-DD
 draft: true
 format:
@@ -8,12 +8,6 @@ format:
     toc: true
     toc-expand: 3
 ---
-
-::: callout-caution
-## WIP
-
-This page is still in the works - will have a process flow for researchers
-:::
 
 The strategy to make a computational research project reproducible is to cast it into the framework of a [reproducible analytical pipeline (RAP)](https://nhsdigital.github.io/rap-community-of-practice/). This is a natural framework to represent a research project and, by following the framework, the research project inherits good properties for open and reproducible research. Structuring a research project as a RAP fits with the model of a [research compendium](https://book.the-turing-way.org/reproducible-research/compendia/), with the latter encompassing all parts of the project.
 
@@ -45,3 +39,37 @@ The key improvements involve structuring how your project is organized following
 ## Mastering reproducibility
 
 The final steps to make a research project highly reproducible are less about structure and more about how the computational parts of the research are done. Much like having clean and well-structured proofs is important for theory work, the scripts and code for an empirical project should not just be executable but also understandable. This involves following a [style guide](https://book.the-turing-way.org/reproducible-research/code-quality/code-quality-style/), [structuring](https://book.the-turing-way.org/reproducible-research/code-quality/) and [documenting](https://book.the-turing-way.org/reproducible-research/code-documentation/) code in a way that makes it easy to follow, and having [automated tests](https://book.the-turing-way.org/reproducible-research/testing/). Although this may feel like a foray away from research and into software development, once you adopt these workflows it is hard to go back. [Building reproducible analytical pipelines with R](https://raps-with-r.dev/) gives a book-length treatment of RAPs with a nice focus on these elements of reproducibility.
+
+## Checklist
+
+Rather than a strictly-defined list of requirements, this is intended to provide suggestions for how you can improve your project with RAP principles. You're encouraged to consider the objective of your work and then determine which suggestions best support those objectives.
+
+### Baseline 
+
+-   Make the code available online. GitHub is free and considered the best option, but using an institution's website, or even a public blog, is better than nothing.
+
+-   Use a widely-accepted language, ideally an open-source one. R and Python are both free and widely-used, and using a commonly-understood language makes the code more accessible.
+
+-   Make data available online when possible. Zenodo is a free to use option.
+
+-   Make documentation explaining the code and data available online. These should be sufficient for a user to repeat the analysis.
+
+### Silver
+
+-   The code repository is well-structured, conforming to a well-known standard (such as standard directory format) or other logical layout.
+
+-   The code adheres to a coding standard for the language, such as PEP8 for Python.
+
+-   The data are well-structured, conforming to a well-known standard (such as Tidy data format) or other logical layout and include suitable metadata.
+
+-   The explanatory documentation includes docstrings, methodology explainers, dependency information, and more comprehensive guidance for less confident users.
+
+### Gold 
+
+-   The code repository employs tools to provide additional utility (such as CI/CD or GitHub Actions).
+
+-   The code includes functions to help the user run it, or is fully packaged.
+
+-   The data's metadata is comprehensive (e.g. frequency of update, quality controls, license requirements).
+
+-   The explanatory documentation covers major changes over time (e.g., Semantic Versioning).
