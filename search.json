@@ -525,7 +525,7 @@
     "href": "docs/catalogue/about.html#what-are-the-tags-used-in-the-catalogue",
     "title": "How does the catalogue work?",
     "section": "What are the tags used in the catalogue?",
-    "text": "What are the tags used in the catalogue?\nThe catalogue uses the following tag structure to help categorize the datasets.\n\n\n\n\n\n\nNoteTags may change\n\n\n\nTags will evolve and change over time, especially as new datasets are registered.\n\n\n\nData type\nThe first set of tags categorize the dataset whether it fits our norm\n\nscanner\nweb-scraped\nadministrative\nfield-or-sample\n\n\n\nAssociated Tasks\nThis set of tags add information for known possible uses of the data\n\nbilaterals\nmultilaterals\nclassification\nseasonalily\nquality-adjustment",
+    "text": "What are the tags used in the catalogue?\nThe catalogue uses the following tag structure to help categorize the datasets.\n\n\n\n\n\n\nNoteTags may change\n\n\n\nTags will evolve and change over time, especially as new datasets are registered.\n\n\n\nData type\nThe first set of tags categorize the dataset on common types used in price statistics.\n\nscanner\nweb-scraped\nadministrative\nfield-or-sample\n\n\n\nDataset Topic\nThe second set of tags focus on the uses of the data within price statistics. This relates most closely to categories of the area being measured as this implies the use of specific features in the data and specific set of methods.\n\nelectronics-and-applicances\nhousing\ngroceries-and-food\nfuels\n\n\n\n\n\n\n\nNoteLabels to be expanded over time\n\n\n\nAs new datasets are catalogued, this list will be expanded.",
     "crumbs": [
       "Data Catalogue",
       "About the catalogue",
