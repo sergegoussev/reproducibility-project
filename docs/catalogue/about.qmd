@@ -55,11 +55,11 @@ As new datasets are catalogued, this list will be expanded.
 
 ## Where is the stadalone data catalogue?
 
-The [data catalogue can be found here](https://un-task-team-for-scanner-data.github.io/price-stats-data-catalogue/). It is basically a simple static site hosted on a separate GitHub repo.
+The standalone [data catalogue can be found here](https://un-task-team-for-scanner-data.github.io/price-stats-data-catalogue/). It is a static site hosted on a separate GitHub repository.
 
 ## What does the catalogue not do?
 
-As the catalogue does not store the dataset itself or make decisions on key aspects of the datses'but simply describes it in detail. In other words, this catalogue is [not a data repository](https://book.the-turing-way.org/reproducible-research/rdm/rdm-repository#rr-rdm-repository-select).
+As the catalogue does not store the dataset itself or make decisions on key aspects of the dataset, but simply describes it in detail. In other words, this catalogue is [not a data repository](https://book.the-turing-way.org/reproducible-research/rdm/rdm-repository#rr-rdm-repository-select). Catalogue records point to the wherever the dataset lives. If more than one version is available, the dataset version that is easiest for researchers to use is referenced.
 
 ::: callout-note
 ## This is an interim catalogue only!
