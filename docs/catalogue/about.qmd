@@ -31,22 +31,27 @@ Tags will evolve and change over time, especially as new datasets are registered
 
 ### Data type
 
-The first set of tags categorize the dataset whether it fits our norm
+The first set of tags categorize the dataset on common types used in price statistics.
 
 -   `scanner`
 -   `web-scraped`
 -   `administrative`
 -   `field-or-sample`
 
-### Associated Tasks
+### Dataset Topic
 
-This set of tags add information for known possible uses of the data
+The second set of tags focus on the uses of the data within price statistics. This relates most closely to categories of the area being measured as this implies the use of specific features in the data and specific set of methods.
 
--   `bilaterals`
--   `multilaterals`
--   `classification`
--   `seasonalily`
--   `quality-adjustment`
+-   `electronics-and-applicances`
+-   `housing`
+-   `groceries-and-food`
+-   `fuels`
+
+::: callout-note
+## Labels to be expanded over time
+
+As new datasets are catalogued, this list will be expanded.
+:::
 
 ## Where is the stadalone data catalogue?
 
