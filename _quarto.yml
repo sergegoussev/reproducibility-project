@@ -38,6 +38,8 @@ website:
         text: Home
       - text: "How to be reproducible"
         href: docs/reproducibility-guidance/intro.qmd
+      - text: "Reproducibility Blog"
+        href: docs/blog.qmd
       - text: "Data Catalogue"
         href: docs/catalogue/catalogue.qmd
       - text: "About"

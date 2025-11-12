@@ -1,0 +1,20 @@
+---
+title: "Reproducibility Blog"
+listing:
+  id: reproducibility-blogs
+  contents: 
+    - blogs/*.ipynb
+  sort: "title"
+  type: table
+  categories: true
+  fields: [title, categories]
+format:
+  html:
+    toc: true
+    toc-expand: 2
+---
+
+This page hosts blogs on various topics related to reproducibility in price statistics
+
+::: {#reproducibility-blogs}
+:::
