@@ -35,6 +35,6 @@ You have two options
 
 Create [a new issue](https://github.com/UN-Task-Team-for-Scanner-Data/reproducibility-project/issues/new) under the project with your question and [the team](/docs/about.qmd) will get back to you as soon as we can!
 
-## Contact us directly
+## Option 2: Contact us directly
 
 Check out the [about the team section](/docs/about.qmd) for our info. The project lead's email will be included if you wish to use it.
