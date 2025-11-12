@@ -14,8 +14,6 @@ __temp__*
 env/*
 build/*
 .vscode
-_freeze/*
-_extensions/*
  
 # Quarto components
 /.quarto/
