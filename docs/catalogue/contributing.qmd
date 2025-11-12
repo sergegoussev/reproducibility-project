@@ -2,6 +2,7 @@
 title: "How can you contribute?"
 date: 2025-04-08
 date-modified: last-modified
+date-format: YYYY-MM-DD
 draft: true
 format:
   html:
@@ -11,7 +12,7 @@ format:
 
 If you have a dataset that you would like to register on the catalogue, the following process outlines how to do this. @process-flow-fig outlines this in high level, with details on each step below.
 
-![High level process flow to register a dataset](/docs/images\Registering-dataset-process-flow.drawio.svg){#process-flow-fig fig-align="center" width="80%"}
+![High level process flow to register a dataset](/docs/images/Registering-dataset-process-flow.drawio.svg){#process-flow-fig fig-align="center" width="80%"}
 
 # Before you start
 
