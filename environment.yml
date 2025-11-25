@@ -1,0 +1,42 @@
+name: reproducibility-project
+channels:
+  - conda-forge
+dependencies:
+  # R and Python
+  - r-base=4.5.1
+  - python=3.12
+  
+  # Core R packages
+  - r-arrow
+  - r-piar
+  - r-indexnumr
+  
+  # R dependencies for Quarto
+  - r-knitr
+  - r-rmarkdown
+  - r-tinytex
+  
+  # R data manipulation
+  - r-dplyr
+  - r-tidyr
+  - r-rlang
+  - r-tibble
+  
+  # R visualization
+  - r-ggplot2
+  - r-scales
+  
+  # R utilities
+  - r-cli
+  - r-glue
+  - r-stringr
+  
+  # Python packages
+  - pandas
+  - pip
+  
+  # Quarto (optional, can also use setup action)
+  # - quarto
+
+pip:
+  - rdata
