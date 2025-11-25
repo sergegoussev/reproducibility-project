@@ -17,13 +17,25 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
-      - name: Set up Conda environment
+      # - name: Set up Conda environment
+      #   uses: conda-incubator/setup-miniconda@v3
+      #   with:
+      #     auto-activate-base: true
+      #     miniconda-version: latest
+      #     environment-file: environment.yml
+      #     activate-environment: reproducibility-project
+  
+      - name: Setup Miniconda
         uses: conda-incubator/setup-miniconda@v3
         with:
-          auto-activate-base: true
-          miniconda-version: latest
-          environment-file: environment.yml
-          activate-environment: reproducibility-project
+          python-version: 3.9 # Specify the Python version for your environment
+          environment-file: environment.yml # Optional: path to your conda environment file
+          auto-activate-base: false # Recommended to avoid installing into the base environment
+          auto-update-conda: true # Update conda to the latest version
+
+      - name: Install dependencies (if using environment.yml)
+        run: |
+          conda env update -f environment.yml # Update the environment based on your file
 
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
