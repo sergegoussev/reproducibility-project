@@ -34,7 +34,7 @@ packages are highly citeable.
   year = {2025},
   doi = {10.32614/CRAN.package.PriceIndices},
   url = {https://cran.r-project.org/package=PriceIndices},
-  note = {R package version 0.2.3}
+  note = {R package version 0.2.5}
 }
 ```
 
@@ -61,12 +61,12 @@ pd.read_parquet("coffee.parquet").head()
 ```
 
 Another approach, and one that doesn't use R, is to simply download the {PriceIndices}
-package from CRAN and use the [{rdata}](https://doi.org/10.21105/joss.07540) Python
+package from CRAN and uses the [{rdata}](https://doi.org/10.21105/joss.07540) Python
 package to read the datasets in Python.
 
 ```{bash}
-curl -s https://cran.r-project.org/src/contrib/PriceIndices_0.2.3.tar.gz -o PriceIndices_0.2.3.tar.gz
-tar -vxzf PriceIndices_0.2.3.tar.gz PriceIndices/data
+curl -s https://cran.r-project.org/src/contrib/PriceIndices_0.2.5.tar.gz -o PriceIndices_0.2.5.tar.gz
+tar -vxzf PriceIndices_0.2.5.tar.gz PriceIndices/data
 ```
 
 ```{python}
