@@ -72,6 +72,49 @@ All raw `draw.io` and exports for this site are saved in [`/docs/images/`](https
 
 # What does this look like?
 
+## Overview of the structure
+
+In a nutshell, along with a resarch paper, a compendium is shared that includes all research objects necessary to reproduce the research. These are often git repositories (in say GitHub) that include a structure similar to the one in @fig-example below.
+
+![Exemplar [price index pipeline](https://github.com/UN-Task-Team-for-Scanner-Data/price-index-pipeline).](/docs/images/price-stats-exemplar.svg){#fig-example fig-align="center" width="35%"}
+
+### A little about each aspect
+
+**A data folder that outlines where to store the raw dataset used for the research project**. Ideally the researcher uses an open dataset (which will make the whole process reproducible), but they may also use a proprietary dataset.
+
+::: callout-tip
+## Don't version control the main input dataset
+
+The dataset that acts as the main input dataset to the research should not be version controlled. The folder is created in order to ensure that when a local copy of the compendium is used by researchers, they know where to put the data to ensure that the code will replicate the results in full.
+
+Technically, this means making sure that the `.gitignore` skips this data file
+:::
+
+**A folder for functions (or other code) that helps process your data into the relevant outputs.** This could include the code to clean and prepare the raw dataset for research purposes, the code to create the processing and research experiments, as well as notebooks where the data is explored and various aspects that feed the research paper are generated.
+
+**A folder for the output data.** This data can be versioned (if it is not sensitive) with the repository and allows researchers to replicate the process. Note, if the output data can be used for research in its own right, it may be appropriate to register this dataset on a public repository (such as Zenodo) that mints a DOI.
+
+**A folder for documentation to that explain key aspects of the research**. This folder stores [project documentation](https://book.the-turing-way.org/reproducible-research/code-documentation/code-documentation-project) or [the project design](https://book.the-turing-way.org/project-design/pd-overview), however [code should also be documented](https://book.the-turing-way.org/reproducible-research/code-documentation/code-documentation-code) well.
+
+**A license**. This will tell users how they can use the code.
+
+**A `.gitignore` file.** There are some files and folders that should not be version controlled. Notable example is datasets
+
+**A file to [recreate the environment](https://book.the-turing-way.org/reproducible-research/renv) on which the code will run identically**. A shift in one package version to another may change the output, hence its key to track exactly how to replicate the same environment and get the same result.
+
+**Finally, a README to introduce the project**. This will be the landing place when someone navigates to the repository, hence it should describe the project at a glance.
+
+## How to share a research compendium?
+
+Version controlling the research compendium is key.[^5] Once version controlled, it is best to push it to a hosting service like GitHub. Working with something like GitHub makes it easy for researchers to ensure their projects are well structured and robust.
+
+[^5]: See overview and explanations of [version control in The Turing Way](https://book.the-turing-way.org/reproducible-research/vcs) for more info.
+
+## Notable example
+
+To showcase an exemplar for price statistics, we created [a mock-up price index pipeline](https://github.com/UN-Task-Team-for-Scanner-Data/price-index-pipeline) that researchers can explore.
+
+
 Lets take a look at [price-index-pipeline](https://github.com/UN-Task-Team-for-Scanner-Data/price-index-pipeline)
 
 ::: callout-caution
