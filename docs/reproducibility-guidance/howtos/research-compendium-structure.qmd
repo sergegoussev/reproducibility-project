@@ -10,19 +10,55 @@ format:
     toc-expand: 3
 ---
 
-The purpose of this guide is on clarifying **why you should care** about structure and automation when it comes to initial setup and use of your research compendium as you are expanding it during your research. While these are slightly more advanced topics (we see [structure as silver level](/docs/reproducibility-guidance/how-to-start.qmd#silver) and [automation as gold](/docs/reproducibility-guidance/how-to-start.qmd#gold)), we think that considering the design at the beginning and a bit of discipline throughout adds great value to yourself and to others! You will indeed thank yourself later!
+The purpose of this guide is on clarifying **why you should care** about structure and automation when it comes to initial setup and use of your research compendium as you are expanding it during your research. It also outlines the target structure and lists the key sub-objects that are typically present.
 
-# The target structure
+While structure is a slightly more advanced topic (we see [structure as silver level](/docs/reproducibility-guidance/how-to-start.qmd#silver) and [automation as gold](/docs/reproducibility-guidance/how-to-start.qmd#gold)), we think that considering the design at the beginning and a bit of discipline throughout adds great value to yourself and to others! You will indeed thank yourself later!
 
-## Overview of the structure
+# What structure do you need?
 
-In a nutshell, along with a resarch paper, a compendium is shared that includes all research objects necessary to reproduce the research. These are often git repositories (in say GitHub) that include a structure similar to the one in @fig-example below.
+## Overview
+
+In a nutshell, as a compendium is shared alongside the published paper that includes all research objects necessary to reproduce the research, it is key to ensure the structure is logical and intuitive. We can visualize the structure in two ways - visually (see @fig-example) and through a directory structure.
+
+:: {.panel-tabset}
+
+## Visual (high level)
+
 
 ![Exemplar [price index pipeline](https://github.com/UN-Task-Team-for-Scanner-Data/price-index-pipeline).](/docs/images/price-stats-exemplar.svg){#fig-example fig-align="center" width="35%"}
 
+## Directory structure (more detailed)
+
+```raw
+price-index-pipeline/
+├── README.md               # The "Landing Page" for the compendium
+├── LICENSE                 # CC-BY (text/media) and MIT (code).
+├── my-compendium.Rproj     # RStudio Project file (ensures relative paths work).
+├── renv.lock               # The "Time Capsule": Records exact package versions.
+├── _quarto.yml             # Project configuration.
+│
+├── data/
+│   ├── raw/                # READ-ONLY. Never modify files here manually.
+│   └── processed/          # Intermediate data cleaned by your scripts.
+│
+├── R/                      # Custom functions. Keep the logic out of the .qmd.
+│   ├── load_data.R
+│   └── index_utils.R       # e.g., your price index calculation functions.
+│
+├── output/                 # Generated artifacts.
+│   ├── figures/
+│   └── tables/
+│
+└── analysis/               # The narrative.
+    ├── paper.qmd           # The main manuscript (imports data, runs analysis).
+    └── references.bib      # Bibliography.
+```
+:::
+
+
 ### A little about each aspect
 
-**A data folder that outlines where to store the raw dataset used for the research project**. Ideally the researcher uses an open dataset (which will make the whole process reproducible), but they may also use a proprietary dataset.
+**A data folder that outlines where to store the raw (input) dataset used for the research project**. Ideally the researcher uses an open dataset (which will make the whole process reproducible), but they may also use a proprietary dataset.
 
 ::: callout-tip
 ## Don't version control the main input dataset
@@ -32,7 +68,7 @@ The dataset that acts as the main input dataset to the research should not be ve
 Technically, this means making sure that the `.gitignore` skips this data file
 :::
 
-**A folder for functions (or other code) that helps process your data into the relevant outputs.** This could include the code to clean and prepare the raw dataset for research purposes, the code to create the processing and research experiments, as well as notebooks where the data is explored and various aspects that feed the research paper are generated.
+**A folder for functions (or other code) that helps process your data into the relevant outputs.** This could include the code to clean and prepare the raw dataset for research purposes, the code to create the processing and research experiments, as well as notebooks where the data is explored and various aspects that feed the research paper are generated. Note this is sometimes also called `/src/` or `/R/` folder.
 
 **A folder for the output data.** This data can be versioned (if it is not sensitive) with the repository and allows researchers to replicate the process. Note, if the output data can be used for research in its own right, it may be appropriate to register this dataset on a public repository (such as Zenodo) that mints a DOI.
 
@@ -42,28 +78,27 @@ Technically, this means making sure that the `.gitignore` skips this data file
 
 **A `.gitignore` file.** There are some files and folders that should not be version controlled. Notable example is datasets
 
-**A file to [recreate the environment](https://book.the-turing-way.org/reproducible-research/renv) on which the code will run identically**. A shift in one package version to another may change the output, hence its key to track exactly how to replicate the same environment and get the same result.
+**A file to [recreate the computational environment](https://book.the-turing-way.org/reproducible-research/renv) on which the code will run identically**. A shift in one package version to another may change the output, hence its key to track exactly how to replicate the same environment and get the same result.
 
 **Finally, a README to introduce the project**. This will be the landing place when someone navigates to the repository, hence it should describe the project at a glance.
 
 ## How to share a research compendium?
 
-Version controlling the research compendium is key.[^5] Once version controlled, it is best to push it to a hosting service like GitHub. Working with something like GitHub makes it easy for researchers to ensure their projects are well structured and robust.
+Version controlling the research compendium is key.[^1] Once version controlled, it is best to push it to a hosting service like GitHub. Working with something like GitHub makes it easy for researchers to ensure their projects are well structured and robust.
 
-[^5]: See overview and explanations of [version control in The Turing Way](https://book.the-turing-way.org/reproducible-research/vcs) for more info.
-
+[^1]: See overview and explanations of [version control in The Turing Way](https://book.the-turing-way.org/reproducible-research/vcs) for more info.
 
 # The Why
 
 ## Why use a standard directory structure?
 
-As outlined in the ideal case, a structured approach is at a minimum **organized** and **clear**. Anyone can:
+As outlined above, a structured approach is at a minimum **organized** and **clear**. Anyone can:
 
-1.  Put the same input data as you used in the `/data/` folder.
-2.  Run the preprocessing scripts in `/src/processing`.
-3.  Repeat the analysis notebooks in `/src/analysis/`and get the same results.
+1.  The input data goes in the `/data/` folder.
+2.  The preprocessing scripts in `/src/processing.py` convert the raw data into processed data.
+3.  Analysis in `/src/analysis.py` output data and images that can be embedded directly in the paper.
 
-In other words, the research becomes very clear and the *value added* is the contribution, with a lower cognitive load placed on anyone (including yourself at a later date) trying to understand it. The project probably had a messy but implicit structure, you are just making it explicit and coherent.
+In other words, the research becomes very clear and the *value added* is the contribution, with a lower cognitive load placed on anyone (including yourself at a later date) trying to understand it.
 
 What happens if you don't make the structure explicit but keep it implicit?
 
@@ -101,9 +136,9 @@ So what to do instead?
 
 No matter how clear the structure or the script naming convention, the narrative explanation of steps to follow will still requires some documentation. Indeed the list of specific steps may be clear from the analysis steps, but the **why** and the **how** will not be---hence both will also benefit from being made explicit.
 
-A good way to provide clarity to any user without the context is to create a visual of the process flow. For instance, you can outline the process using [**mermaid diagrams**](https://nhsdigital.github.io/rap-community-of-practice/implementing_RAP/process_mapping/#example-using-markdown-and-mermaid), or use open source diagram tool (like [draw.io](https://app.diagrams.net/) or [lucidchart](https://www.lucidchart.com/pages)) to draw the process yourself, export the image and embed that into the documentation (be sure you version to diagram file itself so that you can always tune the diagram and don't have to recreate it!).[^1]
+A good way to provide clarity to any user without the context is to create a visual of the process flow. For instance, you can outline the process using [**mermaid diagrams**](https://nhsdigital.github.io/rap-community-of-practice/implementing_RAP/process_mapping/#example-using-markdown-and-mermaid), or use open source diagram tool (like [draw.io](https://app.diagrams.net/) or [lucidchart](https://www.lucidchart.com/pages)) to draw the process yourself, export the image and embed that into the documentation (be sure you version to diagram file itself so that you can always tune the diagram and don't have to recreate it!).[^2]
 
-[^1]: Check out this [overview guide on process mapping by the NHS](https://nhsdigital.github.io/rap-community-of-practice/implementing_RAP/process_mapping/).
+[^2]: Check out this [overview guide on process mapping by the NHS](https://nhsdigital.github.io/rap-community-of-practice/implementing_RAP/process_mapping/).
 
 ::: callout-note
 ## We use draw.io for reproducibility diagrams
@@ -111,8 +146,6 @@ A good way to provide clarity to any user without the context is to create a vis
 All raw `draw.io` and exports for this site are saved in [`/docs/images/`](https://github.com/UN-Task-Team-for-Scanner-Data/reproducibility-project/tree/main/docs/images)
 :::
 
-
 ## Notable example
 
 To showcase an exemplar for price statistics, we created [a mock-up price index pipeline](https://github.com/UN-Task-Team-for-Scanner-Data/price-index-pipeline) that researchers can explore.
-
