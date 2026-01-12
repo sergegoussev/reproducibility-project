@@ -20,7 +20,7 @@ While structure is a slightly more advanced topic (we see [structure as silver l
 
 In a nutshell, as a compendium is shared alongside the published paper that includes all research objects necessary to reproduce the research, it is key to ensure the structure is logical and intuitive. We can visualize the structure in two ways - visually (see @fig-example) and through a directory structure.
 
-:: {.panel-tabset}
+::: {.panel-tabset}
 
 ## Visual (high level)
 
