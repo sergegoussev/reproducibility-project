@@ -475,9 +475,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#the-target-structure" id="toc-the-target-structure" class="nav-link active" data-scroll-target="#the-target-structure">The target structure</a>
+  <li><a href="#what-structure-do-you-need" id="toc-what-structure-do-you-need" class="nav-link active" data-scroll-target="#what-structure-do-you-need">What structure do you need?</a>
   <ul class="collapse">
-  <li><a href="#overview-of-the-structure" id="toc-overview-of-the-structure" class="nav-link" data-scroll-target="#overview-of-the-structure">Overview of the structure</a>
+  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#visual-high-level" id="toc-visual-high-level" class="nav-link" data-scroll-target="#visual-high-level">Visual (high level)</a></li>
+  <li><a href="#directory-structure-more-detailed" id="toc-directory-structure-more-detailed" class="nav-link" data-scroll-target="#directory-structure-more-detailed">Directory structure (more detailed)</a>
   <ul class="collapse">
   <li><a href="#a-little-about-each-aspect" id="toc-a-little-about-each-aspect" class="nav-link" data-scroll-target="#a-little-about-each-aspect">A little about each aspect</a></li>
   </ul></li>
@@ -523,12 +525,17 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>The purpose of this guide is on clarifying <strong>why you should care</strong> about structure and automation when it comes to initial setup and use of your research compendium as you are expanding it during your research. While these are slightly more advanced topics (we see <a href="../../../docs/reproducibility-guidance/how-to-start.html#silver">structure as silver level</a> and <a href="../../../docs/reproducibility-guidance/how-to-start.html#gold">automation as gold</a>), we think that considering the design at the beginning and a bit of discipline throughout adds great value to yourself and to others! You will indeed thank yourself later!</p>
-<section id="the-target-structure" class="level1">
-<h1>The target structure</h1>
-<section id="overview-of-the-structure" class="level2">
-<h2 class="anchored" data-anchor-id="overview-of-the-structure">Overview of the structure</h2>
-<p>In a nutshell, along with a resarch paper, a compendium is shared that includes all research objects necessary to reproduce the research. These are often git repositories (in say GitHub) that include a structure similar to the one in <a href="#fig-example" class="quarto-xref">Figure&nbsp;1</a> below.</p>
+<p>The purpose of this guide is on clarifying <strong>why you should care</strong> about structure and automation when it comes to initial setup and use of your research compendium as you are expanding it during your research. It also outlines the target structure and lists the key sub-objects that are typically present.</p>
+<p>While structure is a slightly more advanced topic (we see <a href="../../../docs/reproducibility-guidance/how-to-start.html#silver">structure as silver level</a> and <a href="../../../docs/reproducibility-guidance/how-to-start.html#gold">automation as gold</a>), we think that considering the design at the beginning and a bit of discipline throughout adds great value to yourself and to others! You will indeed thank yourself later!</p>
+<section id="what-structure-do-you-need" class="level1">
+<h1>What structure do you need?</h1>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>In a nutshell, as a compendium is shared alongside the published paper that includes all research objects necessary to reproduce the research, it is key to ensure the structure is logical and intuitive. We can visualize the structure in two ways - visually (see <a href="#fig-example" class="quarto-xref">Figure&nbsp;1</a>) and through a directory structure.</p>
+<p>:: {.panel-tabset}</p>
+</section>
+<section id="visual-high-level" class="level2">
+<h2 class="anchored" data-anchor-id="visual-high-level">Visual (high level)</h2>
 <div id="fig-example" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-example-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -539,9 +546,35 @@ Figure&nbsp;1: Exemplar <a href="https://github.com/UN-Task-Team-for-Scanner-Dat
 </figcaption>
 </figure>
 </div>
+</section>
+<section id="directory-structure-more-detailed" class="level2">
+<h2 class="anchored" data-anchor-id="directory-structure-more-detailed">Directory structure (more detailed)</h2>
+<pre class="raw"><code>price-index-pipeline/
+├── README.md               # The "Landing Page" for the compendium
+├── LICENSE                 # CC-BY (text/media) and MIT (code).
+├── my-compendium.Rproj     # RStudio Project file (ensures relative paths work).
+├── renv.lock               # The "Time Capsule": Records exact package versions.
+├── _quarto.yml             # Project configuration.
+│
+├── data/
+│   ├── raw/                # READ-ONLY. Never modify files here manually.
+│   └── processed/          # Intermediate data cleaned by your scripts.
+│
+├── R/                      # Custom functions. Keep the logic out of the .qmd.
+│   ├── load_data.R
+│   └── index_utils.R       # e.g., your price index calculation functions.
+│
+├── output/                 # Generated artifacts.
+│   ├── figures/
+│   └── tables/
+│
+└── analysis/               # The narrative.
+    ├── paper.qmd           # The main manuscript (imports data, runs analysis).
+    └── references.bib      # Bibliography.</code></pre>
+<p>:::</p>
 <section id="a-little-about-each-aspect" class="level3">
 <h3 class="anchored" data-anchor-id="a-little-about-each-aspect">A little about each aspect</h3>
-<p><strong>A data folder that outlines where to store the raw dataset used for the research project</strong>. Ideally the researcher uses an open dataset (which will make the whole process reproducible), but they may also use a proprietary dataset.</p>
+<p><strong>A data folder that outlines where to store the raw (input) dataset used for the research project</strong>. Ideally the researcher uses an open dataset (which will make the whole process reproducible), but they may also use a proprietary dataset.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -556,12 +589,12 @@ Figure&nbsp;1: Exemplar <a href="https://github.com/UN-Task-Team-for-Scanner-Dat
 <p>Technically, this means making sure that the <code>.gitignore</code> skips this data file</p>
 </div>
 </div>
-<p><strong>A folder for functions (or other code) that helps process your data into the relevant outputs.</strong> This could include the code to clean and prepare the raw dataset for research purposes, the code to create the processing and research experiments, as well as notebooks where the data is explored and various aspects that feed the research paper are generated.</p>
+<p><strong>A folder for functions (or other code) that helps process your data into the relevant outputs.</strong> This could include the code to clean and prepare the raw dataset for research purposes, the code to create the processing and research experiments, as well as notebooks where the data is explored and various aspects that feed the research paper are generated. Note this is sometimes also called <code>/src/</code> or <code>/R/</code> folder.</p>
 <p><strong>A folder for the output data.</strong> This data can be versioned (if it is not sensitive) with the repository and allows researchers to replicate the process. Note, if the output data can be used for research in its own right, it may be appropriate to register this dataset on a public repository (such as Zenodo) that mints a DOI.</p>
 <p><strong>A folder for documentation to that explain key aspects of the research</strong>. This folder stores <a href="https://book.the-turing-way.org/reproducible-research/code-documentation/code-documentation-project">project documentation</a> or <a href="https://book.the-turing-way.org/project-design/pd-overview">the project design</a>, however <a href="https://book.the-turing-way.org/reproducible-research/code-documentation/code-documentation-code">code should also be documented</a> well.</p>
 <p><strong>A license</strong>. This will tell users how they can use the code.</p>
 <p><strong>A <code>.gitignore</code> file.</strong> There are some files and folders that should not be version controlled. Notable example is datasets</p>
-<p><strong>A file to <a href="https://book.the-turing-way.org/reproducible-research/renv">recreate the environment</a> on which the code will run identically</strong>. A shift in one package version to another may change the output, hence its key to track exactly how to replicate the same environment and get the same result.</p>
+<p><strong>A file to <a href="https://book.the-turing-way.org/reproducible-research/renv">recreate the computational environment</a> on which the code will run identically</strong>. A shift in one package version to another may change the output, hence its key to track exactly how to replicate the same environment and get the same result.</p>
 <p><strong>Finally, a README to introduce the project</strong>. This will be the landing place when someone navigates to the repository, hence it should describe the project at a glance.</p>
 </section>
 </section>
@@ -574,13 +607,13 @@ Figure&nbsp;1: Exemplar <a href="https://github.com/UN-Task-Team-for-Scanner-Dat
 <h1>The Why</h1>
 <section id="why-use-a-standard-directory-structure" class="level2">
 <h2 class="anchored" data-anchor-id="why-use-a-standard-directory-structure">Why use a standard directory structure?</h2>
-<p>As outlined in the ideal case, a structured approach is at a minimum <strong>organized</strong> and <strong>clear</strong>. Anyone can:</p>
+<p>As outlined above, a structured approach is at a minimum <strong>organized</strong> and <strong>clear</strong>. Anyone can:</p>
 <ol type="1">
-<li>Put the same input data as you used in the <code>/data/</code> folder.</li>
-<li>Run the preprocessing scripts in <code>/src/processing</code>.</li>
-<li>Repeat the analysis notebooks in <code>/src/analysis/</code>and get the same results.</li>
+<li>The input data goes in the <code>/data/</code> folder.</li>
+<li>The preprocessing scripts in <code>/src/processing.py</code> convert the raw data into processed data.</li>
+<li>Analysis in <code>/src/analysis.py</code> output data and images that can be embedded directly in the paper.</li>
 </ol>
-<p>In other words, the research becomes very clear and the <em>value added</em> is the contribution, with a lower cognitive load placed on anyone (including yourself at a later date) trying to understand it. The project probably had a messy but implicit structure, you are just making it explicit and coherent.</p>
+<p>In other words, the research becomes very clear and the <em>value added</em> is the contribution, with a lower cognitive load placed on anyone (including yourself at a later date) trying to understand it.</p>
 <p>What happens if you don’t make the structure explicit but keep it implicit?</p>
 <ul>
 <li><p>When you come to it fresh (either it is new for you or you are coming back to your own material much later), you <strong>waste</strong> time trying to get into the context.</p></li>

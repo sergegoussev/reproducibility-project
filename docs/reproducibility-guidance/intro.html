@@ -547,29 +547,29 @@ Figure&nbsp;1: Research process
 </div>
 <section id="the-data" class="level3">
 <h3 class="anchored" data-anchor-id="the-data">(1) The data</h3>
-<p>The input data is one of the first and most critical aspects of empirical research. Whatever research questions are asked, they need to be evaluated using one or several datasets.</p>
+<p>It is key to differentiate <strong>input data</strong> and <strong>output data</strong>:</p>
 <ul>
-<li><p>Ideally, input datasets are openly available, as this ensures that the dataset can be used as a benchmark for many different researches over time and help ensure that true reproduciblity is possible. To help increase the use of open datasets, this project includes a catalogue that lists key datasets in the discipline and documents each to help understand it with minimal effort.</p></li>
-<li><p>The input data is owned (and hosted) separately from the research, hence it is not republished with the research project. Ideally the research project automates the collection and processing of the data</p></li>
-</ul>
-<p>It is key to differentiate input data and output data:</p>
+<li><p><strong>Input data</strong> is the data used to answer research questions. It may be open, closed (proprietary or sensitive), or synthetic. Each is approached separately. Some notable aspects:</p>
 <ul>
-<li><p>Input data is the data used to answer research questions. It may be open, closed (proprietary or sensitive), or synthetic. Each is approached separately.</p></li>
-<li><p>Ouput data is data created as part of the research process. Whether (and how) its shared depends on various circumstances and value to later research projects (to say act as an input dataset for other projects).</p></li>
+<li><p>Ideally open data is used as this ensures the research can be fully reproducible and the dataset used can act as a benchmark if other methods are tried on it. We list a few available open datasets in the <a href="https://un-task-team-for-scanner-data.github.io/price-stats-data-catalogue/">discipline specific catalogue</a>.</p></li>
+<li><p>While input data is ingested and processed by the research, in itself it is <em>ignored</em> by the research compendium (such as by listing the data files in the <code>.gitingore</code>). Read more in the <a href="../../docs/reproducibility-guidance/howtos/input-data.html">input data guide</a>.</p></li>
+</ul></li>
+<li><p><strong>Ouput data</strong> is data created as part of the research process. Whether (and how) its shared depends on various circumstances and value to later research projects (to say act as an input dataset for other projects). Read <a href="../../docs/reproducibility-guidance/howtos/opening-data.html">about this process here</a>.</p></li>
 </ul>
 </section>
 <section id="the-research-compendium" class="level3">
 <h3 class="anchored" data-anchor-id="the-research-compendium">(2) The research compendium</h3>
 <p>The research compendium is a <strong>structured object</strong> that contains <strong>all the aspects</strong> to recreate the output (i.e.&nbsp;results shared in the paper). Some key sub-components include:</p>
 <ul>
-<li><p>Its logical <strong>structure</strong> ensures maturity and helps others (or you later) in trying to peer review, reproduce or extend the research.</p></li>
+<li><p>Its logical <strong>structure</strong> ensures maturity and helps others (or you later) in trying to peer review, reproduce or extend the research. Read more about how and why to set up an appropriate structure <a href="../../docs/reproducibility-guidance/howtos/research-compendium-structure.html">here</a>.</p></li>
 <li><p>The code and workflows <strong>ingest and processes</strong> input data to <strong>create relevant outputs</strong> (output data, figures, etc) in an automated fashion (i.e.&nbsp;avoiding manual steps). As mentioned above, the <strong>input data</strong> itself however <strong>is not</strong> a part of the compendium and is not republished.</p></li>
 <li><p>The source for the paper is included so that raw input to final paper can be reproduced in an automated fashion. This allows you to regenerate and change the paper as needed.</p></li>
 </ul>
-<p>It is key to differentiate between active and archived versions of the compendium:</p>
+<p>It is key to differentiate between <strong>active</strong> and <strong>archived</strong> versions of the compendium:</p>
 <section id="a.-active-research-compendium" class="level4">
 <h4 class="anchored" data-anchor-id="a.-active-research-compendium">2A. Active research compendium</h4>
-<p>When a project is active, it is best to use a version control process (such as GitHub/GitLab) to store the whole object. While GitHub/GitLab are great for technical maturity and robustness, they are not permanent records - i.e.&nbsp;the GitHub repository can be deleted or changed, making it hard to find later.</p>
+<p>When a project is active, it is best to use a version control process (such as GitHub/GitLab) to store and version the whole object. This is a sensible default for research projects.</p>
+<p>There is a risk however with GitHub/GitLab for long term archival as they are not permanent records - i.e.&nbsp;the GitHub repository can be deleted or changed and the URL could change.</p>
 </section>
 <section id="b.-archived-research-compendium" class="level4">
 <h4 class="anchored" data-anchor-id="b.-archived-research-compendium">2B. Archived research compendium</h4>
@@ -584,7 +584,7 @@ Figure&nbsp;1: Research process
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Use of repositories such as Zenodo depends on the researchers and the organization they are in.</p>
+<p>Use of repositories such as Zenodo depends on the researchers and the organization they are in. It is best to follow your organization’s rules for which repository it is best to publish from. The main idea is to publish to a repository that helps create a DOI which is (ideally) immunable.</p>
 </div>
 </div>
 </section>
@@ -593,8 +593,8 @@ Figure&nbsp;1: Research process
 <h3 class="anchored" data-anchor-id="key-software">(3) Key software</h3>
 <p>Not all code in the research compendium will be written by the researchers from scratch using vanilla code. It is likely to use packages to abstract away some or most of the complexity and automate the work. There are two sensible rules of thumb that can be applied:</p>
 <ul>
-<li><p>If the code is pivotal to the methodology (for instance the package was used to calculate price indices), then it is best to acknowledge this in the paper (by citing it).</p></li>
-<li><p>A snapshot of the computational environment should be taken and included in the research compendium. This ensures that the exact computation requirement can be replicated, but also to ensure that dependencies on specific versions of other packages is saved.</p></li>
+<li><p>If the code is pivotal to the methodology (for instance the package was used to calculate price indices), then it is best to acknowledge this in the paper (<a href="../../docs/reproducibility-guidance/howtos/citing-code.html">by citing it</a>).</p></li>
+<li><p>A snapshot of the <strong>computational environment</strong> should be taken and included in the research compendium. This ensures that the exact computation requirement can be replicated, but also to ensure that dependencies on specific versions of other packages is saved.</p></li>
 </ul>
 </section>
 <section id="the-paper" class="level3">
