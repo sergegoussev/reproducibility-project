@@ -195,6 +195,32 @@
     ]
   },
   {
+    "objectID": "docs/reproducibility-guidance/howtos/research-compendium-structure.html#overview-of-the-structure",
+    "href": "docs/reproducibility-guidance/howtos/research-compendium-structure.html#overview-of-the-structure",
+    "title": "Research compendium: deeper dive",
+    "section": "Overview of the structure",
+    "text": "Overview of the structure\nIn a nutshell, along with a resarch paper, a compendium is shared that includes all research objects necessary to reproduce the research. These are often git repositories (in say GitHub) that include a structure similar to the one in Figure 1 below.\n\n\n\n\n\n\nFigure 1: Exemplar price index pipeline.\n\n\n\n\nA little about each aspect\nA data folder that outlines where to store the raw dataset used for the research project. Ideally the researcher uses an open dataset (which will make the whole process reproducible), but they may also use a proprietary dataset.\n\n\n\n\n\n\nTipDon’t version control the main input dataset\n\n\n\nThe dataset that acts as the main input dataset to the research should not be version controlled. The folder is created in order to ensure that when a local copy of the compendium is used by researchers, they know where to put the data to ensure that the code will replicate the results in full.\nTechnically, this means making sure that the .gitignore skips this data file\n\n\nA folder for functions (or other code) that helps process your data into the relevant outputs. This could include the code to clean and prepare the raw dataset for research purposes, the code to create the processing and research experiments, as well as notebooks where the data is explored and various aspects that feed the research paper are generated.\nA folder for the output data. This data can be versioned (if it is not sensitive) with the repository and allows researchers to replicate the process. Note, if the output data can be used for research in its own right, it may be appropriate to register this dataset on a public repository (such as Zenodo) that mints a DOI.\nA folder for documentation to that explain key aspects of the research. This folder stores project documentation or the project design, however code should also be documented well.\nA license. This will tell users how they can use the code.\nA .gitignore file. There are some files and folders that should not be version controlled. Notable example is datasets\nA file to recreate the environment on which the code will run identically. A shift in one package version to another may change the output, hence its key to track exactly how to replicate the same environment and get the same result.\nFinally, a README to introduce the project. This will be the landing place when someone navigates to the repository, hence it should describe the project at a glance.",
+    "crumbs": [
+      "How to be reproducible",
+      "Guides and how-tos",
+      "The research compendium",
+      "Research compendium: deeper dive"
+    ]
+  },
+  {
+    "objectID": "docs/reproducibility-guidance/howtos/research-compendium-structure.html#how-to-share-a-research-compendium",
+    "href": "docs/reproducibility-guidance/howtos/research-compendium-structure.html#how-to-share-a-research-compendium",
+    "title": "Research compendium: deeper dive",
+    "section": "How to share a research compendium?",
+    "text": "How to share a research compendium?\nVersion controlling the research compendium is key.1 Once version controlled, it is best to push it to a hosting service like GitHub. Working with something like GitHub makes it easy for researchers to ensure their projects are well structured and robust.",
+    "crumbs": [
+      "How to be reproducible",
+      "Guides and how-tos",
+      "The research compendium",
+      "Research compendium: deeper dive"
+    ]
+  },
+  {
     "objectID": "docs/reproducibility-guidance/howtos/research-compendium-structure.html#why-use-a-standard-directory-structure",
     "href": "docs/reproducibility-guidance/howtos/research-compendium-structure.html#why-use-a-standard-directory-structure",
     "title": "Research compendium: deeper dive",
@@ -212,7 +238,7 @@
     "href": "docs/reproducibility-guidance/howtos/research-compendium-structure.html#why-take-the-effort-of-avoiding-manual-steps",
     "title": "Research compendium: deeper dive",
     "section": "Why take the effort of avoiding manual steps?",
-    "text": "Why take the effort of avoiding manual steps?\nFurther to structuring your project, avoiding manual steps (especially manipulation of spreadsheets!!) is key. If you’ve ever read a paper where preprocessing was described in a few short and unclear sentences which made it nearly impossible to reproduce the process without contacting the researcher—you can probably see what we mean!\nSo what to do instead?\n\nEnsure all steps can be executed through code (and version control this code with the repository). In other words, make sure there are no manual steps. This also means that you should version control all code, including the data preprocessing code.\nStructure the steps to follow a clear order of operations and use a specific folder structure for code and data that is processed along the way.\nTest the automation to ensure that anyone (including yourself at a later time) can process the same outputs with the same raw data.\nIf you’re up for it, you could even automate the rendering of the analysis paper, such as through the manuscripts feature of Quarto.\n\nFor instance Figure 1 shows visually how a .qmd file and some notebooks in the repository can be automated to generate the final analysis paper.\nUsing make or dvc are other examples of tools to automate the process.\n\n\n\n\n\n\n\n\nFigure 1: See walk-through by Alex Emmons for more detail.",
+    "text": "Why take the effort of avoiding manual steps?\nFurther to structuring your project, avoiding manual steps (especially manipulation of spreadsheets!!) is key. If you’ve ever read a paper where preprocessing was described in a few short and unclear sentences which made it nearly impossible to reproduce the process without contacting the researcher—you can probably see what we mean!\nSo what to do instead?\n\nEnsure all steps can be executed through code (and version control this code with the repository). In other words, make sure there are no manual steps. This also means that you should version control all code, including the data preprocessing code.\nStructure the steps to follow a clear order of operations and use a specific folder structure for code and data that is processed along the way.\nTest the automation to ensure that anyone (including yourself at a later time) can process the same outputs with the same raw data.\nIf you’re up for it, you could even automate the rendering of the analysis paper, such as through the manuscripts feature of Quarto.\n\nFor instance Figure 2 shows visually how a .qmd file and some notebooks in the repository can be automated to generate the final analysis paper.\nUsing make or dvc are other examples of tools to automate the process.\n\n\n\n\n\n\n\n\nFigure 2: See walk-through by Alex Emmons for more detail.",
     "crumbs": [
       "How to be reproducible",
       "Guides and how-tos",
@@ -225,33 +251,7 @@
     "href": "docs/reproducibility-guidance/howtos/research-compendium-structure.html#why-invest-in-documentation",
     "title": "Research compendium: deeper dive",
     "section": "Why invest in documentation?",
-    "text": "Why invest in documentation?\nNo matter how clear the structure or the script naming convention, the narrative explanation of steps to follow will still requires some documentation. Indeed the list of specific steps may be clear from the analysis steps, but the why and the how will not be—hence both will also benefit from being made explicit.\nA good way to provide clarity to any user without the context is to create a visual of the process flow. For instance, you can outline the process using mermaid diagrams, or use open source diagram tool (like draw.io or lucidchart) to draw the process yourself, export the image and embed that into the documentation (be sure you version to diagram file itself so that you can always tune the diagram and don’t have to recreate it!).1\n\n\n\n\n\n\nNoteWe use draw.io for reproducibility diagrams\n\n\n\nAll raw draw.io and exports for this site are saved in /docs/images/",
-    "crumbs": [
-      "How to be reproducible",
-      "Guides and how-tos",
-      "The research compendium",
-      "Research compendium: deeper dive"
-    ]
-  },
-  {
-    "objectID": "docs/reproducibility-guidance/howtos/research-compendium-structure.html#overview-of-the-structure",
-    "href": "docs/reproducibility-guidance/howtos/research-compendium-structure.html#overview-of-the-structure",
-    "title": "Research compendium: deeper dive",
-    "section": "Overview of the structure",
-    "text": "Overview of the structure\nIn a nutshell, along with a resarch paper, a compendium is shared that includes all research objects necessary to reproduce the research. These are often git repositories (in say GitHub) that include a structure similar to the one in Figure 2 below.\n\n\n\n\n\n\nFigure 2: Exemplar price index pipeline.\n\n\n\n\nA little about each aspect\nA data folder that outlines where to store the raw dataset used for the research project. Ideally the researcher uses an open dataset (which will make the whole process reproducible), but they may also use a proprietary dataset.\n\n\n\n\n\n\nTipDon’t version control the main input dataset\n\n\n\nThe dataset that acts as the main input dataset to the research should not be version controlled. The folder is created in order to ensure that when a local copy of the compendium is used by researchers, they know where to put the data to ensure that the code will replicate the results in full.\nTechnically, this means making sure that the .gitignore skips this data file\n\n\nA folder for functions (or other code) that helps process your data into the relevant outputs. This could include the code to clean and prepare the raw dataset for research purposes, the code to create the processing and research experiments, as well as notebooks where the data is explored and various aspects that feed the research paper are generated.\nA folder for the output data. This data can be versioned (if it is not sensitive) with the repository and allows researchers to replicate the process. Note, if the output data can be used for research in its own right, it may be appropriate to register this dataset on a public repository (such as Zenodo) that mints a DOI.\nA folder for documentation to that explain key aspects of the research. This folder stores project documentation or the project design, however code should also be documented well.\nA license. This will tell users how they can use the code.\nA .gitignore file. There are some files and folders that should not be version controlled. Notable example is datasets\nA file to recreate the environment on which the code will run identically. A shift in one package version to another may change the output, hence its key to track exactly how to replicate the same environment and get the same result.\nFinally, a README to introduce the project. This will be the landing place when someone navigates to the repository, hence it should describe the project at a glance.",
-    "crumbs": [
-      "How to be reproducible",
-      "Guides and how-tos",
-      "The research compendium",
-      "Research compendium: deeper dive"
-    ]
-  },
-  {
-    "objectID": "docs/reproducibility-guidance/howtos/research-compendium-structure.html#how-to-share-a-research-compendium",
-    "href": "docs/reproducibility-guidance/howtos/research-compendium-structure.html#how-to-share-a-research-compendium",
-    "title": "Research compendium: deeper dive",
-    "section": "How to share a research compendium?",
-    "text": "How to share a research compendium?\nVersion controlling the research compendium is key.2 Once version controlled, it is best to push it to a hosting service like GitHub. Working with something like GitHub makes it easy for researchers to ensure their projects are well structured and robust.",
+    "text": "Why invest in documentation?\nNo matter how clear the structure or the script naming convention, the narrative explanation of steps to follow will still requires some documentation. Indeed the list of specific steps may be clear from the analysis steps, but the why and the how will not be—hence both will also benefit from being made explicit.\nA good way to provide clarity to any user without the context is to create a visual of the process flow. For instance, you can outline the process using mermaid diagrams, or use open source diagram tool (like draw.io or lucidchart) to draw the process yourself, export the image and embed that into the documentation (be sure you version to diagram file itself so that you can always tune the diagram and don’t have to recreate it!).2\n\n\n\n\n\n\nNoteWe use draw.io for reproducibility diagrams\n\n\n\nAll raw draw.io and exports for this site are saved in /docs/images/",
     "crumbs": [
       "How to be reproducible",
       "Guides and how-tos",
@@ -264,7 +264,7 @@
     "href": "docs/reproducibility-guidance/howtos/research-compendium-structure.html#notable-example",
     "title": "Research compendium: deeper dive",
     "section": "Notable example",
-    "text": "Notable example\nTo showcase an exemplar for price statistics, we created a mock-up price index pipeline that researchers can explore.\nLets take a look at price-index-pipeline\n\n\n\n\n\n\nCautionSection WIP\n\n\n\nThis section will be expanded soon. Idea is to show an end-to-end automated example from raw data that needs preprocessing to final paper",
+    "text": "Notable example\nTo showcase an exemplar for price statistics, we created a mock-up price index pipeline that researchers can explore.",
     "crumbs": [
       "How to be reproducible",
       "Guides and how-tos",
@@ -277,7 +277,7 @@
     "href": "docs/reproducibility-guidance/howtos/research-compendium-structure.html#footnotes",
     "title": "Research compendium: deeper dive",
     "section": "Footnotes",
-    "text": "Footnotes\n\n\nCheck out this overview guide on process mapping by the NHS.↩︎\nSee overview and explanations of version control in The Turing Way for more info.↩︎",
+    "text": "Footnotes\n\n\nSee overview and explanations of version control in The Turing Way for more info.↩︎\nCheck out this overview guide on process mapping by the NHS.↩︎",
     "crumbs": [
       "How to be reproducible",
       "Guides and how-tos",
