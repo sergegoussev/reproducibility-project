@@ -99,7 +99,7 @@
     "crumbs": [
       "How to be reproducible",
       "Guides and how-tos",
-      "About about data",
+      "The data",
       "What to do with data your research project creates"
     ]
   },
@@ -112,7 +112,7 @@
     "crumbs": [
       "How to be reproducible",
       "Guides and how-tos",
-      "About about data",
+      "The data",
       "What to do with input data to your project"
     ]
   },
@@ -125,7 +125,7 @@
     "crumbs": [
       "How to be reproducible",
       "Guides and how-tos",
-      "About about data",
+      "Publishig artifacts and citation",
       "How metadata helps the research process"
     ]
   },
@@ -138,7 +138,7 @@
     "crumbs": [
       "How to be reproducible",
       "Guides and how-tos",
-      "How to cite what you use",
+      "Publishig artifacts and citation",
       "How to cite code"
     ]
   },
@@ -151,7 +151,7 @@
     "crumbs": [
       "How to be reproducible",
       "Guides and how-tos",
-      "How to cite what you use",
+      "Publishig artifacts and citation",
       "How to cite code"
     ]
   },
@@ -164,7 +164,7 @@
     "crumbs": [
       "How to be reproducible",
       "Guides and how-tos",
-      "How to cite what you use",
+      "Publishig artifacts and citation",
       "How to cite code"
     ]
   },
@@ -177,7 +177,7 @@
     "crumbs": [
       "How to be reproducible",
       "Guides and how-tos",
-      "How to cite what you use",
+      "Publishig artifacts and citation",
       "How to cite code"
     ]
   },
@@ -190,7 +190,7 @@
     "crumbs": [
       "How to be reproducible",
       "Guides and how-tos",
-      "About the research compendium",
+      "The research compendium",
       "Research compendium: deeper dive"
     ]
   },
@@ -203,7 +203,7 @@
     "crumbs": [
       "How to be reproducible",
       "Guides and how-tos",
-      "About the research compendium",
+      "The research compendium",
       "Research compendium: deeper dive"
     ]
   },
@@ -216,7 +216,7 @@
     "crumbs": [
       "How to be reproducible",
       "Guides and how-tos",
-      "About the research compendium",
+      "The research compendium",
       "Research compendium: deeper dive"
     ]
   },
@@ -229,7 +229,46 @@
     "crumbs": [
       "How to be reproducible",
       "Guides and how-tos",
-      "About the research compendium",
+      "The research compendium",
+      "Research compendium: deeper dive"
+    ]
+  },
+  {
+    "objectID": "docs/reproducibility-guidance/howtos/research-compendium-structure.html#overview-of-the-structure",
+    "href": "docs/reproducibility-guidance/howtos/research-compendium-structure.html#overview-of-the-structure",
+    "title": "Research compendium: deeper dive",
+    "section": "Overview of the structure",
+    "text": "Overview of the structure\nIn a nutshell, along with a resarch paper, a compendium is shared that includes all research objects necessary to reproduce the research. These are often git repositories (in say GitHub) that include a structure similar to the one in Figure 2 below.\n\n\n\n\n\n\nFigure 2: Exemplar price index pipeline.\n\n\n\n\nA little about each aspect\nA data folder that outlines where to store the raw dataset used for the research project. Ideally the researcher uses an open dataset (which will make the whole process reproducible), but they may also use a proprietary dataset.\n\n\n\n\n\n\nTipDon’t version control the main input dataset\n\n\n\nThe dataset that acts as the main input dataset to the research should not be version controlled. The folder is created in order to ensure that when a local copy of the compendium is used by researchers, they know where to put the data to ensure that the code will replicate the results in full.\nTechnically, this means making sure that the .gitignore skips this data file\n\n\nA folder for functions (or other code) that helps process your data into the relevant outputs. This could include the code to clean and prepare the raw dataset for research purposes, the code to create the processing and research experiments, as well as notebooks where the data is explored and various aspects that feed the research paper are generated.\nA folder for the output data. This data can be versioned (if it is not sensitive) with the repository and allows researchers to replicate the process. Note, if the output data can be used for research in its own right, it may be appropriate to register this dataset on a public repository (such as Zenodo) that mints a DOI.\nA folder for documentation to that explain key aspects of the research. This folder stores project documentation or the project design, however code should also be documented well.\nA license. This will tell users how they can use the code.\nA .gitignore file. There are some files and folders that should not be version controlled. Notable example is datasets\nA file to recreate the environment on which the code will run identically. A shift in one package version to another may change the output, hence its key to track exactly how to replicate the same environment and get the same result.\nFinally, a README to introduce the project. This will be the landing place when someone navigates to the repository, hence it should describe the project at a glance.",
+    "crumbs": [
+      "How to be reproducible",
+      "Guides and how-tos",
+      "The research compendium",
+      "Research compendium: deeper dive"
+    ]
+  },
+  {
+    "objectID": "docs/reproducibility-guidance/howtos/research-compendium-structure.html#how-to-share-a-research-compendium",
+    "href": "docs/reproducibility-guidance/howtos/research-compendium-structure.html#how-to-share-a-research-compendium",
+    "title": "Research compendium: deeper dive",
+    "section": "How to share a research compendium?",
+    "text": "How to share a research compendium?\nVersion controlling the research compendium is key.2 Once version controlled, it is best to push it to a hosting service like GitHub. Working with something like GitHub makes it easy for researchers to ensure their projects are well structured and robust.",
+    "crumbs": [
+      "How to be reproducible",
+      "Guides and how-tos",
+      "The research compendium",
+      "Research compendium: deeper dive"
+    ]
+  },
+  {
+    "objectID": "docs/reproducibility-guidance/howtos/research-compendium-structure.html#notable-example",
+    "href": "docs/reproducibility-guidance/howtos/research-compendium-structure.html#notable-example",
+    "title": "Research compendium: deeper dive",
+    "section": "Notable example",
+    "text": "Notable example\nTo showcase an exemplar for price statistics, we created a mock-up price index pipeline that researchers can explore.\nLets take a look at price-index-pipeline\n\n\n\n\n\n\nCautionSection WIP\n\n\n\nThis section will be expanded soon. Idea is to show an end-to-end automated example from raw data that needs preprocessing to final paper",
+    "crumbs": [
+      "How to be reproducible",
+      "Guides and how-tos",
+      "The research compendium",
       "Research compendium: deeper dive"
     ]
   },
@@ -238,11 +277,11 @@
     "href": "docs/reproducibility-guidance/howtos/research-compendium-structure.html#footnotes",
     "title": "Research compendium: deeper dive",
     "section": "Footnotes",
-    "text": "Footnotes\n\n\nCheck out this overview guide on process mapping by the NHS.↩︎",
+    "text": "Footnotes\n\n\nCheck out this overview guide on process mapping by the NHS.↩︎\nSee overview and explanations of version control in The Turing Way for more info.↩︎",
     "crumbs": [
       "How to be reproducible",
       "Guides and how-tos",
-      "About the research compendium",
+      "The research compendium",
       "Research compendium: deeper dive"
     ]
   },
@@ -251,10 +290,11 @@
     "href": "docs/reproducibility-guidance/intro.html",
     "title": "How to approach reproducibility",
     "section": "",
-    "text": "For robust scientific progress, new methods or approaches should be confirmed independently before they are widely adopted. The goal of appropriately structuring and sharing research objects in a transparent fashion is to simplify this peer review process.1 The primary way this is achieved by creating and publicly publishing a research compendium along with the paper. A research compendium is a collection of digital parts of the research project that supports reuse, including data, code, protocols, metadata, etc.2",
+    "text": "For robust scientific progress, new methods or approaches should be confirmed independently before they are widely adopted. The goal of appropriately structuring and sharing research objects in a transparent fashion is to simplify this peer review process.1 The primary way this is achieved by creating and publicly publishing a research compendium along with the paper. A research compendium is a collection of digital parts of the research project that supports reuse, including data, code, protocols, documentation, metadata, etc.2",
     "crumbs": [
       "How to be reproducible",
-      "Getting started"
+      "Getting started",
+      "How to approach reproducibility"
     ]
   },
   {
@@ -262,10 +302,11 @@
     "href": "docs/reproducibility-guidance/intro.html#what-is-reproducibility",
     "title": "How to approach reproducibility",
     "section": "",
-    "text": "For robust scientific progress, new methods or approaches should be confirmed independently before they are widely adopted. The goal of appropriately structuring and sharing research objects in a transparent fashion is to simplify this peer review process.1 The primary way this is achieved by creating and publicly publishing a research compendium along with the paper. A research compendium is a collection of digital parts of the research project that supports reuse, including data, code, protocols, metadata, etc.2",
+    "text": "For robust scientific progress, new methods or approaches should be confirmed independently before they are widely adopted. The goal of appropriately structuring and sharing research objects in a transparent fashion is to simplify this peer review process.1 The primary way this is achieved by creating and publicly publishing a research compendium along with the paper. A research compendium is a collection of digital parts of the research project that supports reuse, including data, code, protocols, documentation, metadata, etc.2",
     "crumbs": [
       "How to be reproducible",
-      "Getting started"
+      "Getting started",
+      "How to approach reproducibility"
     ]
   },
   {
@@ -276,40 +317,20 @@
     "text": "Why does it help?\nThe main principle of the research compendium is to provide all the information about the project publicly and structured in a clear and logical way to ensure that its use is straightforward. This helps researchers themselves as they can easily jump back to a previous project, simplify the task for reviewers or those who want to extend the research, as well as those simply looking to learn. If done properly, the research compendium will help:3\n\nImprove the transparency, reliability and reproducibility of research.\nSimplify peer review.\nFacilitate data and code sharing.\nAllow easy extension of the research.\nEnable learners to understand the research.\nMake it much easier to transition a new method to production.4\nIncrease research visibility and citations.",
     "crumbs": [
       "How to be reproducible",
-      "Getting started"
+      "Getting started",
+      "How to approach reproducibility"
     ]
   },
   {
-    "objectID": "docs/reproducibility-guidance/intro.html#what-does-the-ideal-look-like",
-    "href": "docs/reproducibility-guidance/intro.html#what-does-the-ideal-look-like",
+    "objectID": "docs/reproducibility-guidance/intro.html#key-components-in-a-research-project",
+    "href": "docs/reproducibility-guidance/intro.html#key-components-in-a-research-project",
     "title": "How to approach reproducibility",
-    "section": "What does the ideal look like?",
-    "text": "What does the ideal look like?\n\nOverview of the structure\nIn a nutshell, along with a resarch paper, a compendium is shared that includes all research objects necessary to reproduce the research. These are often git repositories (in say GitHub) that include a structure similar to the one in Figure 1 below.\n\n\n\n\n\n\nFigure 1: Exemplar price index pipeline.\n\n\n\n\n\nA little about each aspect\nA data folder that outlines where to store the raw dataset used for the research project. Ideally the researcher uses an open dataset (which will make the whole process reproducible), but they may also use a proprietary dataset.\n\n\n\n\n\n\nTipDon’t version control the main input dataset\n\n\n\nThe dataset that acts as the main input dataset to the research should not be version controlled. The folder is created in order to ensure that when a local copy of the compendium is used by researchers, they know where to put the data to ensure that the code will replicate the results in full.\nTechnically, this means making sure that the .gitignore skips this data file\n\n\nA folder for functions (or other code) that helps process your data into the relevant outputs. This could include the code to clean and prepare the raw dataset for research purposes, the code to create the processing and research experiments, as well as notebooks where the data is explored and various aspects that feed the research paper are generated.\nA folder for the output data. This data can be versioned (if it is not sensitive) with the repository and allows researchers to replicate the process. Note, if the output data can be used for research in its own right, it may be appropriate to register this dataset on a public repository (such as Zenodo) that mints a DOI.\nA folder for documentation to that explain key aspects of the research. This folder stores project documentation or the project design, however code should also be documented well.\nA license. This will tell users how they can use the code.\nA .gitignore file. There are some files and folders that should not be version controlled. Notable example is datasets\nA file to recreate the environment on which the code will run identically. A shift in one package version to another may change the output, hence its key to track exactly how to replicate the same environment and get the same result.\nFinally, a README to introduce the project. This will be the landing place when someone navigates to the repository, hence it should describe the project at a glance.",
+    "section": "Key components in a research project",
+    "text": "Key components in a research project\nTo make a research project reproducible, it is key to to observe that there is not one object that is produced (i.e. the paper), but 4. Figure 1 provides a visual that can help understand what each is intended to for and how to approach each for reproducibility.\n\n\n\n\n\n\nFigure 1: Research process\n\n\n\n\n(1) The data\nThe input data is one of the first and most critical aspects of empirical research. Whatever research questions are asked, they need to be evaluated using one or several datasets.\n\nIdeally, input datasets are openly available, as this ensures that the dataset can be used as a benchmark for many different researches over time and help ensure that true reproduciblity is possible. To help increase the use of open datasets, this project includes a catalogue that lists key datasets in the discipline and documents each to help understand it with minimal effort.\nThe input data is owned (and hosted) separately from the research, hence it is not republished with the research project. Ideally the research project automates the collection and processing of the data\n\nIt is key to differentiate input data and output data:\n\nInput data is the data used to answer research questions. It may be open, closed (proprietary or sensitive), or synthetic. Each is approached separately.\nOuput data is data created as part of the research process. Whether (and how) its shared depends on various circumstances and value to later research projects (to say act as an input dataset for other projects).\n\n\n\n(2) The research compendium\nThe research compendium is a structured object that contains all the aspects to recreate the output (i.e. results shared in the paper). Some key sub-components include:\n\nIts logical structure ensures maturity and helps others (or you later) in trying to peer review, reproduce or extend the research.\nThe code and workflows ingest and processes input data to create relevant outputs (output data, figures, etc) in an automated fashion (i.e. avoiding manual steps). As mentioned above, the input data itself however is not a part of the compendium and is not republished.\nThe source for the paper is included so that raw input to final paper can be reproduced in an automated fashion. This allows you to regenerate and change the paper as needed.\n\nIt is key to differentiate between active and archived versions of the compendium:\n\n2A. Active research compendium\nWhen a project is active, it is best to use a version control process (such as GitHub/GitLab) to store the whole object. While GitHub/GitLab are great for technical maturity and robustness, they are not permanent records - i.e. the GitHub repository can be deleted or changed, making it hard to find later.\n\n\n2B. Archived research compendium\nWhen a research project is complete, the compendium should thus be archived in a repository. The snapshot created at this time should align to the paper that was published. Repositories (such as Zenodo) mint DOIs (or Digitial Object Identifiers) that are unique and are immutable (i.e. don’t change). This ensures that you can find that same snapshot at any point in the future.\n\n\n\n\n\n\nNoteAdoption depends on the organization\n\n\n\nUse of repositories such as Zenodo depends on the researchers and the organization they are in.\n\n\n\n\n\n(3) Key software\nNot all code in the research compendium will be written by the researchers from scratch using vanilla code. It is likely to use packages to abstract away some or most of the complexity and automate the work. There are two sensible rules of thumb that can be applied:\n\nIf the code is pivotal to the methodology (for instance the package was used to calculate price indices), then it is best to acknowledge this in the paper (by citing it).\nA snapshot of the computational environment should be taken and included in the research compendium. This ensures that the exact computation requirement can be replicated, but also to ensure that dependencies on specific versions of other packages is saved.\n\n\n\n(4) The paper\nFinally, the paper is generated as the output. As the research compendium should (ideally) have the source to generate the paper (such as by using Quarto to render a paper.qmd as a pdf), outputs or images in the paper can be traced back from the body of the image to the code that generated them.",
     "crumbs": [
       "How to be reproducible",
-      "Getting started"
-    ]
-  },
-  {
-    "objectID": "docs/reproducibility-guidance/intro.html#how-to-share-a-research-compendium",
-    "href": "docs/reproducibility-guidance/intro.html#how-to-share-a-research-compendium",
-    "title": "How to approach reproducibility",
-    "section": "How to share a research compendium?",
-    "text": "How to share a research compendium?\nVersion controlling the research compendium is key.5 Once version controlled, it is best to push it to a hosting service like GitHub. Working with something like GitHub makes it easy for researchers to ensure their projects are well structured and robust.",
-    "crumbs": [
-      "How to be reproducible",
-      "Getting started"
-    ]
-  },
-  {
-    "objectID": "docs/reproducibility-guidance/intro.html#notable-example",
-    "href": "docs/reproducibility-guidance/intro.html#notable-example",
-    "title": "How to approach reproducibility",
-    "section": "Notable example",
-    "text": "Notable example\nTo showcase an exemplar for price statistics, we created a mock-up price index pipeline that researchers can explore.",
-    "crumbs": [
-      "How to be reproducible",
-      "Getting started"
+      "Getting started",
+      "How to approach reproducibility"
     ]
   },
   {
@@ -317,10 +338,11 @@
     "href": "docs/reproducibility-guidance/intro.html#footnotes",
     "title": "How to approach reproducibility",
     "section": "Footnotes",
-    "text": "Footnotes\n\n\nA good overview of reproducible research is done by the Turing Way. The book also covers open research and many other topics.↩︎\nSee Research Compendia in The Turing Way for more detail on this concept.↩︎\nSee a more in depth overview of the benefits of reproducible research, as well as common barriers.↩︎\nResearch compendia are conceptually quite similar to Reproducible Analytical Pipelines (RAPs), although the latter focuses more on production processes. Hence if the research is easy to reproduce by adopting a compendium structure and making everything easily reproducible, operationalizing of a new method could be dramatically simplified. For more on RAPs in price statistics, see a RAP class recently done by ESCAP, as well as a good paper by Price and Marques (2023) showcasing RAP for production processes.↩︎\nSee overview and explanations of version control in The Turing Way for more info.↩︎",
+    "text": "Footnotes\n\n\nA good overview of reproducible research is done by the Turing Way. The book also covers open research and many other topics.↩︎\nSee Research Compendia in The Turing Way for more detail on this concept.↩︎\nSee a more in depth overview of the benefits of reproducible research, as well as common barriers.↩︎\nResearch compendia are conceptually quite similar to Reproducible Analytical Pipelines (RAPs), although the latter focuses more on production processes. Hence if the research is easy to reproduce by adopting a compendium structure and making everything easily reproducible, operationalizing of a new method could be dramatically simplified. For more on RAPs in price statistics, see a RAP class recently done by ESCAP, as well as a good paper by Price and Marques (2023) showcasing RAP for production processes.↩︎",
     "crumbs": [
       "How to be reproducible",
-      "Getting started"
+      "Getting started",
+      "How to approach reproducibility"
     ]
   },
   {
@@ -793,11 +815,7 @@
     "href": "docs/reproducibility-guidance/guides-summary.html",
     "title": "Guides and how-tos",
     "section": "",
-    "text": "Find guides on topics that you specifically need\n\nHow to create and structure a research compendium\n\n\nHow to cite objects in your paper\n\n\nWhat to do about data\n\n\n\n\n Back to top",
-    "crumbs": [
-      "How to be reproducible",
-      "Guides and how-tos"
-    ]
+    "text": "Find guides on topics that you specifically need\n\nHow to create and structure a research compendium\n\n\nHow to cite objects in your paper\n\n\nWhat to do about data\n\n\n\n\n Back to top"
   },
   {
     "objectID": "docs/reproducibility-guidance/howtos/synthetic-data.html",
@@ -808,7 +826,7 @@
     "crumbs": [
       "How to be reproducible",
       "Guides and how-tos",
-      "About about data",
+      "The data",
       "How to approach synthetic data"
     ]
   },
@@ -821,7 +839,7 @@
     "crumbs": [
       "How to be reproducible",
       "Guides and how-tos",
-      "How to cite what you use",
+      "Publishig artifacts and citation",
       "How to cite open data"
     ]
   },
@@ -834,7 +852,7 @@
     "crumbs": [
       "How to be reproducible",
       "Guides and how-tos",
-      "How to cite what you use",
+      "Publishig artifacts and citation",
       "How to cite open data"
     ]
   },
@@ -847,33 +865,33 @@
     "crumbs": [
       "How to be reproducible",
       "Guides and how-tos",
-      "How to cite what you use",
+      "Publishig artifacts and citation",
       "How to reference digital objects you create"
     ]
   },
   {
-    "objectID": "docs/reproducibility-guidance/howtos/how-to-cite-digital-objects.html#proposed-sensible-default",
-    "href": "docs/reproducibility-guidance/howtos/how-to-cite-digital-objects.html#proposed-sensible-default",
+    "objectID": "docs/reproducibility-guidance/howtos/how-to-cite-digital-objects.html#visual",
+    "href": "docs/reproducibility-guidance/howtos/how-to-cite-digital-objects.html#visual",
     "title": "How to reference digital objects you create",
-    "section": "Proposed sensible default",
-    "text": "Proposed sensible default\nInspired by the FAIR research code approach, we recommend including references to the digital byproducts made available alongside the research (i.e. the research compendium and any new datasets created) in the following manner at the end of your paper.\nAdd two headers just after the conclusion and before the references section:\n\n… conclusion of the paper\nData availability\nSummarize where datasets created as part of the paper are published. This could be on a data repository like Zenodo for instance.\nCode availability\nAdd link to the GitHub repository where the research compendium is published.\nReferences\n… rest of the references",
+    "section": "Visual",
+    "text": "Visual\nBuilding on the visual seen earlier of the 4 objects of the resarch process, Figure 1 shows how each can be cited.\n\n\n\n\n\n\nFigure 1: Citing research objects",
     "crumbs": [
       "How to be reproducible",
       "Guides and how-tos",
-      "How to cite what you use",
+      "Publishig artifacts and citation",
       "How to reference digital objects you create"
     ]
   },
   {
-    "objectID": "docs/reproducibility-guidance/howtos/how-to-cite-digital-objects.html#what-about-datasets-you-use-or-other-peoples-code",
-    "href": "docs/reproducibility-guidance/howtos/how-to-cite-digital-objects.html#what-about-datasets-you-use-or-other-peoples-code",
+    "objectID": "docs/reproducibility-guidance/howtos/how-to-cite-digital-objects.html#how-to-cite-each-in-your-paper",
+    "href": "docs/reproducibility-guidance/howtos/how-to-cite-digital-objects.html#how-to-cite-each-in-your-paper",
     "title": "How to reference digital objects you create",
-    "section": "What about datasets you use or other people’s code?",
-    "text": "What about datasets you use or other people’s code?\nThe best place to reference others’ code or open datasets is in the bibliography. Ideally these should have a Digitial Object Identifier (or DOI) so they are unique and can be easily found. There may be harder cases, which are detailed out in more detail in separate articles:\n\nHow to cite data.\nHow to cite others’ code.",
+    "section": "How to cite each in your paper",
+    "text": "How to cite each in your paper\nInspired by the FAIR research code approach, we recommend including references to the digital byproducts made available alongside the research in the following manner at the end of your paper.\nAdd two headers just after the conclusion and before the references section:\n\nData\nCite the input data used in the data section of the paper\n….. other sections\n… conclusion of the paper\nData availability\nRererence the output datasets created as part of the research.\nCode availability\nReference the research compendium (the archived version ideally, but the active GitHub link works too if no archive was made).\nReferences\n… rest of the references\n\nUsing proper citation style throughout the paper ensures that the bibliography has the full set of references. The standard structure (while not absolutely necessary as footnotes or other approaches also work) helps ensure that researchers in the discipline follow a standard approach.",
     "crumbs": [
       "How to be reproducible",
       "Guides and how-tos",
-      "How to cite what you use",
+      "Publishig artifacts and citation",
       "How to reference digital objects you create"
     ]
   },
@@ -886,7 +904,7 @@
     "crumbs": [
       "How to be reproducible",
       "Guides and how-tos",
-      "About the research compendium",
+      "Publishig artifacts and citation",
       "Publishing your research compendium"
     ]
   },
@@ -899,7 +917,7 @@
     "crumbs": [
       "How to be reproducible",
       "Guides and how-tos",
-      "About the research compendium",
+      "The research compendium",
       "What licences could I use?"
     ]
   },
