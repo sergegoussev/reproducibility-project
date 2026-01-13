@@ -47,4 +47,4 @@ Add two headers just after the conclusion and before the references section:
 >
 > *... rest of the references*
 
-Using proper citation style throughout the paper ensures that the bibliography has the full set of references. The standard structure (while not absolutely necessary as footnotes or other approaches also work) helps ensure that researchers in the discipline follow a standard approach. 
+Using proper citation style throughout the paper ensures that the bibliography has the full set of references. The standard structure (while not absolutely necessary as footnotes or other approaches also work) helps ensure that researchers in the discipline follow a standard approach.
