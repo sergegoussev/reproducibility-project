@@ -487,7 +487,10 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#why-use-a-standard-directory-structure" id="toc-why-use-a-standard-directory-structure" class="nav-link" data-scroll-target="#why-use-a-standard-directory-structure">Why use a standard directory structure?</a></li>
   <li><a href="#why-take-the-effort-of-avoiding-manual-steps" id="toc-why-take-the-effort-of-avoiding-manual-steps" class="nav-link" data-scroll-target="#why-take-the-effort-of-avoiding-manual-steps">Why take the effort of avoiding manual steps?</a></li>
-  <li><a href="#why-invest-in-documentation" id="toc-why-invest-in-documentation" class="nav-link" data-scroll-target="#why-invest-in-documentation">Why invest in documentation?</a></li>
+  <li><a href="#why-invest-in-documentation-on-top-of-the-paper" id="toc-why-invest-in-documentation-on-top-of-the-paper" class="nav-link" data-scroll-target="#why-invest-in-documentation-on-top-of-the-paper">Why invest in documentation (on top of the paper)?</a>
+  <ul class="collapse">
+  <li><a href="#what-type-of-docs" id="toc-what-type-of-docs" class="nav-link" data-scroll-target="#what-type-of-docs">What type of docs?</a></li>
+  </ul></li>
   <li><a href="#notable-example" id="toc-notable-example" class="nav-link" data-scroll-target="#notable-example">Notable example</a></li>
   </ul></li>
   </ul>
@@ -529,7 +532,7 @@ ul.task-list li input[type="checkbox"] {
 <h1>What structure do you need?</h1>
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>In a nutshell, as a compendium is shared alongside the published paper that includes all research objects necessary to reproduce the research, it is key to ensure the structure is logical and intuitive. We can visualize the structure in two ways - visually (see <a href="#fig-example" class="quarto-xref">Figure&nbsp;1</a>) and through a directory structure.</p>
+<p>In a nutshell, as a compendium is shared alongside the published paper that includes all research objects necessary to reproduce the research, it is key to ensure the structure is logical and intuitive. We can visualize the structure in two ways – visually (see <a href="#fig-example" class="quarto-xref">Figure&nbsp;1</a>) or through a directory structure.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Visual (high level)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Directory structure (more detailed)</a></li></ul>
 <div class="tab-content">
@@ -537,7 +540,7 @@ ul.task-list li input[type="checkbox"] {
 <div id="fig-example" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-example-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../../../docs/images/price-stats-exemplar.svg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:35.0%">
+<img src="../../../docs/images/price-stats-exemplar.svg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-example-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;1: Exemplar <a href="https://github.com/UN-Task-Team-for-Scanner-Data/price-index-pipeline">price index pipeline</a>.
@@ -547,27 +550,30 @@ Figure&nbsp;1: Exemplar <a href="https://github.com/UN-Task-Team-for-Scanner-Dat
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <pre class="raw"><code>price-index-pipeline/
-├── README.md               # The "Landing Page" for the compendium
-├── LICENSE                 # CC-BY (text/media) and MIT (code).
-├── my-compendium.Rproj     # RStudio Project file (ensures relative paths work).
-├── renv.lock               # The "Time Capsule": Records exact package versions.
-├── _quarto.yml             # Project configuration.
-│
 ├── data/
-│   ├── raw/                # READ-ONLY. Never modify files here manually.
-│   └── processed/          # Intermediate data cleaned by your scripts.
+│   ├── raw/                # READ ONLY raw input data
+│   └── processed/          # Processed data ready for analysis
 │
-├── R/                      # Custom functions. Keep the logic out of the .qmd.
-│   ├── load_data.R
-│   └── index_utils.R       # e.g., your price index calculation functions.
+├── functions/              # Code that processes and analysis the data
+│   ├── process_data.R      # Process the raw data to prepare it for analysis
+│   └── index_utils.R       # Functions used in the analysis step (keeps heavy)
+│                           #  processing out of the paper.qmd 
 │
-├── output/                 # Generated artifacts.
-│   ├── figures/
-│   └── tables/
+├── output/                 # Generated data and artifacts
+│   ├── figures/            # Figures embedded into the paper
+│   └── tables/             # Output data
 │
-└── analysis/               # The narrative.
-    ├── paper.qmd           # The main manuscript (imports data, runs analysis).
-    └── references.bib      # Bibliography.</code></pre>
+├── docs/                   # Project documentation/paper
+│   ├── paper.qmd           # The main manuscript (imports data, runs analysis).
+│   ├── references.bib      # Bibliography.
+│   └── charter.md          # Project charter (and other project management materials)
+│
+├── _quarto.yml             # Project configuration (if you use Quarto)
+├── README.md               # The "Home Page" for the compendium
+├── LICENSE                 # CC-BY (text/media) and MIT (code).
+├── renv.lock               # The "Time Capsule" for the computational evironment
+├── .gitignore              # File that specifies which files should not be versioned controlled
+└── makefile                # Automate the workflow of collecting and processing your data</code></pre>
 </div>
 </div>
 </div>
@@ -590,10 +596,11 @@ Figure&nbsp;1: Exemplar <a href="https://github.com/UN-Task-Team-for-Scanner-Dat
 </div>
 <p><strong>A folder for functions (or other code) that helps process your data into the relevant outputs.</strong> This could include the code to clean and prepare the raw dataset for research purposes, the code to create the processing and research experiments, as well as notebooks where the data is explored and various aspects that feed the research paper are generated. Note this is sometimes also called <code>/src/</code> or <code>/R/</code> folder.</p>
 <p><strong>A folder for the output data.</strong> This data can be versioned (if it is not sensitive) with the repository and allows researchers to replicate the process. Note, if the output data can be used for research in its own right, it may be appropriate to register this dataset on a public repository (such as Zenodo) that mints a DOI.</p>
-<p><strong>A folder for documentation to that explain key aspects of the research</strong>. This folder stores <a href="https://book.the-turing-way.org/reproducible-research/code-documentation/code-documentation-project">project documentation</a> or <a href="https://book.the-turing-way.org/project-design/pd-overview">the project design</a>, however <a href="https://book.the-turing-way.org/reproducible-research/code-documentation/code-documentation-code">code should also be documented</a> well.</p>
+<p><strong>A folder for documentation to that explain key aspects of the research</strong>. This folder stores <a href="https://book.the-turing-way.org/reproducible-research/code-documentation/code-documentation-project">project documentation</a> or <a href="https://book.the-turing-way.org/project-design/pd-overview">the project design</a>, <a href="https://book.the-turing-way.org/reproducible-research/code-documentation/code-documentation-code/">code documention</a>, as well as the source code for the paper.</p>
 <p><strong>A license</strong>. This will tell users how they can use the code.</p>
 <p><strong>A <code>.gitignore</code> file.</strong> There are some files and folders that should not be version controlled. Notable example is datasets</p>
 <p><strong>A file to <a href="https://book.the-turing-way.org/reproducible-research/renv">recreate the computational environment</a> on which the code will run identically</strong>. A shift in one package version to another may change the output, hence its key to track exactly how to replicate the same environment and get the same result.</p>
+<p>A <a href="https://book.the-turing-way.org/reproducible-research/make/"><strong>Makefile</strong></a> (or another orchestrator) to automate the data cleaning, processing, and analysis steps that results in the final paper. This helps ensure that you don’t have to remember the order of scripts in the <code>/functions</code> folder.</p>
 <p><strong>Finally, a README to introduce the project</strong>. This will be the landing place when someone navigates to the repository, hence it should describe the project at a glance.</p>
 </section>
 </section>
@@ -609,8 +616,8 @@ Figure&nbsp;1: Exemplar <a href="https://github.com/UN-Task-Team-for-Scanner-Dat
 <p>As outlined above, a structured approach is at a minimum <strong>organized</strong> and <strong>clear</strong>. Anyone can:</p>
 <ol type="1">
 <li>The input data goes in the <code>/data/</code> folder.</li>
-<li>The preprocessing scripts in <code>/src/processing.py</code> convert the raw data into processed data.</li>
-<li>Analysis in <code>/src/analysis.py</code> output data and images that can be embedded directly in the paper.</li>
+<li>The preprocessing scripts in <code>/functions/processing.py</code> convert the raw data into processed data.</li>
+<li>Analysis in <code>/functions/analysis.py</code> output data and images that can be embedded directly in the paper.</li>
 </ol>
 <p>In other words, the research becomes very clear and the <em>value added</em> is the contribution, with a lower cognitive load placed on anyone (including yourself at a later date) trying to understand it.</p>
 <p>What happens if you don’t make the structure explicit but keep it implicit?</p>
@@ -625,7 +632,7 @@ Figure&nbsp;1: Exemplar <a href="https://github.com/UN-Task-Team-for-Scanner-Dat
 <p>Further to structuring your project, avoiding manual steps (especially manipulation of spreadsheets!!) is key. If you’ve ever read a paper where preprocessing was described in a few short and unclear sentences which made it <strong>nearly impossible</strong> to reproduce the process <strong>without contacting the researcher</strong>—you can probably see what we mean!</p>
 <p>So what to do instead?</p>
 <ul>
-<li><p>Ensure all steps can be executed through code (and version control this code with the repository). In other words, make sure there are <strong>no manual steps</strong>. This also means that you should version control all code, including the data preprocessing code.</p></li>
+<li><p>Ensure all steps can be executed through code (and version control this code with the repository). In other words, make sure there are <strong>no manual steps</strong>. This also means that you should version control all code, including the data preprocessing code. This can be done by creating a <a href="https://book.the-turing-way.org/reproducible-research/make/">Makefile</a> and versioning it in the compendium.</p></li>
 <li><p>Structure the steps to follow a <strong>clear order of operations</strong> and use a specific folder structure for code and data that is processed along the way.</p></li>
 <li><p><strong>Test the automation</strong> to ensure that anyone (including yourself at a later time) can process the <strong>same outputs</strong> with the <strong>same raw data</strong>.</p></li>
 <li><p>If you’re up for it, you could even automate the rendering of the analysis paper, such as through the <a href="https://quarto-ext.github.io/manuscript-template-jupyter/">manuscripts feature of Quarto</a>.</p>
@@ -647,10 +654,15 @@ Figure&nbsp;2: See <a href="https://bioinformatics.ccr.cancer.gov/docs/btep-codi
 </div></li>
 </ul>
 </section>
-<section id="why-invest-in-documentation" class="level2">
-<h2 class="anchored" data-anchor-id="why-invest-in-documentation">Why invest in documentation?</h2>
-<p>No matter how clear the structure or the script naming convention, the narrative explanation of steps to follow will still requires some documentation. Indeed the list of specific steps may be clear from the analysis steps, but the <strong>why</strong> and the <strong>how</strong> will not be—hence both will also benefit from being made explicit.</p>
-<p>A good way to provide clarity to any user without the context is to create a visual of the process flow. For instance, you can outline the process using <a href="https://nhsdigital.github.io/rap-community-of-practice/implementing_RAP/process_mapping/#example-using-markdown-and-mermaid"><strong>mermaid diagrams</strong></a>, or use open source diagram tool (like <a href="https://app.diagrams.net/">draw.io</a> or <a href="https://www.lucidchart.com/pages">lucidchart</a>) to draw the process yourself, export the image and embed that into the documentation (be sure you version to diagram file itself so that you can always tune the diagram and don’t have to recreate it!).<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+<section id="why-invest-in-documentation-on-top-of-the-paper" class="level2">
+<h2 class="anchored" data-anchor-id="why-invest-in-documentation-on-top-of-the-paper">Why invest in documentation (on top of the paper)?</h2>
+<section id="what-type-of-docs" class="level3">
+<h3 class="anchored" data-anchor-id="what-type-of-docs">What type of docs?</h3>
+<ul>
+<li><p><strong>Project management/design</strong> documentation – such as the project charter, <a href="https://book.the-turing-way.org/reproducible-research/rdm/rdm-dmp/">data management plan</a>, etc. These help clearly <a href="https://book.the-turing-way.org/project-design/pd-overview/">state the success criteria for a project and keep you on track</a>.</p></li>
+<li><p>Documenation that <strong>explains the code</strong>. No matter how clear the structure or the scripts, the narrative explanation of steps to follow will still requires some documentation. Indeed the list of specific steps may be clear from the analysis steps, but the <strong>why</strong> and the <strong>how</strong> will not be—hence both will also benefit from being made explicit.</p></li>
+<li><p>Documenation to <strong>explain the process</strong>. A good way to provide clarity to any user without the context is to create a visual of the process flow. For instance, you can outline the process using <a href="https://nhsdigital.github.io/rap-community-of-practice/implementing_RAP/process_mapping/#example-using-markdown-and-mermaid"><strong>mermaid diagrams</strong></a>, or use open source diagram tool (like <a href="https://app.diagrams.net/">draw.io</a> or <a href="https://www.lucidchart.com/pages">lucidchart</a>) to draw the process yourself, export the image and embed that into the documentation (be sure you version to diagram file itself so that you can always tune the diagram and don’t have to recreate it!).<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p></li>
+</ul>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -664,6 +676,7 @@ Figure&nbsp;2: See <a href="https://bioinformatics.ccr.cancer.gov/docs/btep-codi
 <p>All raw <code>draw.io</code> and exports for this site are saved in <a href="https://github.com/UN-Task-Team-for-Scanner-Data/reproducibility-project/tree/main/docs/images"><code>/docs/images/</code></a></p>
 </div>
 </div>
+</section>
 </section>
 <section id="notable-example" class="level2">
 <h2 class="anchored" data-anchor-id="notable-example">Notable example</h2>
