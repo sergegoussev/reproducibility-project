@@ -913,7 +913,7 @@
     "href": "docs/reproducibility-guidance/howtos/licences.html",
     "title": "What licences could I use?",
     "section": "",
-    "text": "CautionWIP\n\n\n\nThis page is still in the works. Possile topics (see #52 for more info) could include:\n\nLicenses for code (such as by NHS RAP guide)\nData licenses (such as by How to FAIR)\n\n\n\n\n\n\n Back to top",
+    "text": "CautionSection in progress\n\n\n\nLicences are a complex topic. We cannot offer much more than what others have already written – so while we work on a succinct and accurate summary that applies most to the discipline, we recommend a few of the following that cover the topic quite well:\n\nThe quite comprehensive Turing Way chapter on Licences\nHow to FAIR’s guide on Data Licenses is robust and succinct\n\n\n\n\n\n\n Back to top",
     "crumbs": [
       "How to be reproducible",
       "Guides and how-tos",
