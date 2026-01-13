@@ -424,18 +424,14 @@
             <mxPoint x="1160" y="650" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-7iMMvP_QDEhnpGE_fHA-0" parent="SdPmVmJaIzPX4YnRcUBH-1" style="shape=image;aspect=fixed;image=data:image/svg+xml,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyNTYgMjU2IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyNTYgMjU2OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDojQTZDRTM5O30NCgkuc3Qxe2ZpbGw6I0ZGRkZGRjt9DQo8L3N0eWxlPg0KPHBhdGggY2xhc3M9InN0MCIgZD0iTTI1NiwxMjhjMCw3MC43LTU3LjMsMTI4LTEyOCwxMjhDNTcuMywyNTYsMCwxOTguNywwLDEyOEMwLDU3LjMsNTcuMywwLDEyOCwwQzE5OC43LDAsMjU2LDU3LjMsMjU2LDEyOHoiLz4NCjxnPg0KCTxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik04Ni4zLDE4Ni4ySDcwLjlWNzkuMWgxNS40djQ4LjRWMTg2LjJ6Ii8+DQoJPHBhdGggY2xhc3M9InN0MSIgZD0iTTEwOC45LDc5LjFoNDEuNmMzOS42LDAsNTcsMjguMyw1Nyw1My42YzAsMjcuNS0yMS41LDUzLjYtNTYuOCw1My42aC00MS44Vjc5LjF6IE0xMjQuMywxNzIuNGgyNC41DQoJCWMzNC45LDAsNDIuOS0yNi41LDQyLjktMzkuN2MwLTIxLjUtMTMuNy0zOS43LTQzLjctMzkuN2gtMjMuN1YxNzIuNHoiLz4NCgk8cGF0aCBjbGFzcz0ic3QxIiBkPSJNODguNyw1Ni44YzAsNS41LTQuNSwxMC4xLTEwLjEsMTAuMWMtNS42LDAtMTAuMS00LjYtMTAuMS0xMC4xYzAtNS42LDQuNS0xMC4xLDEwLjEtMTAuMQ0KCQlDODQuMiw0Ni43LDg4LjcsNTEuMyw4OC43LDU2Ljh6Ii8+DQo8L2c+DQo8L3N2Zz4=;labelPosition=center;verticalLabelPosition=bottom;align=center;verticalAlign=top;" value="Researcer&#xa;ORCID " vertex="1">
-          <mxGeometry height="40" width="40" x="1255" y="457" as="geometry" />
-        </mxCell>
-        <mxCell id="-7iMMvP_QDEhnpGE_fHA-2" edge="1" parent="SdPmVmJaIzPX4YnRcUBH-1" source="N7qf4dsmEP9mTKs7Yjpm-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=1 2;strokeWidth=2;curved=1;fillColor=#fa6800;strokeColor=#C73500;sketch=1;curveFitting=1;jiggle=2;shadow=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="-7iMMvP_QDEhnpGE_fHA-0" value="&lt;span style=&quot;font-size: 13px;&quot;&gt;(iv) Cite the&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;researcher&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;ORCID&lt;/span&gt;&lt;/div&gt;">
-          <mxGeometry relative="1" x="0.0395" y="-35" as="geometry">
+        <mxCell id="-7iMMvP_QDEhnpGE_fHA-2" edge="1" parent="SdPmVmJaIzPX4YnRcUBH-1" source="N7qf4dsmEP9mTKs7Yjpm-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=1 2;strokeWidth=2;curved=1;fillColor=#fa6800;strokeColor=#C73500;sketch=1;curveFitting=1;jiggle=2;shadow=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="-7iMMvP_QDEhnpGE_fHA-1" value="&lt;span style=&quot;font-size: 13px;&quot;&gt;(iv) Reference&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;the&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;researcher(s)&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;">
+          <mxGeometry relative="1" x="0.1711" y="-55" as="geometry">
             <mxPoint as="offset" />
             <Array as="points">
-              <mxPoint x="1226" y="590" />
-              <mxPoint x="1275" y="590" />
+              <mxPoint x="1260" y="600" />
             </Array>
             <mxPoint x="1865" y="630" as="sourcePoint" />
-            <mxPoint x="1280" y="887" as="targetPoint" />
+            <mxPoint x="1275" y="497" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
