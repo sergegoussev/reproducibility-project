@@ -16,12 +16,10 @@ format:
 
 Building on the previous introduction of citation, we can take a deeper dive into metadata in order to understand how it helps make the reseach project reproducible.
 
-# Citing the research objects and their metadata
-
 ::: callout-caution
 ## WIP
 
-This page is still in the works. The guide ([#51](https://github.com/UN-Task-Team-for-Scanner-Data/reproducibility-project/issues/51)) could cover such topics as:
+The guide ([#51](https://github.com/UN-Task-Team-for-Scanner-Data/reproducibility-project/issues/51)) could cover such topics as:
 
 -   Metadata is to help find, reuse, understand everything. [How-to-fair guide on the topic](https://www.howtofair.dk/how-to-fair/metadata/) provides an intro, the [FAIR cookbook](https://faircookbook.elixir-europe.org/content/home.html)is also not bad.
 
