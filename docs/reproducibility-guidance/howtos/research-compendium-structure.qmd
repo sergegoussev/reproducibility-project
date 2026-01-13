@@ -1,7 +1,8 @@
 ---
-title: "Research compendium: deeper dive"
+title: "Components, structure and why they matter"
 subtitle: "Tips on structuring your project for automation, clarity, and reproducibility"
 date: 2025-11-25
+date-modified: last-modified
 draft: true
 sidebar: true
 format:
@@ -51,8 +52,8 @@ price-index-pipeline/
 ├── README.md               # The "Home Page" for the compendium
 ├── LICENSE                 # CC-BY (text/media) and MIT (code).
 ├── renv.lock               # The "Time Capsule" for the computational evironment
-├── .gitignore              # File that specifies which files should not be versioned controlled
-└── makefile                # Automate the workflow of collecting and processing your data
+├── .gitignore              # Specify which files should not be versioned controlled
+└── makefile                # Automate the end-to-end workflow
 ```
 :::
 
@@ -80,13 +81,13 @@ Technically, this means making sure that the `.gitignore` skips this data file
 
 **A file to [recreate the computational environment](https://book.the-turing-way.org/reproducible-research/renv) on which the code will run identically**. A shift in one package version to another may change the output, hence its key to track exactly how to replicate the same environment and get the same result.
 
-A [**Makefile**](https://book.the-turing-way.org/reproducible-research/make/) (or another orchestrator) to automate the data cleaning, processing, and analysis steps that results in the final paper. This helps ensure that you don't have to remember the order of scripts in the `/functions` folder.
+An **orchestrator of all the steps** to automate the data cleaning, processing, and analysis steps that results in the final paper. Options like [make](https://book.the-turing-way.org/reproducible-research/make/), [`pre-render` in Quarto](https://quarto.org/docs/projects/scripts.html#pre-and-post-render), or [dvc](https://dvc.org/blog/best-practices-of-orchestrating-python-and-r-code-in-ml-projects/) are some notable examples. This helps ensure that you don't have to remember the order of scripts in the `/functions` folder.
 
 **Finally, a README to introduce the project**. This will be the landing place when someone navigates to the repository, hence it should describe the project at a glance.
 
-## How to share a research compendium?
+## How to share your active research compendium while?
 
-Version controlling the research compendium is key.[^1] Once version controlled, it is best to push it to a hosting service like GitHub. Working with something like GitHub makes it easy for researchers to ensure their projects are well structured and robust.
+Version controlling the research compendium is key.[^1] Once version controlled, it is best to push it to a hosting service like GitHub. Working with something like GitHub makes it easy for researchers to ensure their projects are well structured and robust. Later, [we will cover how to publish your research compendium](/docs/reproducibility-guidance/howtos/publishing-research-compendium.qmd) to a repository like Zenodo in order to create a 'snapshot' for archival purposes. 
 
 [^1]: See overview and explanations of [version control in The Turing Way](https://book.the-turing-way.org/reproducible-research/vcs) for more info.
 
