@@ -516,7 +516,16 @@ ul.task-list li input[type="checkbox"] {
 <div class="callout-body-container callout-body">
 <p>This page is still in the works. Overview of possible topics to summarize:</p>
 <ul>
-<li><p>Save input data into <code>/data/</code> folder and use <code>.gitignore</code> to ensure that the raw data is not saved - as per the deeper dive on structure:</p>
+<li><p>Summarize the main types of input data:</p>
+<ul>
+<li><p><strong>Open data</strong> - this is data that is openly available and can be downloaded and used for analysis. We aim to document the most valuable open data on the open data catalogue. Open data makes reproducibility easy as these datasets can become benchmarks for empirical studies.</p></li>
+<li><p><strong>Proprietary data</strong> - this data is in theory available, however it may need to be purchased. If the organization the researcher is in has access to the data, this dataset can be used for research. As most researchers do not have access to this data and the structure and exact details (i.e.&nbsp;metadata) of the dataset is often not summarized.</p></li>
+<li><p><strong>Sensitive data</strong> - most data at NSOs is data provided to the organization by data owners in that country, which is likely never going to be available to researchers outside the NSO that owns the data.</p>
+<ul>
+<li>NOTE: This is the most common case. In this case, creating a <strong>synthetic dataset</strong> to simulate the sensitive one could help make the project at least replicable.</li>
+</ul></li>
+</ul></li>
+<li><p>Either download the raw data directly or save downloaded input data into <code>/data/</code> folder and use <code>.gitignore</code> to ensure that the raw data is not saved - as per the deeper dive on structure:</p>
 <ul>
 <li><p>If data and analysis is simple, the analysis scripts in <code>/src/analysis/</code> will take the data and generate relevant outputs (data and visuals) in <code>/output/</code></p></li>
 <li><p>If data cleaning is more complex, you can create a <code>/data/raw</code>, a <code>/data/clean/</code>, and a <code>/src/data_cleaning.py</code> that converts from raw to clean (before analysis). This way anyone can reproduce this process and modify the analysis with new data as they can understand exactly how to preprocess the data before analysis.</p></li>
