@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.26">
+<meta name="generator" content="quarto-1.8.27">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -40,9 +40,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-b758ccaa5987ceb1b75504551e579abf.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-4d9afe2b8d18ee9fa5d0d57b5ed4214d.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../../site_libs/bootstrap/bootstrap-17d01b5babc88cbee53e37b4dd766b3a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
@@ -521,7 +521,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">January 13, 2026</p>
+      <p class="date-modified">February 3, 2026</p>
     </div>
   </div>
     
@@ -638,7 +638,7 @@ Figure&nbsp;1: Exemplar <a href="https://github.com/UN-Task-Team-for-Scanner-Dat
 <p>Further to structuring your project, avoiding manual steps (especially manipulation of spreadsheets!!) is key. If you’ve ever read a paper where preprocessing was described in a few short and unclear sentences which made it <strong>nearly impossible</strong> to reproduce the process <strong>without contacting the researcher</strong>—you can probably see what we mean!</p>
 <p>So what to do instead?</p>
 <ul>
-<li><p>Ensure all steps can be executed through code (and version control this code with the repository). In other words, make sure there are <strong>no manual steps</strong>. This also means that you should version control all code, including the data preprocessing code. This can be done by creating a <a href="https://book.the-turing-way.org/reproducible-research/make/">Makefile</a> and versioning it in the compendium.</p></li>
+<li><p>Ensure all steps can be executed through code (and version control this code with the repository). In other words, make sure there are <strong>no manual steps</strong>. This also means that you should version control all code, including the data preprocessing code.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p></li>
 <li><p>Structure the steps to follow a <strong>clear order of operations</strong> and use a specific folder structure for code and data that is processed along the way.</p></li>
 <li><p><strong>Test the automation</strong> to ensure that anyone (including yourself at a later time) can process the <strong>same outputs</strong> with the <strong>same raw data</strong>.</p></li>
 <li><p>If you’re up for it, you could even automate the rendering of the analysis paper, such as through the <a href="https://quarto-ext.github.io/manuscript-template-jupyter/">manuscripts feature of Quarto</a>.</p>
@@ -667,7 +667,7 @@ Figure&nbsp;2: See <a href="https://bioinformatics.ccr.cancer.gov/docs/btep-codi
 <ul>
 <li><p><strong>Project management/design</strong> documentation – such as the project charter, <a href="https://book.the-turing-way.org/reproducible-research/rdm/rdm-dmp/">data management plan</a>, etc. These help clearly <a href="https://book.the-turing-way.org/project-design/pd-overview/">state the success criteria for a project and keep you on track</a>.</p></li>
 <li><p>Documenation that <strong>explains the code</strong>. No matter how clear the structure or the scripts, the narrative explanation of steps to follow will still requires some documentation. Indeed the list of specific steps may be clear from the analysis steps, but the <strong>why</strong> and the <strong>how</strong> will not be—hence both will also benefit from being made explicit.</p></li>
-<li><p>Documenation to <strong>explain the process</strong>. A good way to provide clarity to any user without the context is to create a visual of the process flow. For instance, you can outline the process using <a href="https://nhsdigital.github.io/rap-community-of-practice/implementing_RAP/process_mapping/#example-using-markdown-and-mermaid"><strong>mermaid diagrams</strong></a>, or use open source diagram tool (like <a href="https://app.diagrams.net/">draw.io</a> or <a href="https://www.lucidchart.com/pages">lucidchart</a>) to draw the process yourself, export the image and embed that into the documentation (be sure you version to diagram file itself so that you can always tune the diagram and don’t have to recreate it!).<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p></li>
+<li><p>Documenation to <strong>explain the process</strong>. A good way to provide clarity to any user without the context is to create a visual of the process flow. For instance, you can outline the process using <a href="https://nhsdigital.github.io/rap-community-of-practice/implementing_RAP/process_mapping/#example-using-markdown-and-mermaid"><strong>mermaid diagrams</strong></a>, or use open source diagram tool (like <a href="https://app.diagrams.net/">draw.io</a> or <a href="https://www.lucidchart.com/pages">lucidchart</a>) to draw the process yourself, export the image and embed that into the documentation (be sure you version to diagram file itself so that you can always tune the diagram and don’t have to recreate it!).<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p></li>
 </ul>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -697,7 +697,8 @@ Figure&nbsp;2: See <a href="https://bioinformatics.ccr.cancer.gov/docs/btep-codi
 
 <ol>
 <li id="fn1"><p>See overview and explanations of <a href="https://book.the-turing-way.org/reproducible-research/vcs">version control in The Turing Way</a> for more info.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>Check out this <a href="https://nhsdigital.github.io/rap-community-of-practice/implementing_RAP/process_mapping/">overview guide on process mapping by the NHS</a>.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>There are multiple ways to do this, such as using <a href="https://quarto.org/docs/projects/scripts.html#pre-and-post-render">Quarto scripts</a> to pre-process input data, a light orchestration such as using DVC, developing and versioning a <a href="https://book.the-turing-way.org/reproducible-research/make/">Makefile</a>, etc.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Check out this <a href="https://nhsdigital.github.io/rap-community-of-practice/implementing_RAP/process_mapping/">overview guide on process mapping by the NHS</a>.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
