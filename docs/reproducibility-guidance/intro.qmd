@@ -75,7 +75,7 @@ When a research project is complete, the compendium should thus be archived in a
 ::: callout-note
 ## Adoption depends on the organization
 
-Use of repositories such as Zenodo depends on the researchers and the organization they are in. It is best to follow your organization's rules for which repository it is best to publish from. The main idea is to publish to a repository that helps create a DOI which is (ideally) immunable.
+Use of repositories such as Zenodo depends on the researchers and the organization they are in. It is best to follow your organization's rules for which repository it is best to publish from. The main idea is to publish to a repository that helps create a DOI which is (ideally) immutable.
 :::
 
 ### (3) Key software
