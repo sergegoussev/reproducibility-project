@@ -287,7 +287,7 @@ Great!
 ::::: fragment
 What are we missing if you are not convinced? Do you have blockers we are not addressing? Is something confusing?
 
-::: callout-important
+::: callout-tip
 ## Lend your perspective
 Fill in [a short poll](https://forms.gle/DZRzqNbPHCfgdReLA) and help us map the hurdles and thus address them together!
 
