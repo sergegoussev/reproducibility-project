@@ -269,7 +269,7 @@ Ideally, each dataset is in a data repository (e.g., Zenodo)
 
 # Are you convinced?
 
-## Takeaways---what you can do if you are convinced!
+## What you can do if you are convinced!
 
 Great!
 
@@ -282,20 +282,19 @@ Great!
 > Goussev, S., Martin, S., Lamboray, C., Bontemps, C., Flower, T., Hillman, B., White, C., & Mehroff, J. (2026). Price Statistics Reproducibility Project (v0.1). Zenodo. https://doi.org/10.5281/zenodo.19779579
 :::
 
-## What else is blocking you?
+## Help us know about and clear other hurdles
 
-::::::: fragment
-Are you convinced? Do you have blockers we are not addressing? Is something confusing?
+::::: fragment
+What are we missing if you are not convinced? Do you have blockers we are not addressing? Is something confusing?
 
-:::::: {style="text-align: center;"}
-::::: callout-important
+::: callout-important
+## Lend your perspective
 Fill in [a short poll](https://forms.gle/DZRzqNbPHCfgdReLA) and help us map the hurdles and thus address them together!
 
 ![](qrcode.png){fig-align="center" width="40%"}
-:::::
-::::::
+:::
 
-:::::::
+:::::
 
 # What's happening next?
 
