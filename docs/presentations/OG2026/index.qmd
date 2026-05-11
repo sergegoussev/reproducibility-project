@@ -291,7 +291,7 @@ What are we missing if you are not convinced? Do you have blockers we are not ad
 ## Lend your perspective
 Fill in [a short poll](https://forms.gle/DZRzqNbPHCfgdReLA) and help us map the hurdles and thus address them together!
 
-![](qrcode.png){fig-align="center" width="40%"}
+![](qrcode.png){fig-align="center" width="30%"}
 :::
 
 :::::
