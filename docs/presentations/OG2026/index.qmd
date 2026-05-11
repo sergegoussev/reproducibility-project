@@ -285,7 +285,7 @@ Great!
 ## Help us know about and clear other hurdles
 
 ::::: fragment
-What are we missing if you are not convinced? Do you have blockers we are not addressing? Is something confusing?
+If you are not convinced, what are we missing? Do you have blockers we are not addressing? Is something confusing?
 
 ::: callout-tip
 ## Lend your perspective
