@@ -282,13 +282,19 @@ Great!
 > Goussev, S., Martin, S., Lamboray, C., Bontemps, C., Flower, T., Hillman, B., White, C., & Mehroff, J. (2026). Price Statistics Reproducibility Project (v0.1). Zenodo. https://doi.org/10.5281/zenodo.19779579
 :::
 
-## Not convinced?
+## Are we missing anything?
 
-Tell us what is in your way to research in a reproducible way?
+::: fragment
 
-<https://forms.gle/DZRzqNbPHCfgdReLA>
+Tell us what is in your way to research in a reproducible way or what your blockers are! 
+
+::: {style="text-align: center;"}
+Fill in [a short poll](https://forms.gle/DZRzqNbPHCfgdReLA)
+:::
 
 ![](qrcode.png){fig-align="center" width="50%"}
+
+:::
 
 # What's happening next?
 
@@ -302,4 +308,4 @@ Tell us what is in your way to research in a reproducible way?
 
 # Questions?
 
-More than anything---are you convinced?
+More than anything---do you have what you need to get started?
