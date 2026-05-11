@@ -40,8 +40,7 @@ format:
 
 ## Replication crisis is not new, it's actually well acknowledged in science
 
-:::: {.columns}
-
+::::::: columns
 ::: {.column width="45%"}
 -   @10.1371/journal.pmed.0020124, @baker20161, and many others put the replication crisis on the map.
 
@@ -54,24 +53,21 @@ format:
 -   A lot of progress has been made! For example a recent survey of reproducibility in Economics (at least for journals with strict data sharing mandates and policies) reproducibility is as high as 85% [@brodeur2026reproducibility].
 :::
 
-::: {.column width="55%"}
-::::: {.fragment}
+::::: {.column width="55%"}
+:::: fragment
 #### (Check out the references for more info)
 
 ::: {#refs}
 :::
-
-:::::
-:::
-
 ::::
-
+:::::
+:::::::
 
 ## Progress in price statistics is lower, but it doesn't have to be this way!
 
 -   In Price Statistics, we can adopt common practices to improve **replicability** (and ideally aim for **reproducibility**).
 
-::: {.fragment}
+::: fragment
 > We can move from a "trust me, it works on my data" toward "here is exactly how I did what I did, and here is everything you need to check my work."
 :::
 
@@ -107,15 +103,12 @@ format:
 
 ## Prioritize reproducibility or replicability
 
-::::: columns
-
-::: {.column width="35%"}
-
-:::: {.fragment}
+:::::: columns
+:::: {.column width="35%"}
+::: fragment
 ![Reproducibility quadrant](/docs/images/reproducibility-grid.svg){fig-align="center"}
-::::
-
 :::
+::::
 
 ::: {.column width="65%"}
 -   We should aim for **reproducibility** for methodological studies---i.e. if the analysis (i.e. the code) is public and the data is open.
@@ -130,20 +123,16 @@ format:
 
     -   *More inclined to novelty over robustness or production benefits*---the breadth of options to consider is large but work is left on NSOs to operationalize.
 :::
-
-:::::
+::::::
 
 ## Keep an eye on the how the research compendium helps structure the objects of research
 
-::::: columns
-
-::: {.column width="45%"}
-
-:::: {.fragment}
+:::::: columns
+:::: {.column width="45%"}
+::: fragment
 ![Research objects](/docs/images/reserarch-objects-deeper-dive-1-research.drawio.svg)
-::::
-
 :::
+::::
 
 ::: {.column width="55%"}
 -   The **input** data is used to answer research questions. **Output** data is produced by your research project (such as final indices).
@@ -158,8 +147,7 @@ format:
 
 -   Store the source for your paper in your research compendium.
 :::
-
-:::::
+::::::
 
 ## Adopt the pace that works for you
 
@@ -179,15 +167,12 @@ format:
 
 ## Structure your research compendium
 
-::::: columns
-
-::: {.column width="40%"}
-
-:::: {.fragment}
+:::::: columns
+:::: {.column width="40%"}
+::: fragment
 ![](/docs/images/price-stats-exemplar.svg)
-::::
-
 :::
+::::
 
 ::: {.column width="60%"}
 -   Add coherent structure to the compendium!
@@ -206,8 +191,7 @@ format:
 
     -   carefully track what packages are used;
 :::
-
-:::::
+::::::
 
 ## Choose the most applicable input data for the project
 
@@ -225,20 +209,17 @@ format:
 
 ## Use open datasets if you can
 
-::::: columns
-
-::: {.column width="60%"}
-
-:::: {.fragment}
+:::::::: columns
+:::: {.column width="60%"}
+::: fragment
 ![](/docs/images/data-catalogue-idea.svg)
+:::
 ::::
 
-:::
-
-::: {.column width="40%"}
+::::: {.column width="40%"}
 -   We document discipline specific open datasets in the catalogue.
 
-:::: {.fragment}
+:::: fragment
 ::: callout-caution
 ## The catalogue documents each dataset in a standardized way
 
@@ -248,13 +229,11 @@ Ideally, each dataset is in a data repository (e.g., Zenodo)
 :::
 ::::
 
--   [https://un-task-team-for-scanner-data.github.io/price-stats-data-catalogue/](https://un-task-team-for-scanner-data.github.io/price-stats-data-catalogue/) (or find it embedded in our project site).
+-   <https://un-task-team-for-scanner-data.github.io/price-stats-data-catalogue/> (or find it embedded in our project site).
 
 -   Let us know if you know a good dataset to add!
-
-:::
-
 :::::
+::::::::
 
 ## You can still be reproducible if you work with sensitive data
 
@@ -268,20 +247,17 @@ Ideally, each dataset is in a data repository (e.g., Zenodo)
 
 ## When you are finalizing your paper, lean on metadata to cite things properly
 
-::::: columns
-
-::: {.column width="55%"}
-
-:::: {.fragment}
+:::::: columns
+:::: {.column width="55%"}
+::: fragment
 ![](/docs/images/reserarch-objects-deeper-dive-2-citation.drawio.svg)
-::::
-
 :::
+::::
 
 ::: {.column width="45%"}
 -   Archive your research compendium (immutable copy tied to your submission).
 
--   Cite the objects of research using its findability metadata: 
+-   Cite the objects of research using its findability metadata:
 
     -   Find each object with its (permanent) unique digital identifier (typically a DOI).
 
@@ -289,10 +265,9 @@ Ideally, each dataset is in a data repository (e.g., Zenodo)
 
 -   Metadata standards (i.e. SDMX/DDI/etc) typically applies to publishing new input data.
 :::
+::::::
 
-:::::
-
-# Are you convinced? 
+# Are you convinced?
 
 ## Takeaways---what you can do if you are convinced!
 
@@ -303,7 +278,7 @@ Great!
 -   [Let us know](https://un-task-team-for-scanner-data.github.io/reproducibility-project/docs/faq.html#i-have-questions-on-reproducibility-or-cataloging-a-dataset.-how-and-who-do-i-reach-out-to) if we're missing anything.
 -   Cite our guide!
 
-::: {.fragment}
+::: fragment
 > Goussev, S., Martin, S., Lamboray, C., Bontemps, C., Flower, T., Hillman, B., White, C., & Mehroff, J. (2026). Price Statistics Reproducibility Project (v0.1). Zenodo. https://doi.org/10.5281/zenodo.19779579
 :::
 
@@ -311,11 +286,9 @@ Great!
 
 Tell us what is in your way to research in a reproducible way?
 
-
 <https://forms.gle/DZRzqNbPHCfgdReLA>
 
-
-> TO DO - figure out QR code!
+![](qrcode.png){fig-align="center" width="50%"}
 
 # What's happening next?
 
@@ -324,7 +297,7 @@ Tell us what is in your way to research in a reproducible way?
 -   Add more open data to the catalogue---ideally with your help! Add new datasets that can be used.
 -   Investigate adding proprietary datasets to the catalogue---for those cases where open data is not enough.
 -   Flesh out further guidance on topics that are most valuable.
--   Work with CPI EG and OG to instill reproducibitliy within the conference process.
+-   Work with CPI EG and OG to instill reproducibility within the conference process.
 -   Perhaps host a training session if it's of value.
 
 # Questions?
