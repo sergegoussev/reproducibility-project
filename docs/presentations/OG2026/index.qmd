@@ -25,6 +25,7 @@ format:
     fontsize: 30px
     width: 1280
     height: 720
+  beamer: default
 ---
 
 # Why should you care?
