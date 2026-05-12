@@ -2,13 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.27">
+<meta name="generator" content="quarto-1.9.37">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>meeting-minutes – Price Statistics Reproducibility Project</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -33,19 +36,18 @@ ul.task-list li input[type="checkbox"] {
 <link href="../docs/images/logo.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-4d9afe2b8d18ee9fa5d0d57b5ed4214d.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-17d01b5babc88cbee53e37b4dd766b3a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-e76a3bd875c60c293afb8898fda78102.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-17d01b5babc88cbee53e37b4dd766b3a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-3c28f507822a6aba878936ee8b27b32a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-c258eaed6e8e8a3f375d5ff3df933fe0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-3c28f507822a6aba878936ee8b27b32a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -407,15 +409,68 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#agenda-16" id="toc-agenda-16" class="nav-link" data-scroll-target="#agenda-16">Agenda</a></li>
   <li><a href="#notes-16" id="toc-notes-16" class="nav-link" data-scroll-target="#notes-16">Notes</a></li>
   </ul></li>
+  <li><a href="#section-16" id="toc-section-16" class="nav-link" data-scroll-target="#section-16">2025-12-16</a>
+  <ul class="collapse">
+  <li><a href="#agenda-17" id="toc-agenda-17" class="nav-link" data-scroll-target="#agenda-17">Agenda</a></li>
+  <li><a href="#notes-17" id="toc-notes-17" class="nav-link" data-scroll-target="#notes-17">Notes</a></li>
+  </ul></li>
+  <li><a href="#section-17" id="toc-section-17" class="nav-link" data-scroll-target="#section-17">2026-01-13</a>
+  <ul class="collapse">
+  <li><a href="#agenda-18" id="toc-agenda-18" class="nav-link" data-scroll-target="#agenda-18">Agenda</a></li>
+  <li><a href="#notes-18" id="toc-notes-18" class="nav-link" data-scroll-target="#notes-18">Notes</a></li>
+  </ul></li>
+  <li><a href="#section-18" id="toc-section-18" class="nav-link" data-scroll-target="#section-18">2026-02-03</a>
+  <ul class="collapse">
+  <li><a href="#agenda-19" id="toc-agenda-19" class="nav-link" data-scroll-target="#agenda-19">Agenda</a></li>
+  <li><a href="#notes-19" id="toc-notes-19" class="nav-link" data-scroll-target="#notes-19">Notes</a></li>
+  </ul></li>
+  <li><a href="#section-19" id="toc-section-19" class="nav-link" data-scroll-target="#section-19">2026-02-24</a>
+  <ul class="collapse">
+  <li><a href="#agenda-20" id="toc-agenda-20" class="nav-link" data-scroll-target="#agenda-20">Agenda</a></li>
+  <li><a href="#notes-20" id="toc-notes-20" class="nav-link" data-scroll-target="#notes-20">Notes</a></li>
+  </ul></li>
+  <li><a href="#section-20" id="toc-section-20" class="nav-link" data-scroll-target="#section-20">2026-03-17</a>
+  <ul class="collapse">
+  <li><a href="#agenda-21" id="toc-agenda-21" class="nav-link" data-scroll-target="#agenda-21">Agenda</a></li>
+  <li><a href="#notes-21" id="toc-notes-21" class="nav-link" data-scroll-target="#notes-21">Notes</a></li>
+  </ul></li>
+  <li><a href="#section-21" id="toc-section-21" class="nav-link" data-scroll-target="#section-21">2026-04-14</a>
+  <ul class="collapse">
+  <li><a href="#agenda-22" id="toc-agenda-22" class="nav-link" data-scroll-target="#agenda-22">Agenda</a></li>
+  <li><a href="#notes-22" id="toc-notes-22" class="nav-link" data-scroll-target="#notes-22">Notes</a></li>
+  </ul></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/UN-Task-Team-for-Scanner-Data/reproducibility-project/blob/main/project-content/meeting-minutes.md" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/UN-Task-Team-for-Scanner-Data/reproducibility-project/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+</div>
 
 
 
+<div class="quarto-title-meta">
+
+    
+  
+    
+    <div>
+    <div class="quarto-title-meta-heading">Doi</div>
+    <div class="quarto-title-meta-contents">
+      <p class="doi">
+        <a href="https://doi.org/10.5281/zenodo.19779578">10.5281/zenodo.19779578</a>
+      </p>
+    </div>
+  </div>
+  </div>
+  
+
+
+</header>
 
 
 <section id="meeting-minutes-of-the-project-team" class="level1">
@@ -814,13 +869,119 @@ ul.task-list li input[type="checkbox"] {
 <li>Inital draft mocked up to <a href="https://un-task-team-for-scanner-data.github.io/reproducibility-project/docs/reproducibility-guidance/howtos/research-compendium-structure.html">research compendium deep dive</a>, as well as WIP callouts flushed out (the <a href="https://un-task-team-for-scanner-data.github.io/reproducibility-project/docs/reproducibility-guidance/howtos/metadata.html">metadata</a> one is detailed) so that researchers drafting abstracts for the Ottawa group who visit the site will see a semi put together product.</li>
 <li><a href="https://code.officialstatistics.org/scanner-task-team-gwg/FEWS_package/-/blob/master/data/SampleDataSet.csv?ref_type=heads">New Zealand modified scanner consumer electronics dataset</a> to be mocked for discussion at a future meeting.</li>
 </ul>
+</section>
+</section>
+<section id="section-16" class="level2">
+<h2 class="anchored" data-anchor-id="section-16">2025-12-16</h2>
+<section id="agenda-17" class="level3">
+<h3 class="anchored" data-anchor-id="agenda-17">Agenda</h3>
+<ul>
+<li>Recent minor changes and what is left in scope</li>
+<li>PR and issue templates for dataset registration in the catalogue</li>
+<li>Project management update - review of progress and next steps</li>
+</ul>
+</section>
+<section id="notes-17" class="level3">
+<h3 class="anchored" data-anchor-id="notes-17">Notes</h3>
+<ul>
+<li>The team reviewed recent changes and did a call out for review among the group. The material already drafted and a slight expansion could help in the short term as it would be useful to have Ottawa Group 2026 organizers include a link to our project website in the response to researchers accepted to the conference.</li>
+<li>A standardized issue and a PR template for dataset registration was discussed. The issue template creates a simple ‘workflow’ in asking key questions for anyone proposing new datasets to the catalogue. The PR template offers some structure to how a PR is described in Markdown. Templates approved and will be moved over to the catalogue repo shortly.</li>
+</ul>
+</section>
+</section>
+<section id="section-17" class="level2">
+<h2 class="anchored" data-anchor-id="section-17">2026-01-13</h2>
+<section id="agenda-18" class="level3">
+<h3 class="anchored" data-anchor-id="agenda-18">Agenda</h3>
+<ul>
+<li>Changes to how reproducibility is introduced and the overview of citation guidance</li>
+<li>Discussion on draft guidance on creating synthetic input data</li>
+</ul>
+</section>
+<section id="notes-18" class="level3">
+<h3 class="anchored" data-anchor-id="notes-18">Notes</h3>
+<ul>
+<li>Discussion on proposed changes to how reproducibility is introduced in the intro page of the “How to be reproducible” guidance, focusing on 4 main components of the research project. Team conditionally accepted with review and feedback to be provided over the coming weeks.</li>
+<li>Team discussed draft guidance on synthetic data. Contextualizing the need for synthetic data would be useful and will be added prior to merging the synthetic guidance specifically. Furthermore, guidance on what other actions are possible (such as putting a dummy dataset that can at least run the analysis) if no synthetic data is created. Further review and discussions will follow.</li>
+</ul>
+</section>
+</section>
+<section id="section-18" class="level2">
+<h2 class="anchored" data-anchor-id="section-18">2026-02-03</h2>
+<section id="agenda-19" class="level3">
+<h3 class="anchored" data-anchor-id="agenda-19">Agenda</h3>
+<ul>
+<li>Discussion on guidance and potential direction for the work stream after the Ottawa Group conference</li>
+<li>Discussion on draft guidance on creating synthetic data</li>
+<li>Proposal to register Polish food scanner dataset</li>
+</ul>
+</section>
+<section id="notes-19" class="level3">
+<h3 class="anchored" data-anchor-id="notes-19">Notes</h3>
+<ul>
+<li>The team discussed objectives for May and what work remains afterwards. Longer term goals included working with institutions to improve reproducibility as a whole, investigating more challenging guidance topics, investigating registry of proprietary dataset that could be purchased to the catalogue, potentially hosting training on this materials at the 2027 CPI EG conference, and many other topics.</li>
+<li>The approach to review already drafted material was discussed, with slight preference for gradual light review with more detailed review nearer the conference.</li>
+<li>Disussion on draft synthetic data guidance centered around how to best describe it to simplify understanding and adoption by researchers. Material still a WIP.</li>
+<li>The <a href="https://zenodo.org/records/18342253">polish open dataset</a> was accepted as valuable to be registered to the catalogue.</li>
+</ul>
+</section>
+</section>
+<section id="section-19" class="level2">
+<h2 class="anchored" data-anchor-id="section-19">2026-02-24</h2>
+<section id="agenda-20" class="level3">
+<h3 class="anchored" data-anchor-id="agenda-20">Agenda</h3>
+<ul>
+<li>Discussion on recent updates</li>
+<li>Ideas for future work items</li>
+</ul>
+</section>
+<section id="notes-20" class="level3">
+<h3 class="anchored" data-anchor-id="notes-20">Notes</h3>
+<ul>
+<li>The team reviewed recent changes to data catalogue: (1) <a href="https://github.com/UN-Task-Team-for-Scanner-Data/price-stats-data-catalogue/tree/main/.github/ISSUE_TEMPLATE">a detailed issue template</a> and <a href="https://github.com/UN-Task-Team-for-Scanner-Data/price-stats-data-catalogue/blob/main/.github/pull_request_template.md">PR template</a> was recently added to simplify contributing to the catalogue; (2) the conversion of the metadata standard for each dataset record to <a href="https://bitol-io.github.io/open-data-contract-standard/v3.1.0/">the ODCS standard</a> and other UX changes; (3) the addition of the New Zealand modified electronics dataset; and (4) the addition of the polish scanner dataset.</li>
+<li>The team discussed upcoming priorities and changes, including the assignment of topics still needing documentation, and whether <a href="https://github.com/UN-Task-Team-for-Scanner-Data/price-stats-data-catalogue/issues/28">the IMF synthetic house price dataset</a> was useful for the catalogue.</li>
+</ul>
+</section>
+</section>
+<section id="section-20" class="level2">
+<h2 class="anchored" data-anchor-id="section-20">2026-03-17</h2>
+<section id="agenda-21" class="level3">
+<h3 class="anchored" data-anchor-id="agenda-21">Agenda</h3>
+<ul>
+<li>Discussion on remaining guidance</li>
+<li>Discussion on priorities for the catalogue</li>
+</ul>
+</section>
+<section id="notes-21" class="level3">
+<h3 class="anchored" data-anchor-id="notes-21">Notes</h3>
+<ul>
+<li>The team discussed guidance that remains to be completed. Final topics were assigned and will be prioritized in the next few weeks. Review by the team can commence after to help prepare for Ottawa Group.</li>
+<li>The team also agreed that adding additional datasets to the catalogue should be lower priority before the Ottawa Group.</li>
+</ul>
+</section>
+</section>
+<section id="section-21" class="level2">
+<h2 class="anchored" data-anchor-id="section-21">2026-04-14</h2>
+<section id="agenda-22" class="level3">
+<h3 class="anchored" data-anchor-id="agenda-22">Agenda</h3>
+<ul>
+<li>Discussion latest draft materials</li>
+<li>Discussion on next steps and presentation to the Ottawa Group</li>
+</ul>
+</section>
+<section id="notes-22" class="level3">
+<h3 class="anchored" data-anchor-id="notes-22">Notes</h3>
+<ul>
+<li>The team discussed the latest draft guidance on synthetic data, licenses, metadata, and on publishing to zenodo. Main task seen as most valuable over the next two weeks will be to finish, merge in ongoing drafts, and write drafts for outstanding guides.</li>
+<li>The use of a <code>revealjs</code> presentation embedded within the project was discussed and approved as the approach that will be taken for the OG 2026 presentation. Draft materials to be discussed at the next meeting.</li>
+</ul>
 
 
 </section>
 </section>
 </section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right

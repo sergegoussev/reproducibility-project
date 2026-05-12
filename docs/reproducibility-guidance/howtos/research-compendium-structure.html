@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.27">
+<meta name="generator" content="quarto-1.9.37">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -10,6 +10,9 @@
 
 <title>Components, structure and why they matter – Price Statistics Reproducibility Project</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -35,19 +38,18 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../../docs/images/logo.png" rel="icon" type="image/png">
 <script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-4d9afe2b8d18ee9fa5d0d57b5ed4214d.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-17d01b5babc88cbee53e37b4dd766b3a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-dark-e76a3bd875c60c293afb8898fda78102.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../../site_libs/bootstrap/bootstrap-17d01b5babc88cbee53e37b4dd766b3a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-3c28f507822a6aba878936ee8b27b32a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark-c258eaed6e8e8a3f375d5ff3df933fe0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../site_libs/bootstrap/bootstrap-3c28f507822a6aba878936ee8b27b32a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -381,7 +383,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../docs/reproducibility-guidance/howtos/licences.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">What licences could I use?</span></a>
+ <span class="menu-text">What licence should I use?</span></a>
   </div>
 </li>
       </ul>
@@ -404,13 +406,13 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../docs/reproducibility-guidance/howtos/synthetic-data.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">How to approach synthetic data</span></a>
+ <span class="menu-text">How to work with sensitive and proprietary data</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../docs/reproducibility-guidance/howtos/opening-data.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">What to do with data your research project creates</span></a>
+ <span class="menu-text">Publishing data part of the research project</span></a>
   </div>
 </li>
       </ul>
@@ -481,7 +483,7 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#a-little-about-each-aspect" id="toc-a-little-about-each-aspect" class="nav-link" data-scroll-target="#a-little-about-each-aspect">A little about each aspect</a></li>
   </ul></li>
-  <li><a href="#how-to-share-your-active-research-compendium-while" id="toc-how-to-share-your-active-research-compendium-while" class="nav-link" data-scroll-target="#how-to-share-your-active-research-compendium-while">How to share your active research compendium while?</a></li>
+  <li><a href="#how-to-share-your-active-research-compendium" id="toc-how-to-share-your-active-research-compendium" class="nav-link" data-scroll-target="#how-to-share-your-active-research-compendium">How to share your active research compendium?</a></li>
   </ul></li>
   <li><a href="#the-why" id="toc-the-why" class="nav-link" data-scroll-target="#the-why">The Why</a>
   <ul class="collapse">
@@ -521,10 +523,18 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">February 3, 2026</p>
+      <p class="date-modified">May 12, 2026</p>
     </div>
   </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Doi</div>
+    <div class="quarto-title-meta-contents">
+      <p class="doi">
+        <a href="https://doi.org/10.5281/zenodo.19779578">10.5281/zenodo.19779578</a>
+      </p>
+    </div>
+  </div>
   </div>
   
 
@@ -610,9 +620,9 @@ Figure&nbsp;1: Exemplar <a href="https://github.com/UN-Task-Team-for-Scanner-Dat
 <p><strong>Finally, a README to introduce the project</strong>. This will be the landing place when someone navigates to the repository, hence it should describe the project at a glance.</p>
 </section>
 </section>
-<section id="how-to-share-your-active-research-compendium-while" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-share-your-active-research-compendium-while">How to share your active research compendium while?</h2>
-<p>Version controlling the research compendium is key.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> Once version controlled, it is best to push it to a hosting service like GitHub. Working with something like GitHub makes it easy for researchers to ensure their projects are well structured and robust. Later, <a href="../../../docs/reproducibility-guidance/howtos/publishing-research-compendium.html">we will cover how to publish your research compendium</a> to a repository like Zenodo in order to create a ‘snapshot’ for archival purposes.</p>
+<section id="how-to-share-your-active-research-compendium" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-share-your-active-research-compendium">How to share your active research compendium?</h2>
+<p>Version controlling the research compendium is key.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> Once version controlled, it is best to push it to a hosting service like GitHub. Working with something like GitHub makes it easy for researchers to ensure their projects are well structured and robust. Later, <a href="../../../docs/reproducibility-guidance/howtos/publishing-research-compendium.html">we will cover how to publish your research compendium</a> to a repository like Zenodo in order to create a “snapshot” for archival purposes.</p>
 </section>
 </section>
 <section id="the-why" class="level1">
@@ -666,7 +676,7 @@ Figure&nbsp;2: See <a href="https://bioinformatics.ccr.cancer.gov/docs/btep-codi
 <h3 class="anchored" data-anchor-id="what-type-of-docs">What type of docs?</h3>
 <ul>
 <li><p><strong>Project management/design</strong> documentation – such as the project charter, <a href="https://book.the-turing-way.org/reproducible-research/rdm/rdm-dmp/">data management plan</a>, etc. These help clearly <a href="https://book.the-turing-way.org/project-design/pd-overview/">state the success criteria for a project and keep you on track</a>.</p></li>
-<li><p>Documenation that <strong>explains the code</strong>. No matter how clear the structure or the scripts, the narrative explanation of steps to follow will still requires some documentation. Indeed the list of specific steps may be clear from the analysis steps, but the <strong>why</strong> and the <strong>how</strong> will not be—hence both will also benefit from being made explicit.</p></li>
+<li><p>Documenation that <strong>explains the code</strong>. No matter how clear the structure or the scripts, the narrative explanation of steps to follow will still requires some documentation. Indeed, the list of specific steps may be clear from the analysis steps, but the <strong>why</strong> and the <strong>how</strong> will not be—hence both will also benefit from being made explicit.</p></li>
 <li><p>Documenation to <strong>explain the process</strong>. A good way to provide clarity to any user without the context is to create a visual of the process flow. For instance, you can outline the process using <a href="https://nhsdigital.github.io/rap-community-of-practice/implementing_RAP/process_mapping/#example-using-markdown-and-mermaid"><strong>mermaid diagrams</strong></a>, or use open source diagram tool (like <a href="https://app.diagrams.net/">draw.io</a> or <a href="https://www.lucidchart.com/pages">lucidchart</a>) to draw the process yourself, export the image and embed that into the documentation (be sure you version to diagram file itself so that you can always tune the diagram and don’t have to recreate it!).<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p></li>
 </ul>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -700,7 +710,7 @@ Figure&nbsp;2: See <a href="https://bioinformatics.ccr.cancer.gov/docs/btep-codi
 <li id="fn2"><p>There are multiple ways to do this, such as using <a href="https://quarto.org/docs/projects/scripts.html#pre-and-post-render">Quarto scripts</a> to pre-process input data, a light orchestration such as using DVC, developing and versioning a <a href="https://book.the-turing-way.org/reproducible-research/make/">Makefile</a>, etc.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn3"><p>Check out this <a href="https://nhsdigital.github.io/rap-community-of-practice/implementing_RAP/process_mapping/">overview guide on process mapping by the NHS</a>.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
-</section></div></main> <!-- /main -->
+</section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
@@ -1118,8 +1128,8 @@ Figure&nbsp;2: See <a href="https://bioinformatics.ccr.cancer.gov/docs/btep-codi
   <div class="nav-page nav-page-previous">
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../../docs/reproducibility-guidance/howtos/licences.html" class="pagination-link" aria-label="What licences could I use?">
-        <span class="nav-page-text">What licences could I use?</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../../docs/reproducibility-guidance/howtos/licences.html" class="pagination-link" aria-label="What licence should I use?">
+        <span class="nav-page-text">What licence should I use?</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
